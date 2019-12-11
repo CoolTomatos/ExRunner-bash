@@ -1,16 +1,12 @@
-from sys import argv
 import json
+from sys import argv
 
-
-
-application=argv[1]
-version=argv[2]
-case=argv[3]
-frame=argv[4]
-execution_idx=argv[5]
-search_budget=argv[6]
-
-
+application = argv[1]
+version = argv[2]
+case = argv[3]
+frame = argv[4]
+execution_idx = argv[5]
+search_budget = argv[6]
 
 data = {'application': application,
         'version': version,
@@ -20,6 +16,5 @@ data = {'application': application,
         'search_budget': search_budget
         }
 
-
-read_json =  json.dumps(data)
+read_json = json.dumps(data)
 print read_json.replace(",", "|")
