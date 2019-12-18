@@ -1,0 +1,53 @@
+Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:748)
+Exception in thread "elasticsearch[_x_'D5%>][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:744)
+Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:748)
+Exception in thread "elasticsearch[generic][T#1]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:110)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Exception in thread "main" org.evosuite.testcase.execution.EvosuiteError: org.evosuite.shaded.org.objenesis.ObjenesisException: java.lang.reflect.InvocationTargetException
+	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:739)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.FunctionalMockStatement.execute(FunctionalMockStatement.java:591)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.evosuite.shaded.org.objenesis.ObjenesisException: java.lang.reflect.InvocationTargetException
+	at org.evosuite.shaded.org.objenesis.instantiator.sun.SunReflectionFactoryHelper.createReflectionFactory(SunReflectionFactoryHelper.java:83)
+	at org.evosuite.shaded.org.objenesis.instantiator.sun.SunReflectionFactoryHelper.newConstructorForSerialization(SunReflectionFactoryHelper.java:38)
+	at org.evosuite.shaded.org.objenesis.instantiator.sun.SunReflectionFactoryInstantiator.<init>(SunReflectionFactoryInstantiator.java:41)
+	at org.evosuite.shaded.org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(StdInstantiatorStrategy.java:68)
+	at org.evosuite.shaded.org.objenesis.ObjenesisBase.getInstantiatorOf(ObjenesisBase.java:90)
+	at org.evosuite.shaded.org.objenesis.ObjenesisBase.newInstance(ObjenesisBase.java:73)
+	at org.evosuite.shaded.org.mockito.internal.creation.instance.ObjenesisInstantiator.newInstance(ObjenesisInstantiator.java:19)
+	at org.evosuite.shaded.org.mockito.internal.creation.bytebuddy.SubclassByteBuddyMockMaker.createMock(SubclassByteBuddyMockMaker.java:47)
+	at org.evosuite.shaded.org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker.createMock(ByteBuddyMockMaker.java:25)
+	at org.evosuite.shaded.org.mockito.internal.util.MockUtil.createMock(MockUtil.java:35)
+	at org.evosuite.shaded.org.mockito.internal.MockitoCore.mock(MockitoCore.java:69)
+	at org.evosuite.shaded.org.mockito.Mockito.mock(Mockito.java:1895)
+	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:606)
+	... 9 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.evosuite.shaded.org.objenesis.instantiator.sun.SunReflectionFactoryHelper.createReflectionFactory(SunReflectionFactoryHelper.java:71)
+	... 21 more
+Caused by: java.lang.NullPointerException
+	at org.evosuite.runtime.sandbox.PermissionStatistics.permissionAllowed(PermissionStatistics.java:144)
+	at org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:455)
+	at sun.reflect.ReflectionFactory.getReflectionFactory(ReflectionFactory.java:131)
+	... 25 more
