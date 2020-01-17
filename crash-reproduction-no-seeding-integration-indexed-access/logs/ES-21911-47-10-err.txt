@@ -1,0 +1,106 @@
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console.
+ERROR StatusLogger Catching
+ java.lang.SecurityException: Security manager blocks ("java.lang.RuntimePermission" "shutdownHooks")
+java.lang.Thread.getStackTrace(Thread.java:1559)
+org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:434)
+java.lang.Runtime.addShutdownHook(Runtime.java:209)
+org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry.addShutdownHook(DefaultShutdownCallbackRegistry.java:149)
+org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry.start(DefaultShutdownCallbackRegistry.java:135)
+org.apache.logging.log4j.core.impl.Log4jContextFactory.initializeShutdownCallbackRegistry(Log4jContextFactory.java:125)
+org.apache.logging.log4j.core.impl.Log4jContextFactory.<init>(Log4jContextFactory.java:92)
+org.apache.logging.log4j.core.impl.Log4jContextFactory.<init>(Log4jContextFactory.java:58)
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+java.lang.Class.newInstance(Class.java:442)
+org.apache.logging.log4j.LogManager.<clinit>(LogManager.java:94)
+org.elasticsearch.common.logging.ESLoggerFactory.getLogger(ESLoggerFactory.java:49)
+org.elasticsearch.common.logging.ESLoggerFactory.getLogger(ESLoggerFactory.java:57)
+org.elasticsearch.common.logging.Loggers.getLogger(Loggers.java:101)
+org.elasticsearch.action.get.GetRequest.<clinit>(GetRequest.java:66)
+java.lang.Class.forName0(Native Method)
+java.lang.Class.forName(Class.java:348)
+org.apache.logging.log4j.core.util.Loader.initializeClass(Loader.java:241)
+org.apache.logging.log4j.core.impl.ThrowableProxy.loadClass(ThrowableProxy.java:488)
+org.apache.logging.log4j.core.impl.ThrowableProxy.toExtendedStackTrace(ThrowableProxy.java:623)
+org.apache.logging.log4j.core.impl.ThrowableProxy.<init>(ThrowableProxy.java:136)
+org.apache.logging.log4j.core.impl.ThrowableProxy.<init>(ThrowableProxy.java:118)
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+java.lang.Thread.run(Thread.java:748)
+
+	at org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:452)
+	at java.lang.Runtime.addShutdownHook(Runtime.java:209)
+	at org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry.addShutdownHook(DefaultShutdownCallbackRegistry.java:149)
+	at org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry.start(DefaultShutdownCallbackRegistry.java:135)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.initializeShutdownCallbackRegistry(Log4jContextFactory.java:125)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.<init>(Log4jContextFactory.java:92)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.<init>(Log4jContextFactory.java:58)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at org.apache.logging.log4j.LogManager.<clinit>(LogManager.java:94)
+	at org.elasticsearch.common.logging.ESLoggerFactory.getLogger(ESLoggerFactory.java:49)
+	at org.elasticsearch.common.logging.ESLoggerFactory.getLogger(ESLoggerFactory.java:57)
+	at org.elasticsearch.common.logging.Loggers.getLogger(Loggers.java:101)
+	at org.elasticsearch.action.get.GetRequest.<clinit>(GetRequest.java:66)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.logging.log4j.core.util.Loader.initializeClass(Loader.java:241)
+	at org.apache.logging.log4j.core.impl.ThrowableProxy.loadClass(ThrowableProxy.java:488)
+	at org.apache.logging.log4j.core.impl.ThrowableProxy.toExtendedStackTrace(ThrowableProxy.java:623)
+	at org.apache.logging.log4j.core.impl.ThrowableProxy.<init>(ThrowableProxy.java:136)
+	at org.apache.logging.log4j.core.impl.ThrowableProxy.<init>(ThrowableProxy.java:118)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger Unrecognized format specifier [d]
+ERROR StatusLogger Unrecognized conversion specifier [d] starting at position 16 in conversion pattern.
+ERROR StatusLogger Unrecognized format specifier [thread]
+ERROR StatusLogger Unrecognized conversion specifier [thread] starting at position 25 in conversion pattern.
+ERROR StatusLogger Unrecognized format specifier [level]
+ERROR StatusLogger Unrecognized conversion specifier [level] starting at position 35 in conversion pattern.
+ERROR StatusLogger Unrecognized format specifier [logger]
+ERROR StatusLogger Unrecognized conversion specifier [logger] starting at position 47 in conversion pattern.
+ERROR StatusLogger Unrecognized format specifier [msg]
+ERROR StatusLogger Unrecognized conversion specifier [msg] starting at position 54 in conversion pattern.
+ERROR StatusLogger Unrecognized format specifier [n]
+ERROR StatusLogger Unrecognized conversion specifier [n] starting at position 56 in conversion pattern.
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console.
+ERROR StatusLogger Unrecognized format specifier [d]
+ERROR StatusLogger Unrecognized conversion specifier [d] starting at position 16 in conversion pattern.
+ERROR StatusLogger Unrecognized format specifier [thread]
+ERROR StatusLogger Unrecognized conversion specifier [thread] starting at position 25 in conversion pattern.
+ERROR StatusLogger Unrecognized format specifier [level]
+ERROR StatusLogger Unrecognized conversion specifier [level] starting at position 35 in conversion pattern.
+ERROR StatusLogger Unrecognized format specifier [logger]
+ERROR StatusLogger Unrecognized conversion specifier [logger] starting at position 47 in conversion pattern.
+ERROR StatusLogger Unrecognized format specifier [msg]
+ERROR StatusLogger Unrecognized conversion specifier [msg] starting at position 54 in conversion pattern.
+ERROR StatusLogger Unrecognized format specifier [n]
+ERROR StatusLogger Unrecognized conversion specifier [n] starting at position 56 in conversion pattern.
