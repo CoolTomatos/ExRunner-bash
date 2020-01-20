@@ -1,0 +1,1375 @@
+ERROR StatusLogger Catching
+ java.lang.SecurityException: Security manager blocks ("java.lang.RuntimePermission" "shutdownHooks")
+java.lang.Thread.getStackTrace(Thread.java:1559)
+org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:434)
+java.lang.Runtime.addShutdownHook(Runtime.java:209)
+org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry.addShutdownHook(DefaultShutdownCallbackRegistry.java:151)
+org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry.start(DefaultShutdownCallbackRegistry.java:137)
+org.apache.logging.log4j.core.impl.Log4jContextFactory.initializeShutdownCallbackRegistry(Log4jContextFactory.java:125)
+org.apache.logging.log4j.core.impl.Log4jContextFactory.<init>(Log4jContextFactory.java:92)
+org.apache.logging.log4j.core.impl.Log4jContextFactory.<init>(Log4jContextFactory.java:58)
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+java.lang.Class.newInstance(Class.java:442)
+org.apache.logging.log4j.LogManager.<clinit>(LogManager.java:94)
+org.elasticsearch.common.logging.ESLoggerFactory.getLogger(ESLoggerFactory.java:49)
+org.elasticsearch.common.logging.ESLoggerFactory.getLogger(ESLoggerFactory.java:57)
+org.elasticsearch.monitor.os.OsProbe.<init>(OsProbe.java:455)
+org.elasticsearch.monitor.os.OsProbe$OsProbeHolder.<clinit>(OsProbe.java:444)
+java.lang.Class.forName0(Native Method)
+java.lang.Class.forName(Class.java:348)
+org.evosuite.setup.TestClusterUtils.getClass(TestClusterUtils.java:310)
+org.evosuite.setup.TestClusterGenerator.initializeTargetMethods(TestClusterGenerator.java:662)
+org.evosuite.setup.TestClusterGenerator.generateCluster(TestClusterGenerator.java:134)
+org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:118)
+org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:132)
+eu.stamp.botsing.commons.SetupUtility.analyzeClassDependencies(SetupUtility.java:108)
+eu.stamp.botsing.reproduction.CrashReproduction.initializeTargetClass(CrashReproduction.java:150)
+eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:91)
+eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
+eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:101)
+eu.stamp.botsing.Botsing.main(Botsing.java:168)
+
+	at org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:452)
+	at java.lang.Runtime.addShutdownHook(Runtime.java:209)
+	at org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry.addShutdownHook(DefaultShutdownCallbackRegistry.java:151)
+	at org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry.start(DefaultShutdownCallbackRegistry.java:137)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.initializeShutdownCallbackRegistry(Log4jContextFactory.java:125)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.<init>(Log4jContextFactory.java:92)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.<init>(Log4jContextFactory.java:58)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at org.apache.logging.log4j.LogManager.<clinit>(LogManager.java:94)
+	at org.elasticsearch.common.logging.ESLoggerFactory.getLogger(ESLoggerFactory.java:49)
+	at org.elasticsearch.common.logging.ESLoggerFactory.getLogger(ESLoggerFactory.java:57)
+	at org.elasticsearch.monitor.os.OsProbe.<init>(OsProbe.java:455)
+	at org.elasticsearch.monitor.os.OsProbe$OsProbeHolder.<clinit>(OsProbe.java:444)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.evosuite.setup.TestClusterUtils.getClass(TestClusterUtils.java:310)
+	at org.evosuite.setup.TestClusterGenerator.initializeTargetMethods(TestClusterGenerator.java:662)
+	at org.evosuite.setup.TestClusterGenerator.generateCluster(TestClusterGenerator.java:134)
+	at org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:118)
+	at org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:132)
+	at eu.stamp.botsing.commons.SetupUtility.analyzeClassDependencies(SetupUtility.java:108)
+	at eu.stamp.botsing.reproduction.CrashReproduction.initializeTargetClass(CrashReproduction.java:150)
+	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:91)
+	at eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
+	at eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:101)
+	at eu.stamp.botsing.Botsing.main(Botsing.java:168)
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console.
+ERROR StatusLogger Could not reconfigure JMX
+ java.lang.ExceptionInInitializerError
+	at java.util.logging.Logger.demandLogger(Logger.java:448)
+	at java.util.logging.Logger.getLogger(Logger.java:502)
+	at com.sun.jmx.remote.util.ClassLogger.<init>(ClassLogger.java:55)
+	at javax.management.NotificationBroadcasterSupport.<clinit>(NotificationBroadcasterSupport.java:365)
+	at javax.management.MBeanServerDelegate.<init>(MBeanServerDelegate.java:72)
+	at com.sun.jmx.mbeanserver.MBeanServerDelegateImpl.<init>(MBeanServerDelegateImpl.java:100)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.newMBeanServerDelegate(JmxMBeanServer.java:1374)
+	at javax.management.MBeanServerBuilder.newMBeanServerDelegate(MBeanServerBuilder.java:66)
+	at javax.management.MBeanServerFactory.newMBeanServer(MBeanServerFactory.java:321)
+	at javax.management.MBeanServerFactory.createMBeanServer(MBeanServerFactory.java:231)
+	at javax.management.MBeanServerFactory.createMBeanServer(MBeanServerFactory.java:192)
+	at java.lang.management.ManagementFactory.getPlatformMBeanServer(ManagementFactory.java:469)
+	at org.apache.logging.log4j.core.jmx.Server.reregisterMBeansAfterReconfigure(Server.java:139)
+	at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:541)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:603)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:620)
+	at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:226)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:152)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:45)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:194)
+	at org.apache.logging.log4j.LogManager.getLogger(LogManager.java:551)
+	at org.elasticsearch.common.logging.ESLoggerFactory.getLogger(ESLoggerFactory.java:49)
+	at org.elasticsearch.common.logging.ESLoggerFactory.getLogger(ESLoggerFactory.java:57)
+	at org.elasticsearch.monitor.os.OsProbe.<init>(OsProbe.java:455)
+	at org.elasticsearch.monitor.os.OsProbe$OsProbeHolder.<clinit>(OsProbe.java:444)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.evosuite.setup.TestClusterUtils.getClass(TestClusterUtils.java:310)
+	at org.evosuite.setup.TestClusterGenerator.initializeTargetMethods(TestClusterGenerator.java:662)
+	at org.evosuite.setup.TestClusterGenerator.generateCluster(TestClusterGenerator.java:134)
+	at org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:118)
+	at org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:132)
+	at eu.stamp.botsing.commons.SetupUtility.analyzeClassDependencies(SetupUtility.java:108)
+	at eu.stamp.botsing.reproduction.CrashReproduction.initializeTargetClass(CrashReproduction.java:150)
+	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:91)
+	at eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
+	at eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:101)
+	at eu.stamp.botsing.Botsing.main(Botsing.java:168)
+Caused by: java.lang.SecurityException: Security manager blocks ("java.lang.RuntimePermission" "shutdownHooks")
+java.lang.Thread.getStackTrace(Thread.java:1559)
+org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:434)
+java.util.logging.LogManager.checkSubclassPermissions(LogManager.java:272)
+java.util.logging.LogManager.<init>(LogManager.java:251)
+java.util.logging.LogManager$1.run(LogManager.java:204)
+java.util.logging.LogManager$1.run(LogManager.java:181)
+java.security.AccessController.doPrivileged(Native Method)
+java.util.logging.LogManager.<clinit>(LogManager.java:181)
+java.util.logging.Logger.demandLogger(Logger.java:448)
+java.util.logging.Logger.getLogger(Logger.java:502)
+com.sun.jmx.remote.util.ClassLogger.<init>(ClassLogger.java:55)
+javax.management.NotificationBroadcasterSupport.<clinit>(NotificationBroadcasterSupport.java:365)
+javax.management.MBeanServerDelegate.<init>(MBeanServerDelegate.java:72)
+com.sun.jmx.mbeanserver.MBeanServerDelegateImpl.<init>(MBeanServerDelegateImpl.java:100)
+com.sun.jmx.mbeanserver.JmxMBeanServer.newMBeanServerDelegate(JmxMBeanServer.java:1374)
+javax.management.MBeanServerBuilder.newMBeanServerDelegate(MBeanServerBuilder.java:66)
+javax.management.MBeanServerFactory.newMBeanServer(MBeanServerFactory.java:321)
+javax.management.MBeanServerFactory.createMBeanServer(MBeanServerFactory.java:231)
+javax.management.MBeanServerFactory.createMBeanServer(MBeanServerFactory.java:192)
+java.lang.management.ManagementFactory.getPlatformMBeanServer(ManagementFactory.java:469)
+org.apache.logging.log4j.core.jmx.Server.reregisterMBeansAfterReconfigure(Server.java:139)
+org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:541)
+org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:603)
+org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:620)
+org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:226)
+org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:152)
+org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:45)
+org.apache.logging.log4j.LogManager.getContext(LogManager.java:194)
+org.apache.logging.log4j.LogManager.getLogger(LogManager.java:551)
+org.elasticsearch.common.logging.ESLoggerFactory.getLogger(ESLoggerFactory.java:49)
+org.elasticsearch.common.logging.ESLoggerFactory.getLogger(ESLoggerFactory.java:57)
+org.elasticsearch.monitor.os.OsProbe.<init>(OsProbe.java:455)
+org.elasticsearch.monitor.os.OsProbe$OsProbeHolder.<clinit>(OsProbe.java:444)
+java.lang.Class.forName0(Native Method)
+java.lang.Class.forName(Class.java:348)
+org.evosuite.setup.TestClusterUtils.getClass(TestClusterUtils.java:310)
+org.evosuite.setup.TestClusterGenerator.initializeTargetMethods(TestClusterGenerator.java:662)
+org.evosuite.setup.TestClusterGenerator.generateCluster(TestClusterGenerator.java:134)
+org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:118)
+org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:132)
+eu.stamp.botsing.commons.SetupUtility.analyzeClassDependencies(SetupUtility.java:108)
+eu.stamp.botsing.reproduction.CrashReproduction.initializeTargetClass(CrashReproduction.java:150)
+eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:91)
+eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
+eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:101)
+eu.stamp.botsing.Botsing.main(Botsing.java:168)
+
+	at org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:452)
+	at java.util.logging.LogManager.checkSubclassPermissions(LogManager.java:272)
+	at java.util.logging.LogManager.<init>(LogManager.java:251)
+	at java.util.logging.LogManager$1.run(LogManager.java:204)
+	at java.util.logging.LogManager$1.run(LogManager.java:181)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.util.logging.LogManager.<clinit>(LogManager.java:181)
+	... 38 more
+FATAL StatusLogger ]i
+ java.sql.SQLInvalidAuthorizationSpecException: monitor.os.refresh_interval
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger 
+FATAL StatusLogger ]i
+FATAL StatusLogger null
+ERROR StatusLogger 
+OFF StatusLogger ,"_;c_
+ java.sql.SQLIntegrityConstraintViolationException: the task parameter is required for this operation
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger Throwing
+ java.sql.BatchUpdateException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger 
+ java.sql.SQLFeatureNotSupportedException: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger null
+FATAL StatusLogger gwascEAL.E*?}=zre
+ERROR StatusLogger null
+ java.sql.SQLNonTransientException: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+FATAL StatusLogger )>a
+ERROR StatusLogger index.unassigned.node_left.delayed_timeout
+FATAL StatusLogger null
+FATAL StatusLogger 
+ERROR StatusLogger null
+ java.sql.SQLNonTransientConnectionException: using refresh_interval [{}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger null
+FATAL StatusLogger S/{.g@5!V-M
+FATAL StatusLogger null
+ERROR StatusLogger 
+FATAL StatusLogger using refresh_interval [{}]
+FATAL StatusLogger ]i
+ERROR StatusLogger pageSize=
+FATAL StatusLogger BS.u3$<
+FATAL StatusLogger ]i
+ERROR StatusLogger null
+FATAL StatusLogger CATCHING[ EXCEPTION ]
+FATAL StatusLogger null
+FATAL StatusLogger org.apache.lucene.search.BoostAttributeImpl@5fce5bc4
+FATAL StatusLogger (@0
+ERROR StatusLogger org.apache.logging.log4j.message.ParameterizedNoReferenceMessageFactory@40c14f20
+ERROR StatusLogger 
+FATAL StatusLogger 
+ERROR StatusLogger 2?Ga3{Q~Ep
+ java.sql.SQLTransactionRollbackException: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger 
+FATAL StatusLogger 
+ java.sql.BatchUpdateException: +/oiNa~
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+FATAL StatusLogger 
+ERROR StatusLogger 
+ERROR StatusLogger illegal longitude value [{}] for [GeoDistanceSort] for field [{}].
+FATAL StatusLogger *L+Zy@
+ERROR StatusLogger Throwing
+ java.sql.BatchUpdateException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger null
+ java.sql.SQLWarning: ]i
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger null
+ERROR StatusLogger null
+ java.sql.SQLRecoverableException: java.sql.SQLTransientException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLTransientException
+	... 14 more
+ERROR StatusLogger +J|
+FATAL StatusLogger using refresh_interval [null]
+ERROR StatusLogger null
+ERROR StatusLogger K_s]w m:AvgFb"
+ java.sql.SQLFeatureNotSupportedException: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+FATAL StatusLogger context array must have string values
+ERROR StatusLogger 
+FATAL StatusLogger R*cDtHcL;wi
+ERROR StatusLogger ]i
+ERROR StatusLogger >fHx;rIt5={])x
+ERROR StatusLogger 
+FATAL StatusLogger 
+ERROR StatusLogger ]i
+ java.sql.BatchUpdateException: node closed 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLNonTransientConnectionException
+	... 14 more
+ERROR StatusLogger 
+FATAL StatusLogger null
+ERROR StatusLogger ENTER[ FLOW ]
+ java.sql.SQLInvalidAuthorizationSpecException: kJi'_#:P5S
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+FATAL StatusLogger null
+ERROR StatusLogger 
+ERROR StatusLogger no need to schedule reroute - no delayed unassigned shards
+FATAL StatusLogger 2e9nY4
+ERROR StatusLogger null
+FATAL StatusLogger Throwing
+ java.sql.BatchUpdateException: java.lang.Exception: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.Exception: 
+	... 14 more
+ERROR StatusLogger null
+ java.sql.SQLTransientException: ]i
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+OFF StatusLogger 
+ERROR StatusLogger null
+ java.sql.SQLFeatureNotSupportedException: java.sql.SQLIntegrityConstraintViolationException: Wvr';|}y~
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Wvr';|}y~
+	... 14 more
+Caused by: java.sql.SQLInvalidAuthorizationSpecException: pyfN@|s<oJef+03|*n
+	... 14 more
+Caused by: java.sql.SQLTransactionRollbackException: pyfN@|s<oJef+03|*n
+	... 14 more
+]i StatusLogger null
+ERROR StatusLogger null
+ java.sql.SQLException: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger ]i
+]i StatusLogger ]i
+OFF StatusLogger 6{r]0i
+ERROR StatusLogger 
+FATAL StatusLogger ]i
+FATAL StatusLogger 
+ERROR StatusLogger null
+FATAL StatusLogger null
+FATAL StatusLogger 
+ERROR StatusLogger null
+FATAL StatusLogger 
+monitor.os.refresh_interval StatusLogger monitor.os.refresh_interval
+ERROR StatusLogger null
+ERROR StatusLogger null
+ERROR StatusLogger 
+ java.sql.SQLTransactionRollbackException: ?E_ZS&ND
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG StatusLogger ]l
+ java.lang.Throwable
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Exception in thread "TimeLimitedCollector timer thread" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.apache.lucene.search.TimeLimitingCollector$TimerThread.run(TimeLimitingCollector.java:262)
+ERROR StatusLogger J2&Kz|
+FATAL StatusLogger =j9I/Ik~*GMN,yU~5
+FATAL StatusLogger 
+ java.sql.SQLNonTransientConnectionException: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+FATAL StatusLogger 
+FATAL StatusLogger null
+ERROR StatusLogger THROWING[ EXCEPTION ]
+FATAL StatusLogger ]i
+ java.lang.Throwable: java.sql.SQLInvalidAuthorizationSpecException: =KGr8]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLInvalidAuthorizationSpecException: =KGr8]
+	... 14 more
+FATAL StatusLogger -1
+FATAL StatusLogger 
+ERROR StatusLogger Catching
+FATAL StatusLogger _DCe`APh@e%z,]6Sj%
+ERROR StatusLogger 
+ERROR StatusLogger .~y$$>
+ERROR StatusLogger .@IA8\7!^ .Ccy0:kN
+FATAL StatusLogger 
+ERROR StatusLogger ]i
+ERROR StatusLogger null
+ java.sql.SQLTransientConnectionException: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger transport disconnected
+ERROR StatusLogger ]i
+ERROR StatusLogger 
+ERROR StatusLogger null
+FATAL StatusLogger Resizer failed to return sensible new size: 
+ERROR StatusLogger null
+ERROR StatusLogger ]i
+ java.sql.SQLTransientConnectionException:  #Gz-Z
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+FATAL StatusLogger 
+FATAL StatusLogger ]i
+ERROR StatusLogger 
+FATAL StatusLogger ]i
+ERROR StatusLogger 
+ERROR StatusLogger AJD|L}.?n=&Z9NI{z
+FATAL StatusLogger @%|r$ cY8_@iyI=
+ERROR StatusLogger eP2frxMl<y{rOUE
+ERROR StatusLogger 
+FATAL StatusLogger null
+FATAL StatusLogger 
+ java.sql.SQLInvalidAuthorizationSpecException: C5cMe-]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger null
+ERROR StatusLogger null
+ java.sql.SQLSyntaxErrorException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+FATAL StatusLogger ]i
+FATAL StatusLogger 
+FATAL StatusLogger 
+FATAL StatusLogger 
+ERROR StatusLogger 
+OFF StatusLogger 
+FATAL StatusLogger vS
+FATAL StatusLogger 
+ org.elasticsearch.action.ActionRequestValidationException: Validation Failed: 1: type is missing;2: source is missing;
+	at org.elasticsearch.action.ValidateActions.addValidationError(ValidateActions.java:29)
+	at org.elasticsearch.action.index.IndexRequest.validate(IndexRequest.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger null
+FATAL StatusLogger ]i
+FATAL StatusLogger TCMhPNls(2"f
+ERROR StatusLogger Throwing
+ java.sql.BatchUpdateException: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.Exception
+	... 14 more
+FATAL StatusLogger ]i
+ java.sql.BatchUpdateException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+FATAL StatusLogger G!` lFQa|qd^i*-<
+OFF StatusLogger null
+FATAL StatusLogger WL@<b2QX OH cr!JBC
+FATAL StatusLogger 
+ERROR StatusLogger null
+FATAL StatusLogger -7g}s
+ERROR StatusLogger null
+ java.sql.SQLIntegrityConstraintViolationException: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger ]i
+ERROR StatusLogger ]i
+FATAL StatusLogger null
+ERROR StatusLogger E>9qFkH}DSoZ
+FATAL StatusLogger 
+FATAL StatusLogger ]i
+FATAL StatusLogger null
+FATAL StatusLogger null
+ERROR StatusLogger ^SIbCn|'.5(2l>Yl
+ERROR StatusLogger ]i
+ java.sql.SQLInvalidAuthorizationSpecException: java.sql.SQLTimeoutException: ]i
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLTimeoutException: ]i
+	... 14 more
+Caused by: java.sql.SQLNonTransientException: ]i
+	... 14 more
+ERROR StatusLogger Throwing
+ java.sql.BatchUpdateException: java.sql.SQLDataException: using refresh_interval [{}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLDataException: using refresh_interval [{}]
+	... 14 more
+ERROR StatusLogger null
+ERROR StatusLogger 
+OFF StatusLogger null
+ java.sql.SQLFeatureNotSupportedException: ]i
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger null
+ java.sql.SQLRecoverableException: java.sql.SQLDataException: java.lang.Exception: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLDataException: java.lang.Exception: 
+	... 14 more
+Caused by: java.lang.Exception: 
+	... 14 more
+Caused by: java.sql.SQLFeatureNotSupportedException: shift
+	... 14 more
+ERROR StatusLogger  seg=
+FATAL StatusLogger 
+FATAL StatusLogger monitor.os.refresh_interval
+ERROR StatusLogger ]i
+ java.sql.SQLNonTransientConnectionException: ]i
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+FATAL StatusLogger 
+FATAL StatusLogger ]i
+ java.sql.SQLNonTransientException: 4{
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger index.search.slowlog.threshold.query.info
+FATAL StatusLogger 
+ERROR StatusLogger 
+ERROR StatusLogger 
+FATAL StatusLogger 
+ERROR StatusLogger v
+ERROR StatusLogger null
+ERROR StatusLogger 
+ERROR StatusLogger ~.X41,;uKjkD>My<Y(0
+FATAL StatusLogger monitor.os.refresh_interval
+FATAL StatusLogger ]i
+ERROR StatusLogger null
+FATAL StatusLogger Unsupported Distribution [
+ERROR StatusLogger null
+ERROR StatusLogger Throwing
+ java.sql.BatchUpdateException: {uc,O<_ZT*\o.JhW
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger ]i
+ERROR StatusLogger 
+ERROR StatusLogger 
+ERROR StatusLogger ] with data [
+ERROR StatusLogger ;oK_
+FATAL StatusLogger tCe
+ERROR StatusLogger null
+ERROR StatusLogger 
+FATAL StatusLogger t
+ERROR StatusLogger null
+ERROR StatusLogger "KL|eAs
+ java.sql.SQLException: "KL|eAs
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+FATAL StatusLogger 
+FATAL StatusLogger Catching
+ java.sql.SQLNonTransientConnectionException: 0-^~KOCwG!j!<Ob`j
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+FATAL StatusLogger null
+ java.sql.SQLRecoverableException: using refresh_interval [{}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger ?2?^7mwf6*:C
+ERROR StatusLogger |2E\Yz1v.W"<
+ERROR StatusLogger null
+FATAL StatusLogger ]i
+ java.sql.SQLRecoverableException: java.sql.SQLClientInfoException: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLClientInfoException: 
+	... 14 more
+ERROR StatusLogger 4`bA|0iA72+[vTZe1>
+OFF StatusLogger null
+ java.sql.SQLException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger Catching
+ org.elasticsearch.action.ActionRequestValidationException: Validation Failed: 1: script is missing;
+	at org.elasticsearch.action.ValidateActions.addValidationError(ValidateActions.java:29)
+	at org.elasticsearch.action.admin.cluster.storedscripts.PutStoredScriptRequest.validate(PutStoredScriptRequest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+FATAL StatusLogger ]i
+FATAL StatusLogger 
+FATAL StatusLogger 
+ java.sql.SQLIntegrityConstraintViolationException: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger YtV|d\.
+ java.sql.SQLRecoverableException: YtV|d\.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLTransactionRollbackException: 
+	... 14 more
+FATAL StatusLogger null
+ERROR StatusLogger null
+ERROR StatusLogger null
+FATAL StatusLogger 
+ java.sql.SQLTransactionRollbackException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger 
+ERROR StatusLogger 
+WARN StatusLogger null
+FATAL StatusLogger 
+ java.sql.SQLException: y.arvdwj\7&i#<@[
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger 
+]i StatusLogger null
+ java.sql.BatchUpdateException: +Q.:e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG StatusLogger 
+ java.sql.SQLClientInfoException: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+WARN StatusLogger monitor.os.refresh_interval
+WARN StatusLogger null
+ java.sql.SQLException: :?$,X
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+OFF StatusLogger null
+FATAL StatusLogger null
+WARN StatusLogger ]i
+ java.sql.SQLTransactionRollbackException: <ACRONYM_DEP>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+FATAL StatusLogger strict_date_hour
+WARN StatusLogger 
+ERROR StatusLogger 
+ java.sql.SQLIntegrityConstraintViolationException: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLInvalidAuthorizationSpecException: 
+	... 14 more
+Caused by: java.sql.SQLNonTransientConnectionException: 
+	... 14 more
+WARN StatusLogger rw9`
+WARN StatusLogger null
+ java.sql.SQLRecoverableException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+WARN StatusLogger Mock for Client, hashCode: 289562968
+ java.sql.SQLFeatureNotSupportedException: org.elasticsearch.action.ActionRequestValidationException: Validation Failed: 1: index is missing;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.elasticsearch.action.ActionRequestValidationException: Validation Failed: 1: index is missing;
+	at org.elasticsearch.action.ValidateActions.addValidationError(ValidateActions.java:29)
+	at org.elasticsearch.action.support.single.shard.SingleShardRequest.validateNonNullIndex(SingleShardRequest.java:65)
+	at org.elasticsearch.action.termvectors.MultiTermVectorsShardRequest.validate(MultiTermVectorsShardRequest.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+	... 7 more
+FATAL StatusLogger null
+WARN StatusLogger ^/\=lb
+ org.elasticsearch.action.ActionRequestValidationException: Validation Failed: 1: index is missing;2: type is missing;3: id is missing;
+	at org.elasticsearch.action.ValidateActions.addValidationError(ValidateActions.java:29)
+	at org.elasticsearch.action.support.replication.ReplicationRequest.validate(ReplicationRequest.java:187)
+	at org.elasticsearch.action.delete.DeleteRequest.validate(DeleteRequest.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+WARN StatusLogger O,ewQd mh=bs&LwwGhb
+OFF StatusLogger indexed,omitNorms
+ java.sql.SQLFeatureNotSupportedException: using refresh_interval [{}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger 
+ERROR StatusLogger org.apache.logging.log4j.message.ReusableSimpleMessage@2e737548
+WARN StatusLogger null
+ java.sql.SQLException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+WARN StatusLogger null
+ERROR StatusLogger null
+FATAL StatusLogger null
+ java.sql.SQLRecoverableException: DL_-AA(3Npv2zY
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+WARN StatusLogger 
+WARN StatusLogger OBs&9,clW
+ERROR StatusLogger 
+ERROR StatusLogger Throwing
+ java.sql.BatchUpdateException: indices:admin/aliases/get
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+FATAL StatusLogger ]i
+WARN StatusLogger The Logger org.apache.logging.log4j.status.StatusLogger was created with the message factory org.apache.logging.log4j.message.ParameterizedNoReferenceMessageFactory@40c14f20 and is now requested with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@6b2bad35, which may create log events with unexpected formatting.
+FATAL StatusLogger 
+WARN StatusLogger Seconds
+WARN StatusLogger ]i
+ERROR StatusLogger BUFFER (
+ERROR StatusLogger F.C)bq@=&e
+WARN StatusLogger DOUBLE
+FATAL StatusLogger 
+FATAL StatusLogger */8hdpCOP%m[$cq8;Q
+FATAL StatusLogger null
+ java.sql.SQLNonTransientConnectionException: java.sql.SQLNonTransientConnectionException: uD]\`L^}n3:,q~aDK
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLNonTransientConnectionException: uD]\`L^}n3:,q~aDK
+	... 14 more
+ERROR StatusLogger eXeIq6
+ERROR StatusLogger gkI9q{rIs@-fV-
+WARN StatusLogger null
