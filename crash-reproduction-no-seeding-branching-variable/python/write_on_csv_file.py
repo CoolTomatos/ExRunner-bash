@@ -29,6 +29,8 @@ def write_on_csv_file(csv_result, csv_file_dir):
         "fitness_function_value",
         "number_of_fitness_evaluations",
         "fitness_function_evolution",
+        "covered_goals",
+        "covered_goals_evolution",
     ]
 
     fields = []
@@ -56,6 +58,8 @@ csv_result = {
     "fitness_function_value": "-1",
     "fitness_function_evolution": "",
     "number_of_fitness_evaluations": 0,
+    "covered_goals": "",
+    "covered_goals_evolution": "",
 }
 
 with open(log_dir, "r") as ins:
@@ -66,8 +70,7 @@ with open(log_dir, "r") as ins:
             distribution_ff = splitted_line_1[0].strip()
         elif "Exception type is detected:" in stdout_line:
             splitted_line_1 = stdout_line.split("Exception type is detected: ")
-            csv_result["exception_name"] = splitted_line_1[1].replace('\n', ' ').replace('\r',
-                                                                                         '').strip()
+            csv_result["exception_name"] = splitted_line_1[1].replace('\n', ' ').replace('\r', '').strip()
         elif "eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@" in stdout_line:
             splitted_line_1 = stdout_line.split(": ")
             distribution_ff = splitted_line_1[1].strip()
@@ -75,12 +78,19 @@ with open(log_dir, "r") as ins:
                 csv_result["fitness_function_value"] = distribution_ff
                 csv_result["fitness_function_evolution"] += "[" + distribution_ff + "," + str(
                     csv_result["number_of_fitness_evaluations"] + 1) + "]"
-        elif "Stopping reason: ZeroFitness" in stdout_line:
+        elif "Stopping reason: SingleObjectiveZero" in stdout_line or "Stopping reason: ZeroFitness" in stdout_line:
             if csv_result["number_of_fitness_evaluations"] == 0:
                 csv_result["number_of_fitness_evaluations"] = 1
             csv_result["fitness_function_value"] = "0.0"
             temp = "[" + "0.0" + "," + str(csv_result["number_of_fitness_evaluations"]) + "]"
             if not csv_result["fitness_function_evolution"].endswith(temp):
                 csv_result["fitness_function_evolution"] += temp
+        elif "Number of covered goals are " in stdout_line:
+            splitted_line_1 = stdout_line.split("are ")
+            covered_goals = splitted_line_1[1].strip()
+            if covered_goals != csv_result["covered_goals"]:
+                csv_result["covered_goals"] = covered_goals
+                csv_result["covered_goals_evolution"] += "[" + covered_goals + "," + str(
+                    csv_result["number_of_fitness_evaluations"] + 1) + "]"
 
 write_on_csv_file(csv_result, out_dir)
