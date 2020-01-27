@@ -1,6 +1,15 @@
-22:42:47.348 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-22:42:47.351 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter:866)
-22:42:47.351 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.format.DateTimeFormatter
-22:42:47.351 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-22:42:47.554 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
-22:42:48.445 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
+15:33:38.018 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+15:33:38.039 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter:866)
+15:33:38.039 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.format.DateTimeFormatter
+15:33:38.040 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+15:33:42.300 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+15:34:02.845 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+15:34:02.923 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+15:34:03.099 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 7: 
+15:34:03.099 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+15:34:14.691 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
+15:34:14.846 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+15:34:15.076 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+15:34:19.134 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+15:34:25.013 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DateTimeFormatter_ESTest' to results/TIME-20b-1-8
+15:34:25.144 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

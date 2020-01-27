@@ -1,6 +1,15 @@
-23:03:10.813 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-23:03:10.816 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.DateTimeZone.forOffsetHoursMinutes(DateTimeZone:280)
-23:03:10.816 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.DateTimeZone
-23:03:10.816 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-23:03:11.167 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
-23:03:12.758 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
+15:34:37.542 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+15:34:37.555 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.DateTimeZone.forOffsetHoursMinutes(DateTimeZone:280)
+15:34:37.555 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.DateTimeZone
+15:34:37.569 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+15:34:44.686 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+15:35:05.493 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+15:35:05.578 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+15:35:05.680 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 16: 
+15:35:05.681 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+15:35:12.756 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
+15:35:12.778 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+15:35:13.186 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+15:35:16.473 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+15:35:21.829 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DateTimeZone_ESTest' to results/TIME-8b-1-9
+15:35:21.917 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

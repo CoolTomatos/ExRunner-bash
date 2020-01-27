@@ -1,6 +1,21 @@
-23:03:17.813 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-23:03:17.817 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.DateTimeZone.forOffsetHoursMinutes(DateTimeZone:280)
-23:03:17.817 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.DateTimeZone
-23:03:17.817 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-23:03:18.150 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
-23:03:19.757 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
+15:35:12.162 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+15:35:12.178 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.DateTimeZone.forOffsetHoursMinutes(DateTimeZone:280)
+15:35:12.178 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.DateTimeZone
+15:35:12.179 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+15:35:19.257 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+15:35:38.258 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+15:35:38.313 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+15:35:38.434 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 16: 
+15:35:38.434 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+15:35:43.669 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 9/16
+15:35:45.314 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@559af2b5: 1.3333333333333333
+15:35:45.315 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+15:35:45.315 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 9/16
+15:35:46.222 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@559af2b5: 0.0
+15:35:46.222 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
+15:35:46.224 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
+15:35:46.248 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+15:35:46.397 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+15:35:49.031 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+15:35:54.037 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DateTimeZone_ESTest' to results/TIME-8b-1-28
+15:35:54.089 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
