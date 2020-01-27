@@ -16,8 +16,8 @@ java.lang.ClassNotFoundException: Cannot find the local variable in the method n
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 Caused by: java.lang.IllegalStateException: Cannot find the local variable in the method node!!!
-	at org.evosuite.instrumentation.coverage.BranchingVariableInstrumentation.logBranchingVariables(BranchingVariableInstrumentation.java:157)
-	at org.evosuite.instrumentation.coverage.BranchingVariableInstrumentation.analyze(BranchingVariableInstrumentation.java:63)
+	at org.evosuite.instrumentation.coverage.BranchingVariableInstrumentation.logBranchingVariables(BranchingVariableInstrumentation.java:160)
+	at org.evosuite.instrumentation.coverage.BranchingVariableInstrumentation.analyze(BranchingVariableInstrumentation.java:66)
 	at org.evosuite.graphs.cfg.CFGMethodAdapter.visitEnd(CFGMethodAdapter.java:232)
 	at org.evosuite.shaded.org.objectweb.asm.MethodVisitor.visitEnd(MethodVisitor.java:878)
 	at org.evosuite.shaded.org.objectweb.asm.MethodVisitor.visitEnd(MethodVisitor.java:878)
@@ -29,7 +29,7 @@ Caused by: java.lang.IllegalStateException: Cannot find the local variable in th
 	at org.evosuite.instrumentation.InstrumentingClassLoader.instrumentClass(InstrumentingClassLoader.java:194)
 	... 15 more
 Exception in thread "main" java.lang.NoClassDefFoundError: org/elasticsearch/transport/TcpTransport
-	at org.elasticsearch.transport.TcpTransport$NodeChannels.<clinit>(TcpTransport.java:362)
+	at org.elasticsearch.transport.TcpTransport$HandshakeResponseHandler.<clinit>(TcpTransport.java:241)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:348)
 	at org.evosuite.setup.DependencyAnalysis.loadCallTreeClasses(DependencyAnalysis.java:158)

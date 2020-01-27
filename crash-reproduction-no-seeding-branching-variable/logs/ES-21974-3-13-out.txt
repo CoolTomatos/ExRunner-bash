@@ -1,6 +1,15 @@
-06:07:32.216 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-06:07:32.219 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.rest.RestUtils.decodeComponent(RestUtils:103)
-06:07:32.219 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.rest.RestUtils
-06:07:32.219 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-06:07:32.533 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 78.
-06:07:34.775 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
+11:35:23.924 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+11:35:23.927 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.rest.RestUtils.decodeComponent(RestUtils:103)
+11:35:23.928 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.rest.RestUtils
+11:35:23.928 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+11:35:24.426 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 78.
+11:35:37.557 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+11:35:37.568 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+11:35:37.612 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 25: 
+11:35:37.617 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+11:35:40.151 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
+11:35:40.221 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+11:35:40.250 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+11:35:40.753 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+11:35:42.222 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'RestUtils_ESTest' to results/ES-21974-3-13
+11:35:42.230 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
