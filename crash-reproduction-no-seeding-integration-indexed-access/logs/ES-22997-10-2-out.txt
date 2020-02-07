@@ -1,7 +1,23 @@
-03:51:41.510 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected:  java.lang.StringIndexOutOfBoundsException
-03:51:41.516 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryFetchTransportHandler.messageReceived(SearchServiceTransportAction$SearchQueryFetchTransportHandler:389)
-03:51:41.516 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryFetchTransportHandler
-03:51:41.516 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-03:51:42.797 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 39.
-03:52:33.161 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-03:52:33.176 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+00:33:21.591 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected:  java.lang.StringIndexOutOfBoundsException
+00:33:21.595 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryFetchTransportHandler.messageReceived(SearchServiceTransportAction$SearchQueryFetchTransportHandler:389)
+00:33:21.596 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryFetchTransportHandler
+00:33:21.596 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+00:33:35.398 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages.class' should be in target project!
+00:33:35.399 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+00:33:35.401 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages_en.class' should be in target project!
+00:33:35.401 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+00:33:39.317 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.search.vectorhighlight.BaseFragmentsBuilder
+00:33:39.320 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.highlight.vectorhighlight.SimpleFragmentsBuilder
+00:33:39.321 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.search.vectorhighlight.BaseFragmentsBuilder
+00:33:39.322 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.search.vectorhighlight.FastVectorHighlighter
+00:33:39.323 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.highlight.FastVectorHighlighter
+00:33:39.363 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.highlight.HighlightPhase
+00:33:39.366 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.fetch.FetchPhase
+00:33:39.370 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.SearchService
+00:33:39.373 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryFetchTransportHandler
+00:33:39.373 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryFetchTransportHandler
+00:33:39.373 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryFetchTransportHandler, method messageReceived, and line number 389.
+00:33:39.376 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 10 is an irrelevant frame. We do not count it in the InterProcedural graph
+00:33:40.195 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 39.
+00:34:20.522 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+00:34:20.535 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite

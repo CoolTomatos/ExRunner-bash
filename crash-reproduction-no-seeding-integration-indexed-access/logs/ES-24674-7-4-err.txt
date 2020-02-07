@@ -1,9 +1,6 @@
 Exception in thread "Log4j2-TcpSocketManager-Reconnector" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
 	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
 	at org.apache.logging.log4j.core.net.TcpSocketManager$Reconnector.run(TcpSocketManager.java:245)
-Exception in thread "Log4j2-TcpSocketManager-Reconnector" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.apache.logging.log4j.core.net.TcpSocketManager$Reconnector.run(TcpSocketManager.java:245)
 Exception in thread "main" java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/JsonMappingException
 	at java.lang.Class.getDeclaredMethods0(Native Method)
 	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
@@ -21,7 +18,7 @@ Exception in thread "main" java.lang.NoClassDefFoundError: com/fasterxml/jackson
 	at org.evosuite.testcase.TestChromosome.mutate(TestChromosome.java:340)
 	at eu.stamp.botsing.ga.strategy.operators.GuidedMutation.doRandomMutation(GuidedMutation.java:45)
 	at eu.stamp.botsing.ga.strategy.operators.GuidedMutation.mutateOffspring(GuidedMutation.java:29)
-	at eu.stamp.botsing.commons.ga.strategy.mosa.AbstractMOSA.breedNextGeneration(AbstractMOSA.java:77)
+	at eu.stamp.botsing.commons.ga.strategy.mosa.AbstractMOSA.breedNextGeneration(AbstractMOSA.java:86)
 	at eu.stamp.botsing.commons.ga.strategy.mosa.MOSA.evolve(MOSA.java:50)
 	at eu.stamp.botsing.commons.ga.strategy.mosa.MOSA.generateSolution(MOSA.java:143)
 	at eu.stamp.botsing.commons.testgeneration.strategy.MOSuiteStrategy.generateTests(MOSuiteStrategy.java:93)

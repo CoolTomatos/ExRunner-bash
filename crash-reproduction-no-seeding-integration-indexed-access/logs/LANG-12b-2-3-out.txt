@@ -1,15 +1,17 @@
-11:30:00.989 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
-11:30:00.993 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.lang3.RandomStringUtils.random(RandomStringUtils:321)
-11:30:00.993 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.lang3.RandomStringUtils
-11:30:00.994 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-11:30:01.541 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 9.
-11:30:04.788 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-11:30:04.811 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-11:30:04.886 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
-11:30:04.887 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
-11:30:21.135 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
-11:30:21.164 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
-11:30:21.335 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
-11:30:25.111 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
-11:30:29.265 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'RandomStringUtils_ESTest' to results/LANG-12b-2-3
-11:30:29.308 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
+19:06:01.152 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
+19:06:01.155 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.lang3.RandomStringUtils.random(RandomStringUtils:321)
+19:06:01.156 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.lang3.RandomStringUtils
+19:06:01.156 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+19:06:02.173 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.lang3.RandomStringUtils
+19:06:02.198 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.lang3.RandomStringUtils
+19:06:02.261 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 9.
+19:06:05.880 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+19:06:05.901 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+19:06:05.931 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
+19:06:05.931 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+19:06:19.237 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
+19:06:19.827 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+19:06:43.616 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+19:07:31.517 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+19:07:34.532 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'RandomStringUtils_ESTest' to results/LANG-12b-2-3
+19:07:34.849 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

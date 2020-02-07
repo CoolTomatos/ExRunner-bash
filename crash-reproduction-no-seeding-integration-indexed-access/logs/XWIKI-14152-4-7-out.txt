@@ -1,7 +1,22 @@
-18:38:32.439 [main] WARN  eu.stamp.botsing.commons.ClassPaths - ClassPath entry ../bins/xwiki/8.4.4/bin/ not found, will skip it.
-18:38:32.448 [main] ERROR e.stamp.botsing.commons.SetupUtility - No classpath elements
-18:38:32.463 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.StringIndexOutOfBoundsException
-18:38:32.464 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.query.internal.CountDocumentFilter.filterStatement(CountDocumentFilter:70)
-18:38:32.464 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.query.internal.CountDocumentFilter
-18:38:32.464 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-18:38:32.841 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 1.
+21:35:33.299 [main] WARN  eu.stamp.botsing.commons.ClassPaths - ClassPath entry ../bins/xwiki/8.4.4/bin/ not found, will skip it.
+21:35:33.304 [main] ERROR e.stamp.botsing.commons.SetupUtility - No classpath elements
+21:35:33.313 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.StringIndexOutOfBoundsException
+21:35:33.314 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.query.internal.CountDocumentFilter.filterStatement(CountDocumentFilter:70)
+21:35:33.314 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.query.internal.CountDocumentFilter
+21:35:33.315 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+21:35:33.506 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.lang.IllegalArgumentException: The class path resource /home/sxiang/botsing-evaluation/ExRunner-bash/crash-reproduction-no-seeding-integration-indexed-access does not exist
+21:35:33.506 [main] WARN  e.s.b.c.i.ClassInstrumentation - Error in loading org.xwiki.query.internal.AbstractQueryFilter
+21:35:33.507 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/xwiki/query/internal/CountDocumentFilter.class' should be in target project!
+21:35:33.512 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+21:35:33.512 [main] WARN  e.s.b.c.i.ClassInstrumentation - Error in loading org.xwiki.query.internal.CountDocumentFilter
+21:35:33.513 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class java.lang.String was empty.
+21:35:33.514 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.lang.String
+21:35:33.514 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 1]Cannot load class java.lang.String. We do not count it in the InterProcedural graph
+21:35:33.514 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.query.internal.AbstractQueryFilter
+21:35:33.514 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 2]Cannot load class org.xwiki.query.internal.AbstractQueryFilter. We do not count it in the InterProcedural graph
+21:35:33.514 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.query.internal.CountDocumentFilter
+21:35:33.514 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 3]Cannot load class org.xwiki.query.internal.CountDocumentFilter. We do not count it in the InterProcedural graph
+21:35:33.514 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.query.internal.CountDocumentFilter
+21:35:33.514 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 4]Cannot load class org.xwiki.query.internal.CountDocumentFilter. We do not count it in the InterProcedural graph
+21:35:33.523 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
+21:35:33.533 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite

@@ -1,27 +1,46 @@
-14:50:54.436 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
-14:50:54.519 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.linear.BigMatrixImpl.operate(BigMatrixImpl:997)
-14:50:54.519 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.linear.BigMatrixImpl
-14:50:54.519 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-14:51:05.062 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
-14:51:16.564 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-14:51:16.667 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-14:51:16.809 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
-14:51:16.810 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
-14:51:24.024 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
-14:51:28.885 [main] INFO  e.s.b.f.FitnessFunctions - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@559cee0d: 1.625
-14:51:28.886 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
-14:51:28.886 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
-14:51:31.492 [main] INFO  e.s.b.f.FitnessFunctions - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@559cee0d: 1.625
-14:51:31.492 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
-14:51:31.492 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
-14:51:33.475 [main] INFO  e.s.b.f.FitnessFunctions - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@559cee0d: 1.625
-14:51:33.477 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #3 is created.
-14:51:33.477 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
-14:51:38.613 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - SubFront is empty!
-14:51:38.613 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #4 is created.
-14:51:38.614 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
-14:51:38.628 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
-14:51:38.837 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
-14:51:51.820 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
-14:51:58.243 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BigMatrixImpl_ESTest' to results/MATH-98b-1-7
-14:51:58.360 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
+20:08:28.446 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
+20:08:28.450 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.linear.BigMatrixImpl.operate(BigMatrixImpl:997)
+20:08:28.450 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.linear.BigMatrixImpl
+20:08:28.468 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+20:08:46.601 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.linear.BigMatrixImpl
+20:08:46.726 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+20:09:00.764 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+20:09:00.855 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+20:09:01.039 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
+20:09:01.039 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+20:09:06.901 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+20:09:08.920 [main] INFO  e.s.b.f.FitnessFunctions - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@4f8641f0: 1.0
+20:09:08.921 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+20:09:08.921 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+20:09:10.814 [main] INFO  e.s.b.f.FitnessFunctions - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@4f8641f0: 1.0
+20:09:10.814 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
+20:09:10.814 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+20:09:12.963 [main] INFO  e.s.b.f.FitnessFunctions - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@4f8641f0: 1.0
+20:09:12.963 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #3 is created.
+20:09:12.963 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+20:09:15.558 [main] INFO  e.s.b.f.FitnessFunctions - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@4f8641f0: 1.0
+20:09:15.558 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #4 is created.
+20:09:15.558 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+20:09:20.451 [main] INFO  e.s.b.f.FitnessFunctions - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@4f8641f0: 1.0
+20:09:20.451 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #5 is created.
+20:09:20.451 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+20:09:22.384 [main] INFO  e.s.b.f.FitnessFunctions - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@4f8641f0: 1.0
+20:09:22.384 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #6 is created.
+20:09:22.384 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+20:09:23.880 [main] INFO  e.s.b.f.FitnessFunctions - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@4f8641f0: 1.0
+20:09:23.880 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #7 is created.
+20:09:23.880 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+20:09:25.017 [main] INFO  e.s.b.f.FitnessFunctions - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@4f8641f0: 1.0
+20:09:25.018 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #8 is created.
+20:09:25.018 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+20:09:26.361 [main] INFO  e.s.b.f.FitnessFunctions - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@4f8641f0: 1.0
+20:09:26.362 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #9 is created.
+20:09:26.364 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+20:09:27.451 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - SubFront is empty!
+20:09:27.452 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #10 is created.
+20:09:27.452 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
+20:09:27.500 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+20:09:28.061 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+20:09:43.331 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+20:09:52.790 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BigMatrixImpl_ESTest' to results/MATH-98b-1-7
+20:09:52.994 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
