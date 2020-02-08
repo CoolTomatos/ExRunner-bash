@@ -1,15 +1,16 @@
-00:30:30.276 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.StringIndexOutOfBoundsException
-00:30:30.287 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.lang.WordUtils.abbreviate(WordUtils:629)
-00:30:30.287 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.lang.WordUtils
-00:30:30.288 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-00:30:32.701 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 4.
-00:30:36.630 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-00:30:36.644 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-00:30:36.679 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
-00:30:36.680 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
-00:30:38.068 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
-00:30:38.187 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
-00:30:38.216 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
-00:30:39.595 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
-00:30:42.948 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'WordUtils_ESTest' to results/LANG-45b-1-4
-00:30:42.968 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
+21:33:50.405 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.StringIndexOutOfBoundsException
+21:33:50.408 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.lang.WordUtils.abbreviate(WordUtils:629)
+21:33:50.408 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.lang.WordUtils
+21:33:50.409 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+21:33:51.369 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.lang.WordUtils
+21:33:51.394 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 4.
+21:33:53.125 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+21:33:53.140 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+21:33:53.186 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
+21:33:53.186 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+21:33:53.809 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
+21:33:53.833 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+21:33:53.852 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+21:33:54.396 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+21:33:55.917 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'WordUtils_ESTest' to results/LANG-45b-1-4
+21:33:55.942 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

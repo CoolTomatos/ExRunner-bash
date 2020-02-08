@@ -1,7 +1,27 @@
-23:51:57.686 [main] WARN  eu.stamp.botsing.commons.ClassPaths - ClassPath entry ../bins/xwiki/8.4.4/bin/ not found, will skip it.
-23:51:57.693 [main] ERROR e.stamp.botsing.commons.SetupUtility - No classpath elements
-23:51:57.710 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.StringIndexOutOfBoundsException
-23:51:57.711 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor.createHibernateQuery(HqlQueryExecutor:230)
-23:51:57.712 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor
-23:51:57.712 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-23:51:58.203 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 1.
+21:25:55.761 [main] WARN  eu.stamp.botsing.commons.ClassPaths - ClassPath entry ../bins/xwiki/8.4.4/bin/ not found, will skip it.
+21:25:55.766 [main] ERROR e.stamp.botsing.commons.SetupUtility - No classpath elements
+21:25:55.775 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.StringIndexOutOfBoundsException
+21:25:55.776 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor.createHibernateQuery(HqlQueryExecutor:230)
+21:25:55.776 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor
+21:25:55.777 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+21:25:55.954 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.lang.IllegalArgumentException: The class path resource /home/sxiang/botsing-evaluation/ExRunner-bash/crash-reproduction-no-seeding-integration-indexed-access does not exist
+21:25:55.954 [main] WARN  e.s.b.c.i.ClassInstrumentation - Error in loading org.xwiki.query.internal.AbstractQueryFilter
+21:25:55.955 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/xwiki/query/internal/CountDocumentFilter.class' should be in target project!
+21:25:55.960 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+21:25:55.961 [main] WARN  e.s.b.c.i.ClassInstrumentation - Error in loading org.xwiki.query.internal.CountDocumentFilter
+21:25:55.961 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'com/xpn/xwiki/store/hibernate/query/HqlQueryExecutor.class' should be in target project!
+21:25:55.961 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+21:25:55.961 [main] WARN  e.s.b.c.i.ClassInstrumentation - Error in loading com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor
+21:25:55.962 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class java.lang.String was empty.
+21:25:55.962 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.lang.String
+21:25:55.962 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 1]Cannot load class java.lang.String. We do not count it in the InterProcedural graph
+21:25:55.963 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.query.internal.AbstractQueryFilter
+21:25:55.963 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 2]Cannot load class org.xwiki.query.internal.AbstractQueryFilter. We do not count it in the InterProcedural graph
+21:25:55.963 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.query.internal.CountDocumentFilter
+21:25:55.963 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 3]Cannot load class org.xwiki.query.internal.CountDocumentFilter. We do not count it in the InterProcedural graph
+21:25:55.963 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.query.internal.CountDocumentFilter
+21:25:55.963 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 4]Cannot load class org.xwiki.query.internal.CountDocumentFilter. We do not count it in the InterProcedural graph
+21:25:55.963 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor
+21:25:55.963 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 5]Cannot load class com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor. We do not count it in the InterProcedural graph
+21:25:55.969 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
+21:25:55.978 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite

@@ -1,7 +1,51 @@
-16:16:32.417 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
-16:16:32.424 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.action.bulk.TransportShardBulkAction.onPrimaryShard(TransportShardBulkAction:74)
-16:16:32.424 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.action.bulk.TransportShardBulkAction
-16:16:32.425 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-16:16:33.697 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 35.
-16:16:51.640 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-16:16:51.650 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+03:55:36.658 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
+03:55:36.665 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.action.bulk.TransportShardBulkAction.onPrimaryShard(TransportShardBulkAction:74)
+03:55:36.665 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.action.bulk.TransportShardBulkAction
+03:55:36.665 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+03:55:38.730 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/lucene/analysis/stempel/StempelStemmer.class' should be in target project!
+03:55:38.730 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+03:55:38.731 [main] WARN  e.s.b.c.i.ClassInstrumentation - Error in loading org.apache.lucene.analysis.stempel.StempelStemmer
+03:55:38.733 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/lucene/analysis/stempel/StempelFilter.class' should be in target project!
+03:55:38.734 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+03:55:38.734 [main] WARN  e.s.b.c.i.ClassInstrumentation - Error in loading org.apache.lucene.analysis.stempel.StempelFilter
+03:56:01.982 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class java.util.Arrays was empty.
+03:56:01.982 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class java.lang.AbstractStringBuilder was empty.
+03:56:01.983 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class java.lang.StringBuilder was empty.
+03:56:01.983 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.util.Arrays
+03:56:01.983 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 1]Cannot load class java.util.Arrays. We do not count it in the InterProcedural graph
+03:56:01.983 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.util.Arrays
+03:56:01.984 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 2]Cannot load class java.util.Arrays. We do not count it in the InterProcedural graph
+03:56:01.984 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.lang.AbstractStringBuilder
+03:56:01.984 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 3]Cannot load class java.lang.AbstractStringBuilder. We do not count it in the InterProcedural graph
+03:56:01.984 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.lang.StringBuilder
+03:56:01.984 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 4]Cannot load class java.lang.StringBuilder. We do not count it in the InterProcedural graph
+03:56:01.984 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.analysis.stempel.StempelStemmer
+03:56:01.984 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 5]Cannot load class org.apache.lucene.analysis.stempel.StempelStemmer. We do not count it in the InterProcedural graph
+03:56:01.984 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.analysis.stempel.StempelFilter
+03:56:01.984 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 6]Cannot load class org.apache.lucene.analysis.stempel.StempelFilter. We do not count it in the InterProcedural graph
+03:56:01.984 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.analysis.shingle.ShingleFilter
+03:56:01.986 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.analysis.shingle.ShingleFilter
+03:56:01.987 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.analysis.shingle.ShingleFilter
+03:56:01.988 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DefaultIndexingChain$PerField
+03:56:01.995 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DefaultIndexingChain
+03:56:01.996 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DefaultIndexingChain
+03:56:02.013 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DocumentsWriterPerThread
+03:56:02.014 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DocumentsWriter
+03:56:02.015 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.IndexWriter
+03:56:02.016 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.IndexWriter
+03:56:02.017 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.engine.InternalEngine
+03:56:02.017 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.engine.InternalEngine
+03:56:02.021 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.engine.InternalEngine
+03:56:02.024 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.shard.IndexShard
+03:56:02.041 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.shard.IndexShard
+03:56:02.042 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.index.TransportIndexAction
+03:56:02.043 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.bulk.TransportShardBulkAction
+03:56:02.043 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.bulk.TransportShardBulkAction
+03:56:02.044 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.bulk.TransportShardBulkAction
+03:56:02.045 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.bulk.TransportShardBulkAction
+03:56:02.046 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.bulk.TransportShardBulkAction
+03:56:02.046 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.action.bulk.TransportShardBulkAction, method onPrimaryShard, and line number 74.
+03:56:02.046 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 27 is an irrelevant frame. We do not count it in the InterProcedural graph
+03:56:02.663 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 35.
+03:56:25.468 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+03:56:25.479 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite

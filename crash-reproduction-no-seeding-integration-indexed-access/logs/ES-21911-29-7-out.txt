@@ -1,7 +1,55 @@
-16:02:49.630 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
-16:02:49.638 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.action.support.replication.TransportWriteAction.shardOperationOnPrimary(TransportWriteAction:50)
-16:02:49.639 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.action.support.replication.TransportWriteAction
-16:02:49.639 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-16:02:50.353 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 35.
-16:03:12.190 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-16:03:12.202 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+03:43:05.245 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
+03:43:05.252 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.action.support.replication.TransportWriteAction.shardOperationOnPrimary(TransportWriteAction:50)
+03:43:05.253 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.action.support.replication.TransportWriteAction
+03:43:05.253 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+03:43:05.972 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/lucene/analysis/stempel/StempelStemmer.class' should be in target project!
+03:43:05.972 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+03:43:05.972 [main] WARN  e.s.b.c.i.ClassInstrumentation - Error in loading org.apache.lucene.analysis.stempel.StempelStemmer
+03:43:05.975 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/lucene/analysis/stempel/StempelFilter.class' should be in target project!
+03:43:05.975 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+03:43:05.975 [main] WARN  e.s.b.c.i.ClassInstrumentation - Error in loading org.apache.lucene.analysis.stempel.StempelFilter
+03:43:24.884 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class java.util.Arrays was empty.
+03:43:24.886 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class java.lang.AbstractStringBuilder was empty.
+03:43:24.889 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class java.lang.StringBuilder was empty.
+03:43:24.890 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.util.Arrays
+03:43:24.890 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 1]Cannot load class java.util.Arrays. We do not count it in the InterProcedural graph
+03:43:24.890 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.util.Arrays
+03:43:24.890 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 2]Cannot load class java.util.Arrays. We do not count it in the InterProcedural graph
+03:43:24.890 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.lang.AbstractStringBuilder
+03:43:24.890 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 3]Cannot load class java.lang.AbstractStringBuilder. We do not count it in the InterProcedural graph
+03:43:24.890 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.lang.StringBuilder
+03:43:24.890 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 4]Cannot load class java.lang.StringBuilder. We do not count it in the InterProcedural graph
+03:43:24.890 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.analysis.stempel.StempelStemmer
+03:43:24.890 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 5]Cannot load class org.apache.lucene.analysis.stempel.StempelStemmer. We do not count it in the InterProcedural graph
+03:43:24.890 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.analysis.stempel.StempelFilter
+03:43:24.890 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 6]Cannot load class org.apache.lucene.analysis.stempel.StempelFilter. We do not count it in the InterProcedural graph
+03:43:24.890 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.analysis.shingle.ShingleFilter
+03:43:24.893 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.analysis.shingle.ShingleFilter
+03:43:24.894 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.analysis.shingle.ShingleFilter
+03:43:24.895 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DefaultIndexingChain$PerField
+03:43:24.903 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DefaultIndexingChain
+03:43:24.905 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DefaultIndexingChain
+03:43:24.907 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DocumentsWriterPerThread
+03:43:24.907 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DocumentsWriter
+03:43:24.909 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.IndexWriter
+03:43:24.910 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.IndexWriter
+03:43:24.910 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.engine.InternalEngine
+03:43:24.911 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.engine.InternalEngine
+03:43:24.916 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.engine.InternalEngine
+03:43:24.920 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.shard.IndexShard
+03:43:24.920 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.shard.IndexShard
+03:43:24.921 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.index.TransportIndexAction
+03:43:24.922 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.bulk.TransportShardBulkAction
+03:43:24.922 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.bulk.TransportShardBulkAction
+03:43:24.925 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.bulk.TransportShardBulkAction
+03:43:24.926 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.bulk.TransportShardBulkAction
+03:43:24.926 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.bulk.TransportShardBulkAction
+03:43:24.927 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.action.bulk.TransportShardBulkAction, method onPrimaryShard, and line number 74.
+03:43:24.927 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 27 is an irrelevant frame. We do not count it in the InterProcedural graph
+03:43:24.927 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.support.replication.TransportWriteAction
+03:43:24.927 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.support.replication.TransportWriteAction
+03:43:24.928 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.action.support.replication.TransportWriteAction, method shardOperationOnPrimary, and line number 50.
+03:43:24.928 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 29 is an irrelevant frame. We do not count it in the InterProcedural graph
+03:43:25.373 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 35.
+03:43:45.558 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+03:43:45.568 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite

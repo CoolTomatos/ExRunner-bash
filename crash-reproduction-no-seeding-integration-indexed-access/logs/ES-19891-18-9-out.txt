@@ -1,22 +1,53 @@
-12:26:40.687 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
-12:26:40.692 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.rest.BytesRestResponse.convert(BytesRestResponse:134)
-12:26:40.692 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.rest.BytesRestResponse
-12:26:40.693 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-12:26:41.450 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 39.
-12:26:54.548 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-12:26:54.561 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-12:26:54.600 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
-12:26:54.601 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
-12:27:00.166 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
-12:27:02.690 [main] INFO  e.s.b.f.FitnessFunctions - eu.stamp.botsing.fitnessfunction.ITFFForIndexedAccess@194c02e2: 18.714285714285715
-12:27:02.691 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
-12:27:02.691 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
-12:27:05.015 [main] INFO  e.s.b.f.FitnessFunctions - eu.stamp.botsing.fitnessfunction.ITFFForIndexedAccess@194c02e2: 18.714285714285715
-12:27:05.015 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
-12:27:05.015 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
-12:27:07.290 [main] INFO  e.s.b.f.FitnessFunctions - eu.stamp.botsing.fitnessfunction.ITFFForIndexedAccess@194c02e2: 18.496774193548386
-12:27:07.290 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #3 is created.
-12:27:07.291 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
-12:27:09.474 [main] INFO  e.s.b.f.FitnessFunctions - eu.stamp.botsing.fitnessfunction.ITFFForIndexedAccess@194c02e2: 18.496774193548386
-12:27:09.474 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #4 is created.
-12:27:09.474 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+01:56:24.499 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
+01:56:24.504 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.rest.BytesRestResponse.convert(BytesRestResponse:134)
+01:56:24.505 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.rest.BytesRestResponse
+01:56:24.505 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+01:56:37.165 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class java.lang.Throwable was empty.
+01:56:37.167 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.ElasticsearchException
+01:56:37.168 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.search.SearchPhaseExecutionException
+01:56:37.209 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.search.SearchPhaseExecutionException
+01:56:37.209 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.lang.Throwable
+01:56:37.210 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 4]Cannot load class java.lang.Throwable. We do not count it in the InterProcedural graph
+01:56:37.210 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.lang.Throwable
+01:56:37.210 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 5]Cannot load class java.lang.Throwable. We do not count it in the InterProcedural graph
+01:56:37.210 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.log4j.DefaultThrowableRenderer
+01:56:37.211 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.log4j.spi.ThrowableInformation
+01:56:37.211 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.log4j.spi.LoggingEvent
+01:56:37.211 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.log4j.WriterAppender
+01:56:37.212 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.log4j.WriterAppender
+01:56:37.212 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.log4j.AppenderSkeleton
+01:56:37.213 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.log4j.helpers.AppenderAttachableImpl
+01:56:37.214 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.log4j.Category
+01:56:37.214 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.log4j.Category
+01:56:37.215 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.log4j.Category
+01:56:37.215 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.logging.log4j.Log4jESLogger
+01:56:37.215 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.logging.support.AbstractESLogger
+01:56:37.216 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.rest.BytesRestResponse
+01:56:37.227 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.rest.BytesRestResponse
+01:56:37.565 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 39.
+01:56:59.936 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+01:56:59.974 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+01:57:00.078 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
+01:57:00.078 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+01:57:09.868 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+01:57:15.586 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.ITFFForIndexedAccess@5d21a56d: 18.833333333333336
+01:57:15.587 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+01:57:15.587 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+01:57:19.883 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.ITFFForIndexedAccess@5d21a56d: 18.833333333333336
+01:57:19.883 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
+01:57:19.884 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+01:57:25.329 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.ITFFForIndexedAccess@5d21a56d: 18.833333333333336
+01:57:25.329 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #3 is created.
+01:57:25.329 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+01:57:33.523 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.ITFFForIndexedAccess@5d21a56d: 18.833333333333336
+01:57:33.524 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #4 is created.
+01:57:33.524 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+01:57:38.789 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.ITFFForIndexedAccess@5d21a56d: 18.833333333333336
+01:57:38.789 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #5 is created.
+01:57:38.789 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+01:57:43.368 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.ITFFForIndexedAccess@5d21a56d: 18.833333333333336
+01:57:43.368 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #6 is created.
+01:57:43.368 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+01:57:49.231 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.ITFFForIndexedAccess@5d21a56d: 18.833333333333336
+01:57:49.232 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #7 is created.
+01:57:49.232 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1

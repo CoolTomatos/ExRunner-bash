@@ -1,7 +1,25 @@
-03:14:59.459 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
-03:14:59.476 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService$6:328)
-03:14:59.477 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.action.search.SearchTransportService$6
-03:14:59.477 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-03:15:01.245 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
-03:15:53.917 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-03:15:53.953 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+22:23:30.342 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
+22:23:30.361 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService$6:328)
+22:23:30.362 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.action.search.SearchTransportService$6
+22:23:30.362 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+22:23:49.891 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages.class' should be in target project!
+22:23:49.891 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+22:23:49.904 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages_en.class' should be in target project!
+22:23:49.904 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+22:23:55.190 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.search.vectorhighlight.FieldQuery
+22:23:55.191 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.search.vectorhighlight.FieldQuery
+22:23:55.192 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.search.vectorhighlight.FieldQuery
+22:23:55.193 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.search.vectorhighlight.FieldQuery
+22:23:55.194 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.search.vectorhighlight.CustomFieldQuery
+22:23:55.194 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.fetch.subphase.highlight.FastVectorHighlighter
+22:23:55.235 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.fetch.subphase.highlight.HighlightPhase
+22:23:55.244 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.fetch.FetchPhase
+22:23:55.247 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.SearchService
+22:23:55.247 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.SearchService
+22:23:55.277 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.search.SearchTransportService$6
+22:23:55.277 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.search.SearchTransportService$6
+22:23:55.277 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.action.search.SearchTransportService$6, method messageReceived, and line number 328.
+22:23:55.290 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 12 is an irrelevant frame. We do not count it in the InterProcedural graph
+22:23:56.783 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
+22:25:07.086 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+22:25:07.096 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
