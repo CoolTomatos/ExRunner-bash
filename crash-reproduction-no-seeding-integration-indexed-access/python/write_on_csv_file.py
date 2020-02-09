@@ -70,7 +70,7 @@ with open(log_dir, "r") as ins:
             split_line_1 = stdout_line.split("Exception type is detected: ")
             csv_result["exception_name"] = split_line_1[1].replace(
                 '\n', ' ').replace('\r', '').strip()
-        elif "FitnessFunctions - eu.stamp.botsing.fitnessfunction.ITFFForIndexedAccess@" in stdout_line:
+        elif "eu.stamp.botsing.fitnessfunction.ITFFForIndexedAccess@" in stdout_line:
             split_line_1 = stdout_line.split(": ")
             distribution_ff = split_line_1[1].strip()
             if distribution_ff != csv_result["fitness_function_value"]:
