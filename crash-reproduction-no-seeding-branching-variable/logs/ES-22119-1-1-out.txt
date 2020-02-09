@@ -1,18 +1,55 @@
-23:14:42.576 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
-23:14:42.582 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.script.ScriptType.readFrom(ScriptType:79)
-23:14:42.582 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.script.ScriptType
-23:14:42.583 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-23:14:44.660 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 44.
-23:15:00.836 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-23:15:00.853 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-23:15:00.895 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
-23:15:00.896 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
-23:15:02.560 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
-23:15:03.491 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@52483b03: 0.0
-23:15:03.491 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
-23:15:03.491 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
-23:15:03.498 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
-23:15:03.516 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
-23:15:04.562 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
-23:15:06.690 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'ScriptType_ESTest' to results/ES-22119-1-1
-23:15:06.700 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
+08:17:02.320 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
+08:17:02.325 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.script.ScriptType.readFrom(ScriptType:79)
+08:17:02.325 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.script.ScriptType
+08:17:02.326 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+08:17:06.423 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/logging/log4j/core/net/SocketOptions.class' should be in target project!
+08:17:06.424 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:06.430 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/logging/log4j/core/net/SocketPerformancePreferences.class' should be in target project!
+08:17:06.430 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:06.465 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/logging/log4j/core/appender/db/ColumnMapping.class' should be in target project!
+08:17:06.465 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:06.586 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/logging/log4j/core/appender/HttpAppender.class' should be in target project!
+08:17:06.586 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:06.586 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/logging/log4j/core/appender/nosql/NoSqlAppender.class' should be in target project!
+08:17:06.586 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:06.676 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/logging/log4j/core/net/SocketAddress.class' should be in target project!
+08:17:06.676 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:06.768 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/logging/log4j/core/appender/db/jdbc/DriverManagerConnectionSource.class' should be in target project!
+08:17:06.768 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:06.846 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/logging/log4j/core/appender/rolling/DirectWriteRolloverStrategy.class' should be in target project!
+08:17:06.846 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:07.012 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/logging/log4j/core/appender/rolling/action/PosixViewAttributeAction.class' should be in target project!
+08:17:07.012 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:07.019 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/logging/log4j/core/layout/MessageLayout.class' should be in target project!
+08:17:07.019 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:07.281 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/logging/log4j/core/pattern/EndOfBatchPatternConverter.class' should be in target project!
+08:17:07.282 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:07.416 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/logging/log4j/core/pattern/LoggerFqcnPatternConverter.class' should be in target project!
+08:17:07.417 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:07.417 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/logging/log4j/core/pattern/ProcessIdPatternConverter.class' should be in target project!
+08:17:07.417 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:07.504 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/logging/log4j/core/config/plugins/convert/TypeConverters$InetAddressConverter.class' should be in target project!
+08:17:07.504 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:07.507 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/logging/log4j/core/config/plugins/convert/TypeConverters$PathConverter.class' should be in target project!
+08:17:07.507 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:07.571 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/logging/log4j/core/config/plugins/convert/TypeConverters$UuidConverter.class' should be in target project!
+08:17:07.571 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:07.855 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'com/fasterxml/jackson/databind/ObjectMapper.class' should be in target project!
+08:17:07.855 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:07.856 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'com/fasterxml/jackson/databind/ObjectMapper.class' should be in target project!
+08:17:07.856 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:17:08.186 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.script.ScriptType
+08:17:08.266 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 44.
+08:17:26.667 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+08:17:26.676 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+08:17:26.699 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
+08:17:26.699 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+08:17:28.827 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+08:17:30.263 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@37c27919: 0.0
+08:17:30.264 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+08:17:30.264 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
+08:17:30.273 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+08:17:30.294 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+08:17:31.483 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+08:17:33.274 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'ScriptType_ESTest' to results/ES-22119-1-1
+08:17:33.291 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

@@ -1,18 +1,16 @@
-01:45:59.471 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-01:45:59.476 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.analysis.BrentSolver.solve(BrentSolver:141)
-01:45:59.476 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.analysis.BrentSolver
-01:45:59.476 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-01:46:01.290 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
-01:46:05.045 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-01:46:05.055 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-01:46:05.130 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
-01:46:05.130 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
-01:46:07.557 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
-01:46:08.188 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@2e17a340: 0.0
-01:46:08.188 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
-01:46:08.189 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
-01:46:08.225 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
-01:46:08.366 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
-01:46:10.034 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
-01:46:11.589 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BrentSolver_ESTest' to results/MATH-97b-1-1
-01:46:11.606 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
+18:41:07.871 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+18:41:07.898 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.analysis.BrentSolver.solve(BrentSolver:141)
+18:41:07.898 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.analysis.BrentSolver
+18:41:07.898 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+18:41:14.405 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.analysis.BrentSolver
+18:41:14.635 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+18:41:25.170 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+18:41:25.248 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+18:41:25.433 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
+18:41:25.434 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+18:41:35.814 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
+18:41:35.827 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+18:41:35.921 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+18:41:41.138 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+18:41:46.504 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BrentSolver_ESTest' to results/MATH-97b-1-1
+18:41:46.633 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

@@ -1,9 +1,26 @@
-13:19:57.702 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
-13:19:57.707 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.indices.fielddata.cache.IndicesFieldDataCache$IndexFieldCache.load(IndicesFieldDataCache$IndexFieldCache:154)
-13:19:57.707 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.indices.fielddata.cache.IndicesFieldDataCache$IndexFieldCache
-13:19:57.707 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-13:19:58.057 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
-13:20:09.538 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-13:20:09.546 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-13:20:09.560 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
-13:20:09.560 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+05:31:23.278 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
+05:31:23.281 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.indices.fielddata.cache.IndicesFieldDataCache$IndexFieldCache.load(IndicesFieldDataCache$IndexFieldCache:154)
+05:31:23.281 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.indices.fielddata.cache.IndicesFieldDataCache$IndexFieldCache
+05:31:23.281 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+05:31:25.335 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DocValues
+05:31:25.337 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DocValues
+05:31:25.338 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.fielddata.plain.SortedSetDVBytesAtomicFieldData
+05:31:25.339 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.fielddata.ordinals.GlobalOrdinalsBuilder
+05:31:25.341 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.fielddata.plain.SortedSetDVOrdinalsIndexFieldData
+05:31:25.342 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.fielddata.plain.SortedSetDVOrdinalsIndexFieldData
+05:31:25.342 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.index.fielddata.plain.SortedSetDVOrdinalsIndexFieldData, method localGlobalDirect, and line number 45.
+05:31:25.344 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 6 is an irrelevant frame. We do not count it in the InterProcedural graph
+05:31:25.345 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.indices.fielddata.cache.IndicesFieldDataCache$IndexFieldCache
+05:31:25.345 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.indices.fielddata.cache.IndicesFieldDataCache$IndexFieldCache, method lambda$load$1, and line number 157.
+05:31:25.345 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+05:31:25.345 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 7 is an irrelevant frame. We do not count it in the InterProcedural graph
+05:31:25.345 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.cache.Cache
+05:31:25.346 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.common.cache.Cache, method computeIfAbsent, and line number 401.
+05:31:25.346 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+05:31:25.346 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 8 is an irrelevant frame. We do not count it in the InterProcedural graph
+05:31:25.346 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.indices.fielddata.cache.IndicesFieldDataCache$IndexFieldCache
+05:31:25.417 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
+05:31:37.095 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+05:31:37.102 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+05:31:37.126 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
+05:31:37.126 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA

@@ -1,9 +1,55 @@
-00:40:29.525 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
-00:40:29.530 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.action.admin.cluster.snapshots.get.TransportGetSnapshotsAction.masterOperation(TransportGetSnapshotsAction:97)
-00:40:29.530 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.action.admin.cluster.snapshots.get.TransportGetSnapshotsAction
-00:40:29.530 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-00:40:30.519 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 39.
-00:40:45.842 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-00:40:45.850 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-00:40:45.866 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
-00:40:45.867 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+08:55:56.969 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
+08:55:56.974 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.action.admin.cluster.snapshots.get.TransportGetSnapshotsAction.masterOperation(TransportGetSnapshotsAction:97)
+08:55:56.974 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.action.admin.cluster.snapshots.get.TransportGetSnapshotsAction
+08:55:56.975 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+08:55:58.151 [main] WARN  e.s.b.c.i.ClassInstrumentation - Error in loading org.apache.hadoop.ipc.Client
+08:55:58.464 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/hadoop/hdfs/DFSClient.class' should be in target project!
+08:55:58.464 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:55:58.464 [main] WARN  e.s.b.c.i.ClassInstrumentation - Error in loading org.apache.hadoop.hdfs.DFSClient
+08:55:58.465 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/hadoop/fs/Hdfs.class' should be in target project!
+08:55:58.465 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:55:58.465 [main] WARN  e.s.b.c.i.ClassInstrumentation - Error in loading org.apache.hadoop.fs.Hdfs
+08:56:02.427 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing com.google.common.base.Preconditions
+08:56:02.429 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.ipc.Client
+08:56:02.429 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 2]Cannot load class org.apache.hadoop.ipc.Client. We do not count it in the InterProcedural graph
+08:56:02.429 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.io.retry.RetryInvocationHandler$Call
+08:56:02.429 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.io.retry.RetryInvocationHandler$Call
+08:56:02.429 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.io.retry.RetryInvocationHandler$Call
+08:56:02.430 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.io.retry.RetryInvocationHandler
+08:56:02.430 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.hdfs.DFSClient
+08:56:02.430 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 7]Cannot load class org.apache.hadoop.hdfs.DFSClient. We do not count it in the InterProcedural graph
+08:56:02.431 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.hdfs.DFSClient
+08:56:02.431 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 8]Cannot load class org.apache.hadoop.hdfs.DFSClient. We do not count it in the InterProcedural graph
+08:56:02.431 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.fs.Hdfs
+08:56:02.431 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 9]Cannot load class org.apache.hadoop.fs.Hdfs. We do not count it in the InterProcedural graph
+08:56:02.431 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.fs.FileContext$Util$1
+08:56:02.431 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.fs.FileContext$Util$1
+08:56:02.431 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.apache.hadoop.fs.FileContext$Util$1, method next, and line number 1802.
+08:56:02.431 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 11 is an irrelevant frame. We do not count it in the InterProcedural graph
+08:56:02.431 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.fs.FSLinkResolver
+08:56:02.432 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.fs.FileContext$Util
+08:56:02.432 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.fs.FileContext$Util
+08:56:02.432 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.fs.FileContext$Util
+08:56:02.432 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.repositories.hdfs.HdfsBlobContainer$6
+08:56:02.433 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.repositories.hdfs.HdfsBlobContainer$6
+08:56:02.433 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.repositories.hdfs.HdfsBlobContainer$6, method run, and line number 142.
+08:56:02.433 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 17 is an irrelevant frame. We do not count it in the InterProcedural graph
+08:56:02.433 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.repositories.hdfs.HdfsBlobStore
+08:56:02.433 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.repositories.hdfs.HdfsBlobStore, method lambda$execute$0, and line number 132.
+08:56:02.433 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+08:56:02.433 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 18 is an irrelevant frame. We do not count it in the InterProcedural graph
+08:56:02.433 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.repositories.hdfs.HdfsBlobStore
+08:56:02.433 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.repositories.hdfs.HdfsBlobStore, method execute, and line number 129.
+08:56:02.433 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+08:56:02.433 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 19 is an irrelevant frame. We do not count it in the InterProcedural graph
+08:56:02.433 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.repositories.hdfs.HdfsBlobContainer
+08:56:02.434 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.repositories.blobstore.BlobStoreRepository
+08:56:02.434 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.repositories.blobstore.BlobStoreRepository
+08:56:02.434 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.repositories.blobstore.BlobStoreRepository
+08:56:02.440 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.snapshots.SnapshotsService
+08:56:02.440 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.admin.cluster.snapshots.get.TransportGetSnapshotsAction
+08:56:02.636 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 39.
+08:56:16.570 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+08:56:16.577 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+08:56:16.593 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
+08:56:16.593 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA

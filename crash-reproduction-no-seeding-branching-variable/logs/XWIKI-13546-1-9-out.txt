@@ -1,15 +1,19 @@
-18:10:35.739 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-18:10:35.747 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.model.reference.EntityReference.setName(EntityReference:186)
-18:10:35.747 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.model.reference.EntityReference
-18:10:35.749 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-18:10:39.174 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 585.
-18:10:54.692 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-18:10:54.722 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-18:10:54.760 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
-18:10:54.773 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
-18:10:56.329 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
-18:10:56.366 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
-18:10:56.389 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
-18:10:57.779 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
-18:11:01.504 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'EntityReference_ESTest' to results/XWIKI-13546-1-9
-18:11:01.515 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
+17:09:29.386 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+17:09:29.399 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.model.reference.EntityReference.setName(EntityReference:186)
+17:09:29.399 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.model.reference.EntityReference
+17:09:29.399 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+17:09:37.268 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.model.reference.EntityReference
+17:09:37.347 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 585.
+17:10:05.304 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+17:10:05.422 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+17:10:05.484 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
+17:10:05.493 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+17:10:10.318 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+17:10:11.390 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@2b422b2f: 0.0
+17:10:11.390 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+17:10:11.391 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
+17:10:11.412 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+17:10:11.569 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+17:10:15.808 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+17:10:23.202 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'EntityReference_ESTest' to results/XWIKI-13546-1-9
+17:10:23.237 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

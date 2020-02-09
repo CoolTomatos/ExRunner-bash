@@ -1,8 +1,7 @@
 ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console.
-Exception in thread "globalEventExecutor-1-2" java.lang.IndexOutOfBoundsException: Index: 33261, Size: 44544
-	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
-	at java.util.ArrayList.get(ArrayList.java:433)
-	at org.evosuite.runtime.LoopCounter.checkLoop(LoopCounter.java:111)
-	at io.netty.util.concurrent.GlobalEventExecutor$TaskRunner.run(GlobalEventExecutor.java:231)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+Exception in thread "Lucene-1-thread-1" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at io.netty.util.concurrent.ScheduledFutureTask.nanoTime(ScheduledFutureTask.java:31)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.updateLastExecutionTime(SingleThreadEventExecutor.java:453)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:856)
 	at java.lang.Thread.run(Thread.java:748)

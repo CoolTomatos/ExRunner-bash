@@ -1,7 +1,10 @@
-03:44:57.693 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-03:44:57.696 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.cluster.node.DiscoveryNodeFilters.lambda$static$0(DiscoveryNodeFilters:58)
-03:44:57.696 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.cluster.node.DiscoveryNodeFilters
-03:44:57.697 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-03:44:58.460 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 36.
-03:45:11.320 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-03:45:11.333 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+02:33:25.225 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+02:33:25.230 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.cluster.node.DiscoveryNodeFilters.lambda$static$0(DiscoveryNodeFilters:58)
+02:33:25.230 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.cluster.node.DiscoveryNodeFilters
+02:33:25.231 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+02:33:26.535 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.cluster.node.DiscoveryNodeFilters
+02:33:26.535 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.cluster.node.DiscoveryNodeFilters, method lambda$static$0, and line number 58.
+02:33:26.537 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+02:33:26.538 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 1 is an irrelevant frame. We do not count it in the InterProcedural graph
+02:33:26.544 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
+02:33:26.564 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite

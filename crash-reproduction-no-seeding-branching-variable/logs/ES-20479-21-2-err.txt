@@ -1,9 +1,15 @@
-Exception in thread "main" java.lang.NullPointerException
-	at org.evosuite.Properties.getTargetClass(Properties.java:2390)
-	at org.evosuite.Properties.getInitializedTargetClass(Properties.java:2355)
-	at org.evosuite.setup.TestCluster.isSpecialCase(TestCluster.java:1405)
-	at org.evosuite.setup.TestCluster.getRandomGenerator(TestCluster.java:1067)
-	at org.evosuite.testcase.TestFactory.createObject(TestFactory.java:1253)
+java.lang.IllegalArgumentException: edge not in graph
+	at org.evosuite.graphs.EvoSuiteGraph.getEdgeTarget(EvoSuiteGraph.java:143)
+	at eu.stamp.botsing.commons.graphs.cfg.BotsingRawControlFlowGraph.addInterProceduralEdge(BotsingRawControlFlowGraph.java:57)
+	at eu.stamp.botsing.graphs.cfg.CFGGenerator.generateRawGraph(CFGGenerator.java:107)
+	at eu.stamp.botsing.graphs.cfg.CFGGenerator.generateInterProceduralCFG(CFGGenerator.java:41)
+	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:88)
+	at eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
+	at eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:101)
+	at eu.stamp.botsing.Botsing.main(Botsing.java:168)
+Exception in thread "main" java.lang.IllegalArgumentException: Empty className
+	at org.evosuite.runtime.mock.MockList.getMockClass(MockList.java:226)
+	at org.evosuite.testcase.TestFactory.createObject(TestFactory.java:1304)
 	at org.evosuite.testcase.TestFactory.attemptGeneration(TestFactory.java:857)
 	at org.evosuite.testcase.TestFactory.createVariable(TestFactory.java:1452)
 	at org.evosuite.testcase.TestFactory.createOrReuseVariable(TestFactory.java:1397)

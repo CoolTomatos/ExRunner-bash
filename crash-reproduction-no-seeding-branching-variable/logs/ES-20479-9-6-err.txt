@@ -1,15 +1,13 @@
-Exception in thread "main" org.evosuite.shaded.com.googlecode.gentyref.UnresolvedTypeVariableException: An exact type is requested, but the type contains a type variable that cannot be resolved.
-   Variable: T from class org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter
-   Hint: This is usually caused by trying to get an exact type when a generic method who's type parameters are not given is involved.
-	at org.evosuite.shaded.com.googlecode.gentyref.VarMap.map(VarMap.java:75)
-	at org.evosuite.shaded.com.googlecode.gentyref.VarMap.map(VarMap.java:94)
-	at org.evosuite.shaded.com.googlecode.gentyref.VarMap.map(VarMap.java:80)
-	at org.evosuite.shaded.com.googlecode.gentyref.GenericTypeReflector.mapTypeParameters(GenericTypeReflector.java:66)
-	at org.evosuite.shaded.com.googlecode.gentyref.GenericTypeReflector.getExactDirectSuperTypes(GenericTypeReflector.java:302)
-	at org.evosuite.shaded.com.googlecode.gentyref.GenericTypeReflector.getExactSuperType(GenericTypeReflector.java:138)
-	at org.evosuite.utils.generic.GenericMethod.getExactParameterTypes(GenericMethod.java:211)
-	at org.evosuite.utils.generic.GenericMethod.getParameterTypes(GenericMethod.java:115)
-	at org.evosuite.testcase.TestFactory.addMethod(TestFactory.java:552)
+Exception in thread "main" java.lang.NullPointerException
+	at org.evosuite.Properties.getTargetClass(Properties.java:2390)
+	at org.evosuite.Properties.getInitializedTargetClass(Properties.java:2355)
+	at org.evosuite.setup.TestCluster.isSpecialCase(TestCluster.java:1405)
+	at org.evosuite.setup.TestCluster.getRandomGenerator(TestCluster.java:1067)
+	at org.evosuite.testcase.TestFactory.createObject(TestFactory.java:1253)
+	at org.evosuite.testcase.TestFactory.attemptGeneration(TestFactory.java:857)
+	at org.evosuite.testcase.TestFactory.createVariable(TestFactory.java:1452)
+	at org.evosuite.testcase.TestFactory.createOrReuseVariable(TestFactory.java:1397)
+	at org.evosuite.testcase.TestFactory.addMethod(TestFactory.java:532)
 	at eu.stamp.botsing.fitnessfunction.testcase.factories.StackTraceChromosomeFactory.getRandomTestCase(StackTraceChromosomeFactory.java:160)
 	at eu.stamp.botsing.fitnessfunction.testcase.factories.StackTraceChromosomeFactory.getChromosome(StackTraceChromosomeFactory.java:107)
 	at eu.stamp.botsing.fitnessfunction.testcase.factories.StackTraceChromosomeFactory.getChromosome(StackTraceChromosomeFactory.java:52)

@@ -1,6 +1,6 @@
 Exception in thread "TimeLimitedCollector timer thread" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
 	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.apache.lucene.search.TimeLimitingCollector$TimerThread.run(TimeLimitingCollector.java:257)
+	at org.apache.lucene.search.TimeLimitingCollector$TimerThread.run(TimeLimitingCollector.java:259)
 Exception in thread "main" org.evosuite.testcase.execution.EvosuiteError: java.lang.ExceptionInInitializerError
 	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:739)
 	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
@@ -16,7 +16,7 @@ Caused by: java.lang.ExceptionInInitializerError
 	at org.elasticsearch.common.netty.NettyUtils.<clinit>(NettyUtils.java:95)
 	at org.elasticsearch.http.netty.NettyHttpServerTransport.<clinit>(NettyHttpServerTransport.java:119)
 	at org.elasticsearch.common.settings.ClusterSettings.<clinit>(ClusterSettings.java:159)
-	at sun.reflect.GeneratedSerializationConstructorAccessor7444.newInstance(Unknown Source)
+	at sun.reflect.GeneratedSerializationConstructorAccessor2339.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.evosuite.shaded.org.objenesis.instantiator.sun.SunReflectionFactoryInstantiator.newInstance(SunReflectionFactoryInstantiator.java:48)
 	at org.evosuite.shaded.org.objenesis.ObjenesisBase.newInstance(ObjenesisBase.java:73)

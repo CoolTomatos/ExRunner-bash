@@ -1,10 +1,28 @@
-13:06:03.985 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
-13:06:03.992 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.index.fielddata.plain.SortedSetDVOrdinalsIndexFieldData.loadGlobal(SortedSetDVOrdinalsIndexFieldData:115)
-13:06:03.993 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.index.fielddata.plain.SortedSetDVOrdinalsIndexFieldData
-13:06:03.993 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-13:06:04.517 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
-13:06:18.053 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-13:06:18.063 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-13:06:18.081 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
-13:06:18.081 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
-13:06:19.931 [main] ERROR e.s.b.f.t.f.StackTraceChromosomeFactory - Guided initialization failed. Please revise the target class and method!
+05:16:26.956 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
+05:16:26.959 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.index.fielddata.plain.SortedSetDVOrdinalsIndexFieldData.loadGlobal(SortedSetDVOrdinalsIndexFieldData:115)
+05:16:26.959 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.index.fielddata.plain.SortedSetDVOrdinalsIndexFieldData
+05:16:26.960 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+05:16:29.213 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DocValues
+05:16:29.215 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DocValues
+05:16:29.216 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.fielddata.plain.SortedSetDVBytesAtomicFieldData
+05:16:29.216 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.fielddata.ordinals.GlobalOrdinalsBuilder
+05:16:29.218 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.fielddata.plain.SortedSetDVOrdinalsIndexFieldData
+05:16:29.219 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.fielddata.plain.SortedSetDVOrdinalsIndexFieldData
+05:16:29.219 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.index.fielddata.plain.SortedSetDVOrdinalsIndexFieldData, method localGlobalDirect, and line number 45.
+05:16:29.221 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 6 is an irrelevant frame. We do not count it in the InterProcedural graph
+05:16:29.221 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.indices.fielddata.cache.IndicesFieldDataCache$IndexFieldCache
+05:16:29.221 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.indices.fielddata.cache.IndicesFieldDataCache$IndexFieldCache, method lambda$load$1, and line number 157.
+05:16:29.221 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+05:16:29.221 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 7 is an irrelevant frame. We do not count it in the InterProcedural graph
+05:16:29.221 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.cache.Cache
+05:16:29.222 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.common.cache.Cache, method computeIfAbsent, and line number 401.
+05:16:29.223 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+05:16:29.223 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 8 is an irrelevant frame. We do not count it in the InterProcedural graph
+05:16:29.223 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.indices.fielddata.cache.IndicesFieldDataCache$IndexFieldCache
+05:16:29.223 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.fielddata.plain.SortedSetDVOrdinalsIndexFieldData
+05:16:29.305 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
+05:16:39.902 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+05:16:39.910 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+05:16:39.926 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
+05:16:39.926 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+05:16:41.326 [main] ERROR e.s.b.f.t.f.StackTraceChromosomeFactory - Guided initialization failed. Please revise the target class and method!

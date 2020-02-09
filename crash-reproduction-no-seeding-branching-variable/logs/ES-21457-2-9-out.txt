@@ -1,15 +1,20 @@
-10:30:32.461 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-10:30:32.466 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.index.query.QueryShardContext.nowInMillis(QueryShardContext:278)
-10:30:32.466 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.index.query.QueryShardContext
-10:30:32.466 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-10:30:33.487 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
-10:30:51.803 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-10:30:51.816 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-10:30:51.865 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
-10:30:51.865 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
-10:31:03.902 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
-10:31:03.918 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
-10:31:04.181 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
-10:31:07.269 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
-10:31:10.181 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'QueryShardContext_ESTest' to results/ES-21457-2-9
-10:31:10.224 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
+04:48:09.206 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+04:48:09.211 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.index.query.QueryShardContext.nowInMillis(QueryShardContext:278)
+04:48:09.211 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.index.query.QueryShardContext
+04:48:09.212 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+04:48:11.092 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.query.QueryShardContext
+04:48:11.095 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.query.QueryShardContext
+04:48:11.114 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
+04:48:35.372 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+04:48:35.400 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+04:48:35.458 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
+04:48:35.458 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+04:48:45.690 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+04:48:53.899 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@acc9af0: 0.0
+04:48:53.899 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+04:48:53.900 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
+04:48:53.915 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+04:48:54.300 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+04:48:58.102 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+04:49:00.630 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'QueryShardContext_ESTest' to results/ES-21457-2-9
+04:49:00.713 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

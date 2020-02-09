@@ -3,3 +3,22 @@ Exception in thread "threadDeathWatcher-1-1" org.evosuite.testcase.execution.Tes
 	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:140)
 	at java.lang.Thread.run(Thread.java:748)
+Exception in thread "TimeLimitedCollector timer thread" Exception in thread "globalEventExecutor-3-2" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.apache.lucene.search.TimeLimitingCollector$TimerThread.run(TimeLimitingCollector.java:262)
+org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:140)
+	at java.lang.Thread.run(Thread.java:748)
+Exception in thread "defaultEventExecutor-18-1" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:140)
+	at java.lang.Thread.run(Thread.java:748)
+Exception in thread "Lucene-2-thread-1" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:850)
+	at java.lang.Thread.run(Thread.java:748)
+Exception in thread "defaultChannelPromise-31-1" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:140)
+	at java.lang.Thread.run(Thread.java:748)

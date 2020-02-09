@@ -1,7 +1,17 @@
-03:10:05.675 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-03:10:05.679 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.common.settings.Setting$3.get(Setting$3:885)
-03:10:05.679 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.common.settings.Setting$3
-03:10:05.679 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-03:10:06.273 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 36.
-03:10:13.481 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-03:10:13.489 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+02:00:39.478 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+02:00:39.487 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.common.settings.Setting$3.get(Setting$3:885)
+02:00:39.487 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.common.settings.Setting$3
+02:00:39.487 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+02:00:45.576 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.cluster.node.DiscoveryNodeFilters
+02:00:45.577 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.cluster.node.DiscoveryNodeFilters, method lambda$static$0, and line number 58.
+02:00:45.578 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+02:00:45.578 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 1 is an irrelevant frame. We do not count it in the InterProcedural graph
+02:00:45.589 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.settings.Setting$3
+02:00:45.589 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.common.settings.Setting$3, method get, and line number 908.
+02:00:45.590 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+02:00:45.591 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 2 is an irrelevant frame. We do not count it in the InterProcedural graph
+02:00:45.591 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.settings.Setting$3
+02:00:45.591 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.common.settings.Setting$3, method get, and line number 885.
+02:00:45.592 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 3 is an irrelevant frame. We do not count it in the InterProcedural graph
+02:00:45.597 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
+02:00:45.632 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite

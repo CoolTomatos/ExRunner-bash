@@ -2,7 +2,7 @@ ERROR StatusLogger Catching
  java.lang.SecurityException: Security manager blocks ("java.lang.RuntimePermission" "shutdownHooks")
 java.lang.Thread.getStackTrace(Thread.java:1559)
 org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:434)
-java.lang.Runtime.addShutdownHook(Runtime.java:209)
+java.lang.Runtime.addShutdownHook(Runtime.java:210)
 org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry.addShutdownHook(DefaultShutdownCallbackRegistry.java:151)
 org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry.start(DefaultShutdownCallbackRegistry.java:137)
 org.apache.logging.log4j.core.impl.Log4jContextFactory.initializeShutdownCallbackRegistry(Log4jContextFactory.java:125)
@@ -26,14 +26,13 @@ org.evosuite.setup.TestClusterGenerator.generateCluster(TestClusterGenerator.jav
 org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:118)
 org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:132)
 eu.stamp.botsing.commons.SetupUtility.analyzeClassDependencies(SetupUtility.java:108)
-eu.stamp.botsing.reproduction.CrashReproduction.initializeTargetClass(CrashReproduction.java:150)
-eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:91)
+eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:89)
 eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
 eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:101)
 eu.stamp.botsing.Botsing.main(Botsing.java:168)
 
 	at org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:452)
-	at java.lang.Runtime.addShutdownHook(Runtime.java:209)
+	at java.lang.Runtime.addShutdownHook(Runtime.java:210)
 	at org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry.addShutdownHook(DefaultShutdownCallbackRegistry.java:151)
 	at org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry.start(DefaultShutdownCallbackRegistry.java:137)
 	at org.apache.logging.log4j.core.impl.Log4jContextFactory.initializeShutdownCallbackRegistry(Log4jContextFactory.java:125)
@@ -57,8 +56,7 @@ eu.stamp.botsing.Botsing.main(Botsing.java:168)
 	at org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:118)
 	at org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:132)
 	at eu.stamp.botsing.commons.SetupUtility.analyzeClassDependencies(SetupUtility.java:108)
-	at eu.stamp.botsing.reproduction.CrashReproduction.initializeTargetClass(CrashReproduction.java:150)
-	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:91)
+	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:89)
 	at eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
 	at eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:101)
 	at eu.stamp.botsing.Botsing.main(Botsing.java:168)
@@ -98,8 +96,7 @@ ERROR StatusLogger Could not reconfigure JMX
 	at org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:118)
 	at org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:132)
 	at eu.stamp.botsing.commons.SetupUtility.analyzeClassDependencies(SetupUtility.java:108)
-	at eu.stamp.botsing.reproduction.CrashReproduction.initializeTargetClass(CrashReproduction.java:150)
-	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:91)
+	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:89)
 	at eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
 	at eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:101)
 	at eu.stamp.botsing.Botsing.main(Botsing.java:168)
@@ -145,8 +142,7 @@ org.evosuite.setup.TestClusterGenerator.generateCluster(TestClusterGenerator.jav
 org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:118)
 org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:132)
 eu.stamp.botsing.commons.SetupUtility.analyzeClassDependencies(SetupUtility.java:108)
-eu.stamp.botsing.reproduction.CrashReproduction.initializeTargetClass(CrashReproduction.java:150)
-eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:91)
+eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:89)
 eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
 eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:101)
 eu.stamp.botsing.Botsing.main(Botsing.java:168)
@@ -158,10 +154,13 @@ eu.stamp.botsing.Botsing.main(Botsing.java:168)
 	at java.util.logging.LogManager$1.run(LogManager.java:181)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at java.util.logging.LogManager.<clinit>(LogManager.java:181)
-	... 38 more
-ERROR StatusLogger org.elasticsearch.cluster.metadata.MetaData@9701ef9
-ERROR StatusLogger monitor.os.refresh_interval
- java.sql.SQLTimeoutException: monitor.os.refresh_interval
+	... 37 more
+FATAL StatusLogger es.cgroups.hierarchy.override
+ERROR StatusLogger null
+ERROR StatusLogger pe`$Mc\hv
+FATAL StatusLogger es.cgroups.hierarchy.override
+FATAL StatusLogger es.cgroups.hierarchy.override
+ java.lang.Exception: es.cgroups.hierarchy.override
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -176,8 +175,190 @@ ERROR StatusLogger monitor.os.refresh_interval
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-FATAL StatusLogger extracted source isn't an object or an array
-FATAL StatusLogger '4^N;Q/r
+ERROR StatusLogger f,Vbyd( 
+FATAL StatusLogger .h9?~<YZ/Y:ydqq
+FATAL StatusLogger pageSize must be >= 128
+OFF StatusLogger Catching
+ java.sql.SQLTransientException: *uEzY3&CkmdG3<b r
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger E@cV2Gbn,dmC:>T}
+FATAL StatusLogger es.cgroups.hierarchy.override
+FATAL StatusLogger 
+ERROR StatusLogger [7w|>%@Qi&JQ
+ org.elasticsearch.action.ActionRequestValidationException: Validation Failed: 1: index is missing;
+	at org.elasticsearch.action.ValidateActions.addValidationError(ValidateActions.java:29)
+	at org.elasticsearch.action.support.single.shard.SingleShardRequest.validateNonNullIndex(SingleShardRequest.java:65)
+	at org.elasticsearch.action.get.MultiGetShardRequest.validate(MultiGetShardRequest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+FATAL StatusLogger es.cgroups.hierarchy.override
+FATAL StatusLogger null
+FATAL StatusLogger es.cgroups.hierarchy.override
+FATAL StatusLogger 
+ERROR StatusLogger linear smoothing lambdas must sum to 1
+ERROR StatusLogger p
+ org.elasticsearch.action.ActionRequestValidationException: Validation Failed: 1: index is missing;
+	at org.elasticsearch.action.ValidateActions.addValidationError(ValidateActions.java:29)
+	at org.elasticsearch.action.support.single.shard.SingleShardRequest.validateNonNullIndex(SingleShardRequest.java:65)
+	at org.elasticsearch.action.get.MultiGetShardRequest.validate(MultiGetShardRequest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger es.cgroups.hierarchy.override
+ java.sql.SQLNonTransientException: a
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR StatusLogger null
+FATAL StatusLogger null
+FATAL StatusLogger es.cgroups.hierarchy.override
+ERROR StatusLogger es.cgroups.hierarchy.override
+ERROR StatusLogger es.cgroups.hierarchy.override
+FATAL StatusLogger pu~+*bR\&e
+ java.sql.SQLTransactionRollbackException: es.cgroups.hierarchy.overide
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+FATAL StatusLogger %%[;\kmYum,3
+FATAL StatusLogger THROWING[ EXCEPTION ]
+ java.sql.SQLSyntaxErrorException: es.cgroups.hierarchy.override
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.Exception: es.cgroups.hierarchy.override
+	... 14 more
+ERROR StatusLogger 
+FATAL StatusLogger 
+FATAL StatusLogger null
+ERROR StatusLogger HQ1boMI?pp_z
+ java.sql.SQLTimeoutException: HQ1boMI?pp_z
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLSyntaxErrorException: HQ1boMI?pp_z
+	... 14 more
+ERROR StatusLogger qYRm2'|>@~JLzl/y7*&
+FATAL StatusLogger y)uA}MMIwCgX8Bf
+FATAL StatusLogger es.cgroups.hierarchy.override
+FATAL StatusLogger :WMx_2N-e
+ERROR StatusLogger 3
+FATAL StatusLogger getSystemCpuLoad
+FATAL StatusLogger null
+ java.sql.SQLRecoverableException: java.sql.BatchUpdateException: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.BatchUpdateException: 
+	... 14 more
+FATAL StatusLogger null
+ java.sql.BatchUpdateException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+	at org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+OFF StatusLogger OFF
+OFF StatusLogger es.cgroups.hierarchy.override
 Exception in thread "TimeLimitedCollector timer thread" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
 	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
 	at org.apache.lucene.search.TimeLimitingCollector$TimerThread.run(TimeLimitingCollector.java:262)

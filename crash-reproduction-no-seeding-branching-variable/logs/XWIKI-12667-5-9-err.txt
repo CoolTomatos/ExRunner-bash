@@ -1,0 +1,28 @@
+Exception in thread "MultiThreadedHttpConnectionManager cleanup" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$ReferenceQueueThread.run(MultiThreadedHttpConnectionManager.java:1119)
+Exception in thread "MultiThreadedHttpConnectionManager cleanup" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$ReferenceQueueThread.run(MultiThreadedHttpConnectionManager.java:1126)
+Exception in thread "ObservationManager" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.apache.commons.collections.buffer.BlockingBuffer.remove(BlockingBuffer.java:203)
+	at org.apache.jackrabbit.core.observation.ObservationDispatcher.run(ObservationDispatcher.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+Exception in thread "ObservationManager" Exception in thread "ObservationManager" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.apache.commons.collections.buffer.BlockingBuffer.remove(BlockingBuffer.java:203)
+	at org.apache.jackrabbit.core.observation.ObservationDispatcher.run(ObservationDispatcher.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+Exception in thread "ObservationManager" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.apache.commons.collections.buffer.BlockingBuffer.remove(BlockingBuffer.java:203)
+	at org.apache.jackrabbit.core.observation.ObservationDispatcher.run(ObservationDispatcher.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+Exception in thread "main" java.lang.RuntimeException: No Java compiler is available. Make sure to run EvoSuite with the JDK and not the JRE.You can try to setup the JAVA_HOME system variable to point to it, as well as to make sure that the PATH variable points to the JDK before any JRE.
+	at eu.stamp.botsing.commons.PostProcessUtility.compileAndCheckTests(PostProcessUtility.java:71)
+	at eu.stamp.botsing.commons.PostProcessUtility.postProcessTests(PostProcessUtility.java:59)
+	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:115)
+	at eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
+	at eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:101)
+	at eu.stamp.botsing.Botsing.main(Botsing.java:168)

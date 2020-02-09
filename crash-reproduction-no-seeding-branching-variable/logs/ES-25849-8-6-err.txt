@@ -1,7 +1,19 @@
 Exception in thread "TimeLimitedCollector timer thread" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
 	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
 	at org.apache.lucene.search.TimeLimitingCollector$TimerThread.run(TimeLimitingCollector.java:262)
-Exception in thread "callable-97-1" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+Exception in thread "runnable-21-1" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
 	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:140)
 	at java.lang.Thread.run(Thread.java:748)
+Exception in thread "runnable-32-1" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:140)
+	at java.lang.Thread.run(Thread.java:748)
+Exception in thread "ForkJoinPool.commonPool-worker-43" java.lang.NullPointerException
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1402)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)

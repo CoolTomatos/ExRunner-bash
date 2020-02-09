@@ -1,4 +1,8 @@
-Exception in thread "ForkJoinPool.commonPool-worker-57" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+Exception in thread "AsyncAppender-Dispatcher-Thread-1" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.apache.log4j.AsyncAppender$Dispatcher.run(AsyncAppender.java:591)
+	at java.lang.Thread.run(Thread.java:748)
+Exception in thread "ForkJoinPool-1-worker-57" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
 	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
 	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:110)
 	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
@@ -7,6 +11,3 @@ Exception in thread "ForkJoinPool.commonPool-worker-57" org.evosuite.testcase.ex
 	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-Exception in thread "TimeLimitedCollector timer thread" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.apache.lucene.search.TimeLimitingCollector$TimerThread.run(TimeLimitingCollector.java:259)

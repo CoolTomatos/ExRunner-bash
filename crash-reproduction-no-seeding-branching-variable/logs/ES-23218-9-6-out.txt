@@ -1,9 +1,24 @@
-20:48:18.156 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
-20:48:18.160 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.bootstrap.Bootstrap$6.<init>(Bootstrap$6:241)
-20:48:18.160 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.bootstrap.Bootstrap$6
-20:48:18.161 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-20:48:19.014 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 36.
-20:48:22.468 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
-20:48:22.478 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-20:48:22.755 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
-20:48:22.756 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+07:52:57.055 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
+07:52:57.059 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.bootstrap.Bootstrap$6.<init>(Bootstrap$6:241)
+07:52:57.060 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.bootstrap.Bootstrap$6
+07:52:57.060 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+07:53:00.523 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages.class' should be in target project!
+07:53:00.524 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+07:53:00.527 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages_en.class' should be in target project!
+07:53:00.527 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+07:53:02.268 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class java.util.regex.Matcher was empty.
+07:53:02.271 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.util.regex.Matcher
+07:53:02.271 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 1]Cannot load class java.util.regex.Matcher. We do not count it in the InterProcedural graph
+07:53:02.271 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.monitor.os.OsProbe
+07:53:02.273 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.monitor.os.OsProbe
+07:53:02.275 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.monitor.os.OsProbe
+07:53:02.275 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.monitor.os.OsService
+07:53:02.276 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.monitor.MonitorService
+07:53:02.277 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.node.Node
+07:53:02.333 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.node.Node
+07:53:02.333 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.bootstrap.Bootstrap$6
+07:53:03.278 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 36.
+07:53:06.761 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
+07:53:06.776 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+07:53:07.034 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
+07:53:07.034 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA

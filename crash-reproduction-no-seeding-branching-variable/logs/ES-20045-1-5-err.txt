@@ -10,8 +10,7 @@ Exception in thread "main" java.lang.ExceptionInInitializerError
 	at org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:118)
 	at org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:132)
 	at eu.stamp.botsing.commons.SetupUtility.analyzeClassDependencies(SetupUtility.java:108)
-	at eu.stamp.botsing.reproduction.CrashReproduction.initializeTargetClass(CrashReproduction.java:150)
-	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:91)
+	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:89)
 	at eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
 	at eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:101)
 	at eu.stamp.botsing.Botsing.main(Botsing.java:168)
@@ -21,4 +20,4 @@ Caused by: java.lang.IllegalArgumentException: illegal settings key: [index.max_
 	at org.elasticsearch.common.settings.AbstractScopedSettings.<init>(AbstractScopedSettings.java:70)
 	at org.elasticsearch.common.settings.IndexScopedSettings.<init>(IndexScopedSettings.java:161)
 	at org.elasticsearch.common.settings.IndexScopedSettings.<clinit>(IndexScopedSettings.java:157)
-	... 16 more
+	... 15 more

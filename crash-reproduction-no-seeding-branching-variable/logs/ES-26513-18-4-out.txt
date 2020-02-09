@@ -1,7 +1,43 @@
-00:37:46.059 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
-00:37:46.064 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.repositories.hdfs.HdfsBlobStore.lambda$execute$0(HdfsBlobStore:132)
-00:37:46.064 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.repositories.hdfs.HdfsBlobStore
-00:37:46.065 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-00:37:46.590 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 39.
-00:37:49.811 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-00:37:49.820 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+08:51:47.712 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
+08:51:47.717 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.repositories.hdfs.HdfsBlobStore.lambda$execute$0(HdfsBlobStore:132)
+08:51:47.718 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.repositories.hdfs.HdfsBlobStore
+08:51:47.718 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+08:51:48.844 [main] WARN  e.s.b.c.i.ClassInstrumentation - Error in loading org.apache.hadoop.ipc.Client
+08:51:49.122 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/hadoop/hdfs/DFSClient.class' should be in target project!
+08:51:49.122 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:51:49.122 [main] WARN  e.s.b.c.i.ClassInstrumentation - Error in loading org.apache.hadoop.hdfs.DFSClient
+08:51:49.123 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/apache/hadoop/fs/Hdfs.class' should be in target project!
+08:51:49.123 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+08:51:49.123 [main] WARN  e.s.b.c.i.ClassInstrumentation - Error in loading org.apache.hadoop.fs.Hdfs
+08:51:49.742 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing com.google.common.base.Preconditions
+08:51:49.743 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.ipc.Client
+08:51:49.743 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 2]Cannot load class org.apache.hadoop.ipc.Client. We do not count it in the InterProcedural graph
+08:51:49.743 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.io.retry.RetryInvocationHandler$Call
+08:51:49.743 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.io.retry.RetryInvocationHandler$Call
+08:51:49.743 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.io.retry.RetryInvocationHandler$Call
+08:51:49.745 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.io.retry.RetryInvocationHandler
+08:51:49.745 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.hdfs.DFSClient
+08:51:49.745 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 7]Cannot load class org.apache.hadoop.hdfs.DFSClient. We do not count it in the InterProcedural graph
+08:51:49.745 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.hdfs.DFSClient
+08:51:49.745 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 8]Cannot load class org.apache.hadoop.hdfs.DFSClient. We do not count it in the InterProcedural graph
+08:51:49.745 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.fs.Hdfs
+08:51:49.745 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 9]Cannot load class org.apache.hadoop.fs.Hdfs. We do not count it in the InterProcedural graph
+08:51:49.745 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.fs.FileContext$Util$1
+08:51:49.746 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.fs.FileContext$Util$1
+08:51:49.746 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.apache.hadoop.fs.FileContext$Util$1, method next, and line number 1802.
+08:51:49.746 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 11 is an irrelevant frame. We do not count it in the InterProcedural graph
+08:51:49.746 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.fs.FSLinkResolver
+08:51:49.747 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.fs.FileContext$Util
+08:51:49.747 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.fs.FileContext$Util
+08:51:49.748 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.hadoop.fs.FileContext$Util
+08:51:49.748 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.repositories.hdfs.HdfsBlobContainer$6
+08:51:49.748 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.repositories.hdfs.HdfsBlobContainer$6
+08:51:49.748 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.repositories.hdfs.HdfsBlobContainer$6, method run, and line number 142.
+08:51:49.748 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 17 is an irrelevant frame. We do not count it in the InterProcedural graph
+08:51:49.748 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.repositories.hdfs.HdfsBlobStore
+08:51:49.748 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.repositories.hdfs.HdfsBlobStore, method lambda$execute$0, and line number 132.
+08:51:49.748 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+08:51:49.748 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 18 is an irrelevant frame. We do not count it in the InterProcedural graph
+08:51:49.805 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 39.
+08:51:53.112 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+08:51:53.121 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite

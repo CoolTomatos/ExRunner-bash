@@ -1,15 +1,20 @@
-23:23:15.067 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-23:23:15.089 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.rest.RestUtils.decode(RestUtils:171)
-23:23:15.089 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.rest.RestUtils
-23:23:15.090 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-23:23:17.876 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 78.
-23:24:03.473 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-23:24:03.485 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-23:24:03.568 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
-23:24:03.582 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
-23:24:09.639 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
-23:24:09.719 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
-23:24:10.315 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
-23:24:12.161 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
-23:24:15.066 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'RestUtils_ESTest' to results/ES-21974-1-5
-23:24:15.169 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
+00:52:43.965 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+00:52:43.976 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.rest.RestUtils.decode(RestUtils:171)
+00:52:43.977 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.rest.RestUtils
+00:52:43.977 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+00:52:47.891 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.rest.RestUtils
+00:52:47.895 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.rest.RestUtils
+00:52:48.092 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 78.
+00:53:53.017 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+00:53:53.065 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+00:53:53.164 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
+00:53:53.165 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+00:54:08.716 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+00:54:13.729 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@1a0f38b3: 0.0
+00:54:13.729 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+00:54:13.730 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
+00:54:13.749 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+00:54:13.764 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+00:54:16.120 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+00:54:21.245 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'RestUtils_ESTest' to results/ES-21974-1-5
+00:54:21.276 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

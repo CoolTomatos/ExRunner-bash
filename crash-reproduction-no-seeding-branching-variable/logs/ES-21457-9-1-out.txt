@@ -1,9 +1,28 @@
-09:47:28.611 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-09:47:28.615 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler:33)
-09:47:28.615 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.transport.TransportRequestHandler
-09:47:28.616 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-09:47:29.057 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
-09:47:57.268 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-09:47:57.303 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-09:47:57.326 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
-09:47:57.326 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+04:05:47.348 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+04:05:47.352 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler:33)
+04:05:47.352 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.transport.TransportRequestHandler
+04:05:47.353 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+04:05:52.944 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages.class' should be in target project!
+04:05:52.944 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+04:05:52.948 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages_en.class' should be in target project!
+04:05:52.948 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+04:05:54.688 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.query.QueryShardContext
+04:05:54.689 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.query.QueryShardContext
+04:05:54.689 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.mapper.TTLFieldMapper$TTLFieldType
+04:05:54.689 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.fieldvisitor.FieldsVisitor
+04:05:54.690 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.fetch.FetchPhase
+04:05:54.691 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.fetch.FetchPhase
+04:05:54.696 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.SearchService
+04:05:54.698 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.search.SearchTransportService
+04:05:54.699 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.action.search.SearchTransportService, method lambda$registerRequestHandler$684, and line number 311.
+04:05:54.700 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+04:05:54.701 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 8 is an irrelevant frame. We do not count it in the InterProcedural graph
+04:05:54.701 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.transport.TransportRequestHandler
+04:05:54.701 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.transport.TransportRequestHandler, method messageReceived, and line number 33.
+04:05:54.701 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+04:05:54.701 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 9 is an irrelevant frame. We do not count it in the InterProcedural graph
+04:05:54.854 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
+04:06:16.074 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+04:06:16.083 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+04:06:16.105 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
+04:06:16.105 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA

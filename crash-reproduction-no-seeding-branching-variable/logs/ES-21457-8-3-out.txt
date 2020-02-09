@@ -1,7 +1,22 @@
-09:57:39.834 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-09:57:39.839 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.action.search.SearchTransportService.lambda$registerRequestHandler$684(SearchTransportService:311)
-09:57:39.839 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.action.search.SearchTransportService
-09:57:39.839 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-09:57:40.763 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
-09:58:04.898 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-09:58:04.910 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+04:17:24.408 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+04:17:24.414 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.action.search.SearchTransportService.lambda$registerRequestHandler$684(SearchTransportService:311)
+04:17:24.414 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.action.search.SearchTransportService
+04:17:24.414 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+04:17:30.969 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages.class' should be in target project!
+04:17:30.969 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+04:17:30.971 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages_en.class' should be in target project!
+04:17:30.971 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+04:17:32.776 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.query.QueryShardContext
+04:17:32.777 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.query.QueryShardContext
+04:17:32.777 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.mapper.TTLFieldMapper$TTLFieldType
+04:17:32.778 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.fieldvisitor.FieldsVisitor
+04:17:32.779 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.fetch.FetchPhase
+04:17:32.780 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.fetch.FetchPhase
+04:17:32.784 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.search.SearchService
+04:17:32.787 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.search.SearchTransportService
+04:17:32.787 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.action.search.SearchTransportService, method lambda$registerRequestHandler$684, and line number 311.
+04:17:32.789 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+04:17:32.790 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 8 is an irrelevant frame. We do not count it in the InterProcedural graph
+04:17:32.990 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
+04:17:59.195 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+04:17:59.208 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite

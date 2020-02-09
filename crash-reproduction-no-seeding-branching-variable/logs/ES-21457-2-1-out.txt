@@ -1,15 +1,50 @@
-09:42:36.602 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-09:42:36.606 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.index.query.QueryShardContext.nowInMillis(QueryShardContext:278)
-09:42:36.607 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.index.query.QueryShardContext
-09:42:36.607 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-09:42:37.800 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
-09:43:02.749 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-09:43:02.761 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-09:43:02.789 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
-09:43:02.789 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
-09:43:20.267 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
-09:43:20.292 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
-09:43:22.708 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
-09:43:25.003 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
-09:43:27.633 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'QueryShardContext_ESTest' to results/ES-21457-2-1
-09:43:27.653 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
+03:59:55.881 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+03:59:55.886 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.index.query.QueryShardContext.nowInMillis(QueryShardContext:278)
+03:59:55.886 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.index.query.QueryShardContext
+03:59:55.887 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+03:59:59.291 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.query.QueryShardContext
+03:59:59.292 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.query.QueryShardContext
+03:59:59.375 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
+04:00:28.761 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+04:00:28.773 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+04:00:28.801 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
+04:00:28.801 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+04:00:45.208 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+04:00:56.111 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@acc9af0: 1.3333333333333333
+04:00:56.111 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+04:00:56.111 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+04:01:06.486 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@acc9af0: 1.3333333333333333
+04:01:06.486 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
+04:01:06.487 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+04:01:16.993 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@acc9af0: 1.3333333333333333
+04:01:16.993 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #3 is created.
+04:01:16.994 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+04:01:24.754 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@acc9af0: 1.3333333333333333
+04:01:24.754 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #4 is created.
+04:01:24.754 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+04:01:30.326 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@acc9af0: 1.3333333333333333
+04:01:30.326 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #5 is created.
+04:01:30.326 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+04:01:35.662 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@acc9af0: 1.3333333333333333
+04:01:35.663 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #6 is created.
+04:01:35.663 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+04:01:47.017 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@acc9af0: 1.3333333333333333
+04:01:47.017 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #7 is created.
+04:01:47.017 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+04:01:54.176 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@acc9af0: 1.3333333333333333
+04:01:54.177 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #8 is created.
+04:01:54.177 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+04:01:58.261 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@acc9af0: 1.3333333333333333
+04:01:58.264 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #9 is created.
+04:01:58.264 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+04:02:04.211 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@acc9af0: 1.3333333333333333
+04:02:04.211 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #10 is created.
+04:02:04.211 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+04:02:13.217 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@acc9af0: 0.0
+04:02:13.217 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #11 is created.
+04:02:13.217 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
+04:02:13.226 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+04:02:13.347 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+04:02:14.871 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+04:02:18.662 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'QueryShardContext_ESTest' to results/ES-21457-2-1
+04:02:18.690 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
