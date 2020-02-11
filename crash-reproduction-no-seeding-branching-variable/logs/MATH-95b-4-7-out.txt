@@ -1,8 +1,19 @@
-22:45:44.215 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-22:45:44.218 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.distribution.FDistributionImpl.inverseCumulativeProbability(FDistributionImpl:106)
-22:45:44.218 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.distribution.FDistributionImpl
-22:45:44.218 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-22:45:44.474 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
-22:45:45.345 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-22:45:45.351 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-22:45:45.367 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class org.apache.commons.math.analysis.UnivariateRealSolverUtils was null!
+18:14:54.057 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+18:14:54.081 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.distribution.FDistributionImpl.inverseCumulativeProbability(FDistributionImpl:106)
+18:14:54.081 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.distribution.FDistributionImpl
+18:14:54.082 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+18:14:59.581 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.analysis.UnivariateRealSolverUtils
+18:14:59.589 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.analysis.UnivariateRealSolverUtils
+18:14:59.590 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.distribution.AbstractContinuousDistribution
+18:14:59.624 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.distribution.FDistributionImpl
+18:15:00.793 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+18:15:12.592 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+18:15:12.678 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+18:15:13.083 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 24: 
+18:15:13.093 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+18:15:16.380 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
+18:15:16.423 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+18:15:16.862 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+18:15:20.495 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+18:15:28.906 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'FDistributionImpl_ESTest' to results/MATH-95b-4-7
+18:15:29.003 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

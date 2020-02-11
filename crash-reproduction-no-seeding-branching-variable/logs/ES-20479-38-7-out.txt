@@ -1,8 +1,51 @@
-04:00:33.354 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-04:00:33.358 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.common.inject.InjectorImpl.createChildInjector(InjectorImpl:154)
-04:00:33.358 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.common.inject.InjectorImpl
-04:00:33.358 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-04:00:33.987 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 39.
-04:00:37.155 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-04:00:37.163 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-04:00:37.182 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class org.elasticsearch.index.analysis.CustomAnalyzerProvider was null!
+22:03:07.335 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+22:03:07.339 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.common.inject.InjectorImpl.createChildInjector(InjectorImpl:154)
+22:03:07.339 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.common.inject.InjectorImpl
+22:03:07.339 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+22:03:09.870 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class sun.reflect.DelegatingConstructorAccessorImpl was empty.
+22:03:09.873 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class java.lang.reflect.Constructor was empty.
+22:03:09.874 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.analysis.CustomAnalyzerProvider
+22:03:09.884 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.analysis.AnalysisService
+22:03:09.892 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.analysis.AnalysisService
+22:03:09.892 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing sun.reflect.DelegatingConstructorAccessorImpl
+22:03:09.892 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 4]Cannot load class sun.reflect.DelegatingConstructorAccessorImpl. We do not count it in the InterProcedural graph
+22:03:09.892 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.lang.reflect.Constructor
+22:03:09.892 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 5]Cannot load class java.lang.reflect.Constructor. We do not count it in the InterProcedural graph
+22:03:09.892 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1
+22:03:09.893 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ConstructorInjector
+22:03:09.894 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ConstructorBindingImpl$Factory
+22:03:09.894 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1
+22:03:09.894 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InjectorImpl
+22:03:09.895 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter
+22:03:09.895 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.Scopes$1$1
+22:03:09.895 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InternalFactoryToProviderAdapter
+22:03:09.895 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.SingleParameterInjector
+22:03:09.896 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.SingleParameterInjector
+22:03:09.896 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ConstructorInjector
+22:03:09.897 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ConstructorBindingImpl$Factory
+22:03:09.897 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1
+22:03:09.898 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InjectorImpl
+22:03:09.898 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter
+22:03:09.898 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.Scopes$1$1
+22:03:09.899 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InternalFactoryToProviderAdapter
+22:03:09.899 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.SingleParameterInjector
+22:03:09.899 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.SingleParameterInjector
+22:03:09.899 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ConstructorInjector
+22:03:09.901 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ConstructorBindingImpl$Factory
+22:03:09.901 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1
+22:03:09.901 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InjectorImpl
+22:03:09.901 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter
+22:03:09.902 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.Scopes$1$1
+22:03:09.902 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InternalFactoryToProviderAdapter
+22:03:09.903 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InjectorBuilder$1
+22:03:09.903 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InjectorBuilder$1
+22:03:09.903 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.common.inject.InjectorBuilder$1, method call, and line number 193.
+22:03:09.904 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 33 is an irrelevant frame. We do not count it in the InterProcedural graph
+22:03:09.904 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InjectorImpl
+22:03:09.904 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InjectorBuilder
+22:03:09.905 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InjectorBuilder
+22:03:09.905 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InjectorBuilder
+22:03:09.906 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InjectorImpl
+22:03:09.921 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
+22:03:09.928 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+22:03:10.093 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class sun.reflect.DelegatingConstructorAccessorImpl was null!

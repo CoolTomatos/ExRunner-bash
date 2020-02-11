@@ -1,8 +1,36 @@
-17:24:24.019 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-17:24:24.032 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.model.script.ModelScriptService.resolveSpace(ModelScriptService:335)
-17:24:24.033 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.model.script.ModelScriptService
-17:24:24.033 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-17:24:27.780 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 586.
-17:25:04.691 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-17:25:04.716 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-17:25:04.812 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class org.xwiki.model.internal.reference.ExplicitStringEntityReferenceResolver was null!
+15:02:32.386 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+15:02:32.391 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.model.script.ModelScriptService.resolveSpace(ModelScriptService:335)
+15:02:32.391 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.model.script.ModelScriptService
+15:02:32.391 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+15:02:41.821 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.model.internal.reference.ExplicitStringEntityReferenceResolver
+15:02:41.822 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.model.internal.reference.AbstractEntityReferenceResolver
+15:02:41.823 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.model.internal.reference.AbstractStringEntityReferenceResolver
+15:02:41.823 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.model.internal.reference.AbstractStringEntityReferenceResolver
+15:02:41.831 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.model.script.ModelScriptService
+15:02:41.877 [main] WARN  e.s.b.c.g.c.BotsingRawControlFlowGraph - method getDefaultReference(Lorg/xwiki/model/EntityType;[Ljava/lang/Object;)Lorg/xwiki/model/reference/EntityReference; does not have any exit point
+15:02:41.991 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 586.
+15:03:27.090 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+15:03:27.151 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+15:03:27.664 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 34: 
+15:03:27.665 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+15:03:47.450 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/34
+15:03:51.213 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@5e664f7d: 4.75
+15:03:51.214 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+15:03:51.215 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/34
+15:03:53.748 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@5e664f7d: 1.3333333333333333
+15:03:53.748 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
+15:03:53.767 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 2/34
+15:03:57.055 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@5e664f7d: 1.3333333333333333
+15:03:57.055 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #3 is created.
+15:03:57.056 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 4/34
+15:03:59.123 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@5e664f7d: 1.3333333333333333
+15:03:59.124 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #4 is created.
+15:03:59.124 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 4/34
+15:04:01.031 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@5e664f7d: 0.0
+15:04:01.032 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #5 is created.
+15:04:01.081 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
+15:04:01.153 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+15:04:01.859 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+15:04:11.061 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+15:04:26.010 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'ModelScriptService_ESTest' to results/XWIKI-13942-5-5
+15:04:26.053 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

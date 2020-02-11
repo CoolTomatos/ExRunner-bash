@@ -1,8 +1,25 @@
-14:40:31.182 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-14:40:31.186 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.cluster.service.ClusterService$UpdateTask.run(ClusterService$UpdateTask:1112)
-14:40:31.186 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.cluster.service.ClusterService$UpdateTask
-14:40:31.186 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-14:40:31.581 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 36.
-14:40:42.075 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-14:40:42.082 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-14:40:42.097 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class org.elasticsearch.index.mapper.ParentFieldMapper was null!
+01:59:27.781 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+01:59:27.787 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.cluster.service.ClusterService$UpdateTask.run(ClusterService$UpdateTask:1112)
+01:59:27.787 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.cluster.service.ClusterService$UpdateTask
+01:59:27.787 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+01:59:35.569 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages.class' should be in target project!
+01:59:35.570 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+01:59:35.572 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages_en.class' should be in target project!
+01:59:35.572 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+01:59:37.631 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.mapper.ParentFieldMapper
+01:59:37.633 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.mapper.FieldMapper
+01:59:37.648 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.mapper.MetadataFieldMapper
+01:59:37.648 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.mapper.Mapping
+01:59:37.649 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.mapper.DocumentMapper
+01:59:37.650 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor
+01:59:37.655 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor
+01:59:37.681 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.cluster.service.ClusterService
+01:59:37.685 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.cluster.service.ClusterService
+01:59:37.686 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.cluster.service.ClusterService
+01:59:37.711 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.cluster.service.ClusterService$UpdateTask
+01:59:38.586 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 36.
+02:00:01.373 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+02:00:01.383 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+02:00:03.511 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 24: 
+02:00:03.511 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+02:00:10.752 [main] ERROR e.s.b.f.t.f.StackTraceChromosomeFactory - Guided initialization failed. Please revise the target class and method!

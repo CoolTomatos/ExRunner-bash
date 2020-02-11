@@ -1,15 +1,20 @@
-23:15:57.912 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-23:15:57.915 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.transport.netty.NettyTransport.parse(NettyTransport:668)
-23:15:57.915 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.transport.netty.NettyTransport
-23:15:57.915 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-23:15:59.314 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 42.
-23:16:06.761 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-23:16:06.767 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-23:16:06.786 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 16: 
-23:16:06.787 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
-23:16:11.380 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
-23:16:11.405 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
-23:16:11.461 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
-23:16:12.617 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
-23:16:13.304 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'NettyTransport_ESTest' to results/ES-14457-1-6
-23:16:13.312 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
+18:41:28.461 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+18:41:28.469 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.transport.netty.NettyTransport.parse(NettyTransport:668)
+18:41:28.469 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.transport.netty.NettyTransport
+18:41:28.470 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+18:41:38.406 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages.class' should be in target project!
+18:41:38.406 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+18:41:38.408 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages_en.class' should be in target project!
+18:41:38.408 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+18:41:39.156 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.transport.netty.NettyTransport
+18:41:39.356 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 42.
+18:42:07.007 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+18:42:07.019 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+18:42:07.867 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 10: 
+18:42:07.867 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+18:42:12.746 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
+18:42:12.783 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+18:42:12.931 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+18:42:15.755 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+18:42:17.945 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'NettyTransport_ESTest' to results/ES-14457-1-6
+18:42:17.967 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

@@ -1,8 +1,38 @@
-02:37:10.426 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-02:37:10.430 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter$1:47)
-02:37:10.430 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1
-02:37:10.430 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-02:37:10.678 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 39.
-02:37:12.608 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-02:37:12.613 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-02:37:12.646 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class org.elasticsearch.index.analysis.CustomAnalyzerProvider was null!
+20:37:42.186 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+20:37:42.192 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter$1:47)
+20:37:42.193 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1
+20:37:42.193 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+20:37:50.573 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class sun.reflect.DelegatingConstructorAccessorImpl was empty.
+20:37:50.574 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class java.lang.reflect.Constructor was empty.
+20:37:50.575 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.analysis.CustomAnalyzerProvider
+20:37:50.578 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.analysis.AnalysisService
+20:37:50.602 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.analysis.AnalysisService
+20:37:50.603 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing sun.reflect.DelegatingConstructorAccessorImpl
+20:37:50.604 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 4]Cannot load class sun.reflect.DelegatingConstructorAccessorImpl. We do not count it in the InterProcedural graph
+20:37:50.604 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.lang.reflect.Constructor
+20:37:50.604 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 5]Cannot load class java.lang.reflect.Constructor. We do not count it in the InterProcedural graph
+20:37:50.604 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1
+20:37:50.605 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ConstructorInjector
+20:37:50.608 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ConstructorBindingImpl$Factory
+20:37:50.609 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1
+20:37:50.610 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InjectorImpl
+20:37:50.611 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter
+20:37:50.612 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.Scopes$1$1
+20:37:50.612 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InternalFactoryToProviderAdapter
+20:37:50.612 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.SingleParameterInjector
+20:37:50.613 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.SingleParameterInjector
+20:37:50.613 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ConstructorInjector
+20:37:50.615 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ConstructorBindingImpl$Factory
+20:37:50.615 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1
+20:37:50.615 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InjectorImpl
+20:37:50.616 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter
+20:37:50.616 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.Scopes$1$1
+20:37:50.617 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InternalFactoryToProviderAdapter
+20:37:50.617 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.SingleParameterInjector
+20:37:50.618 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.SingleParameterInjector
+20:37:50.618 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ConstructorInjector
+20:37:50.620 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ConstructorBindingImpl$Factory
+20:37:50.620 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1
+20:37:50.669 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
+20:37:50.701 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+20:37:51.169 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class sun.reflect.DelegatingConstructorAccessorImpl was null!

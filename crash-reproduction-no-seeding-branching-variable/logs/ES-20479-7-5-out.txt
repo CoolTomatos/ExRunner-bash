@@ -1,8 +1,19 @@
-03:22:40.773 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-03:22:40.776 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector:86)
-03:22:40.776 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.common.inject.ConstructorInjector
-03:22:40.777 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-03:22:41.121 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 39.
-03:22:43.998 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-03:22:44.005 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-03:22:44.021 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class org.elasticsearch.index.analysis.CustomAnalyzerProvider was null!
+21:26:24.717 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+21:26:24.722 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector:86)
+21:26:24.722 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.common.inject.ConstructorInjector
+21:26:24.722 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+21:26:27.071 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class sun.reflect.DelegatingConstructorAccessorImpl was empty.
+21:26:27.072 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class java.lang.reflect.Constructor was empty.
+21:26:27.073 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.analysis.CustomAnalyzerProvider
+21:26:27.075 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.analysis.AnalysisService
+21:26:27.081 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.analysis.AnalysisService
+21:26:27.082 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing sun.reflect.DelegatingConstructorAccessorImpl
+21:26:27.082 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 4]Cannot load class sun.reflect.DelegatingConstructorAccessorImpl. We do not count it in the InterProcedural graph
+21:26:27.082 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.lang.reflect.Constructor
+21:26:27.082 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 5]Cannot load class java.lang.reflect.Constructor. We do not count it in the InterProcedural graph
+21:26:27.082 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1
+21:26:27.082 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ConstructorInjector
+21:26:27.238 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 39.
+21:26:30.093 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+21:26:30.104 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+21:26:30.236 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class sun.reflect.DelegatingConstructorAccessorImpl was null!

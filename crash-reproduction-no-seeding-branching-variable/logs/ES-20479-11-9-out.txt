@@ -1,8 +1,23 @@
-04:17:13.622 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-04:17:13.625 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter:43)
-04:17:13.626 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter
-04:17:13.626 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-04:17:13.906 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 39.
-04:17:16.786 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-04:17:16.794 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-04:17:16.812 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class org.elasticsearch.index.analysis.CustomAnalyzerProvider was null!
+22:19:49.040 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+22:19:49.044 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter:43)
+22:19:49.044 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter
+22:19:49.044 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+22:19:51.916 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class sun.reflect.DelegatingConstructorAccessorImpl was empty.
+22:19:51.919 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class java.lang.reflect.Constructor was empty.
+22:19:51.919 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.analysis.CustomAnalyzerProvider
+22:19:51.922 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.analysis.AnalysisService
+22:19:51.927 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.analysis.AnalysisService
+22:19:51.927 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing sun.reflect.DelegatingConstructorAccessorImpl
+22:19:51.927 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 4]Cannot load class sun.reflect.DelegatingConstructorAccessorImpl. We do not count it in the InterProcedural graph
+22:19:51.928 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.lang.reflect.Constructor
+22:19:51.928 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 5]Cannot load class java.lang.reflect.Constructor. We do not count it in the InterProcedural graph
+22:19:51.928 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1
+22:19:51.928 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ConstructorInjector
+22:19:51.929 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ConstructorBindingImpl$Factory
+22:19:51.930 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1
+22:19:51.930 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.InjectorImpl
+22:19:51.930 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter
+22:19:52.048 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 39.
+22:19:55.270 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+22:19:55.277 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+22:19:55.394 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class sun.reflect.DelegatingConstructorAccessorImpl was null!

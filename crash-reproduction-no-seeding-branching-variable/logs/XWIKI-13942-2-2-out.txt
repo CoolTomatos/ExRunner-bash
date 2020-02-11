@@ -1,8 +1,21 @@
-17:24:17.498 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-17:24:17.502 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.model.internal.reference.AbstractEntityReferenceResolver.resolveDefaultReference(AbstractEntityReferenceResolver:77)
-17:24:17.502 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.model.internal.reference.AbstractEntityReferenceResolver
-17:24:17.502 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-17:24:18.500 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 586.
-17:24:53.698 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-17:24:53.723 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-17:24:53.755 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class org.xwiki.model.internal.reference.ExplicitStringEntityReferenceResolver was null!
+15:02:26.272 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+15:02:26.276 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.model.internal.reference.AbstractEntityReferenceResolver.resolveDefaultReference(AbstractEntityReferenceResolver:77)
+15:02:26.276 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.model.internal.reference.AbstractEntityReferenceResolver
+15:02:26.276 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+15:02:28.489 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.model.internal.reference.ExplicitStringEntityReferenceResolver
+15:02:28.490 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.model.internal.reference.AbstractEntityReferenceResolver
+15:02:28.497 [main] WARN  e.s.b.c.g.c.BotsingRawControlFlowGraph - method getDefaultReference(Lorg/xwiki/model/EntityType;[Ljava/lang/Object;)Lorg/xwiki/model/reference/EntityReference; does not have any exit point
+15:02:28.512 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 586.
+15:03:08.881 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+15:03:08.897 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+15:03:09.232 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 14: 
+15:03:09.233 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+15:03:14.743 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/14
+15:03:16.209 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@4df7f1f: 0.0
+15:03:16.210 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+15:03:16.210 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
+15:03:16.274 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+15:03:16.463 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+15:03:18.463 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+15:03:30.897 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'AbstractEntityReferenceResolver_ESTest' to results/XWIKI-13942-2-2
+15:03:30.957 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

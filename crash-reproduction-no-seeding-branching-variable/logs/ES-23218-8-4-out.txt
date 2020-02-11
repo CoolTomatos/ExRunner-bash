@@ -1,6 +1,22 @@
-21:56:38.011 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
-21:56:38.014 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.node.Node.<init>(Node:232)
-21:56:38.014 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.node.Node
-21:56:38.014 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-21:56:39.312 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 36.
-21:56:42.184 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
+06:37:22.712 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
+06:37:22.715 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.node.Node.<init>(Node:232)
+06:37:22.715 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.node.Node
+06:37:22.715 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+06:37:24.982 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages.class' should be in target project!
+06:37:24.983 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+06:37:24.984 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages_en.class' should be in target project!
+06:37:24.984 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+06:37:26.597 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class java.util.regex.Matcher was empty.
+06:37:26.599 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.util.regex.Matcher
+06:37:26.599 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 1]Cannot load class java.util.regex.Matcher. We do not count it in the InterProcedural graph
+06:37:26.599 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.monitor.os.OsProbe
+06:37:26.600 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.monitor.os.OsProbe
+06:37:26.602 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.monitor.os.OsProbe
+06:37:26.602 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.monitor.os.OsService
+06:37:26.603 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.monitor.MonitorService
+06:37:26.603 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.node.Node
+06:37:26.648 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.node.Node
+06:37:27.032 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 36.
+06:37:41.092 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+06:37:41.100 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+06:37:41.117 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class java.util.regex.Matcher was null!

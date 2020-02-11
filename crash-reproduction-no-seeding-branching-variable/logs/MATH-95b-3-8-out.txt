@@ -1,8 +1,27 @@
-22:45:46.157 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-22:45:46.160 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.distribution.AbstractContinuousDistribution.inverseCumulativeProbability(AbstractContinuousDistribution:84)
-22:45:46.160 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.distribution.AbstractContinuousDistribution
-22:45:46.160 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-22:45:46.409 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
-22:45:47.468 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-22:45:47.475 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-22:45:47.491 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class org.apache.commons.math.analysis.UnivariateRealSolverUtils was null!
+18:15:10.712 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+18:15:10.744 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.distribution.AbstractContinuousDistribution.inverseCumulativeProbability(AbstractContinuousDistribution:84)
+18:15:10.745 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.distribution.AbstractContinuousDistribution
+18:15:10.745 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+18:15:16.498 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.analysis.UnivariateRealSolverUtils
+18:15:16.570 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.analysis.UnivariateRealSolverUtils
+18:15:16.570 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.distribution.AbstractContinuousDistribution
+18:15:17.631 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+18:15:31.677 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+18:15:31.710 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+18:15:31.863 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 24: 
+18:15:31.877 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+18:15:35.137 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/24
+18:15:36.328 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@5b02a9a3: 3.6666666666666665
+18:15:36.328 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+18:15:36.337 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/24
+18:15:37.588 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@5b02a9a3: 3.6666666666666665
+18:15:37.588 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
+18:15:37.588 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/24
+18:15:38.833 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@5b02a9a3: 0.0
+18:15:38.834 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #3 is created.
+18:15:38.835 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
+18:15:38.888 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+18:15:39.236 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+18:15:41.252 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+18:15:46.925 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'AbstractContinuousDistribution_ESTest' to results/MATH-95b-3-8
+18:15:46.953 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

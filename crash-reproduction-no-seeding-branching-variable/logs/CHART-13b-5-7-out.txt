@@ -1,8 +1,16 @@
-22:04:27.290 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-22:04:27.292 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.jfree.chart.block.BorderArrangement.arrange(BorderArrangement:149)
-22:04:27.292 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.jfree.chart.block.BorderArrangement
-22:04:27.292 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-22:04:27.847 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 8.
-22:04:32.392 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-22:04:32.398 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-22:04:32.410 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class org.jfree.data.Range was null!
+17:55:39.707 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+17:55:39.711 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.jfree.chart.block.BorderArrangement.arrange(BorderArrangement:149)
+17:55:39.711 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.jfree.chart.block.BorderArrangement
+17:55:39.712 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+17:55:46.954 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.jfree.data.Range
+17:55:46.956 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.jfree.chart.block.BorderArrangement
+17:55:46.956 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.jfree.chart.block.BorderArrangement, method arrangeFF, and line number 454.
+17:55:47.000 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+17:55:47.000 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 2 is an irrelevant frame. We do not count it in the InterProcedural graph
+17:55:47.000 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.jfree.chart.block.BorderArrangement
+17:55:47.003 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.jfree.chart.block.BorderArrangement
+17:55:47.030 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.jfree.chart.block.BorderArrangement
+17:55:47.596 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
+17:55:47.659 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+17:55:48.307 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 28: 
+17:55:48.308 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA

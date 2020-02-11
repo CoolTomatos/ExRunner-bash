@@ -1,8 +1,20 @@
-13:48:29.856 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-13:48:29.859 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.cluster.metadata.IndexMetaData$Builder.build(IndexMetaData$Builder:1026)
-13:48:29.859 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.cluster.metadata.IndexMetaData$Builder
-13:48:29.860 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-13:48:30.674 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 36.
-13:48:41.370 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-13:48:41.376 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-13:48:41.389 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class org.elasticsearch.cluster.node.DiscoveryNodeFilters was null!
+01:37:35.189 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+01:37:35.192 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.cluster.metadata.IndexMetaData$Builder.build(IndexMetaData$Builder:1026)
+01:37:35.192 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.cluster.metadata.IndexMetaData$Builder
+01:37:35.193 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+01:37:37.817 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.cluster.node.DiscoveryNodeFilters
+01:37:37.817 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.cluster.node.DiscoveryNodeFilters, method lambda$static$0, and line number 58.
+01:37:37.819 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+01:37:37.819 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 1 is an irrelevant frame. We do not count it in the InterProcedural graph
+01:37:37.819 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.settings.Setting$3
+01:37:37.819 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.common.settings.Setting$3, method get, and line number 908.
+01:37:37.820 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+01:37:37.820 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 2 is an irrelevant frame. We do not count it in the InterProcedural graph
+01:37:37.820 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.settings.Setting$3
+01:37:37.820 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.common.settings.Setting$3, method get, and line number 885.
+01:37:37.820 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 3 is an irrelevant frame. We do not count it in the InterProcedural graph
+01:37:37.820 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.cluster.metadata.IndexMetaData$Builder
+01:37:38.025 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 36.
+01:37:50.608 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+01:37:50.615 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+01:37:50.630 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this line number 58 does not found!

@@ -1,8 +1,29 @@
-11:19:23.981 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-11:19:23.984 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.http.netty4.pipelining.HttpPipeliningHandler.channelRead(HttpPipeliningHandler:66)
-11:19:23.984 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.http.netty4.pipelining.HttpPipeliningHandler
-11:19:23.984 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-11:19:24.354 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 78.
-11:19:32.527 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-11:19:32.535 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-11:19:32.549 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class org.elasticsearch.rest.RestUtils was null!
+00:13:32.796 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+00:13:32.814 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.http.netty4.pipelining.HttpPipeliningHandler.channelRead(HttpPipeliningHandler:66)
+00:13:32.815 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.http.netty4.pipelining.HttpPipeliningHandler
+00:13:32.815 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+00:13:40.856 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.rest.RestUtils
+00:13:40.917 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.rest.RestUtils
+00:13:40.918 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.rest.RestUtils
+00:13:40.918 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.rest.RestUtils
+00:13:40.921 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.rest.RestRequest
+00:13:40.923 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.http.netty4.Netty4HttpRequest
+00:13:40.925 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.http.netty4.Netty4HttpRequestHandler
+00:13:40.926 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing io.netty.channel.SimpleChannelInboundHandler
+00:13:40.926 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing io.netty.channel.AbstractChannelHandlerContext
+00:13:40.927 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class io.netty.channel.AbstractChannelHandlerContext, method invokeChannelRead, and line number 372.
+00:13:40.933 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+00:13:40.933 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 9 is an irrelevant frame. We do not count it in the InterProcedural graph
+00:13:40.934 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing io.netty.channel.AbstractChannelHandlerContext
+00:13:40.934 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class io.netty.channel.AbstractChannelHandlerContext, method invokeChannelRead, and line number 358.
+00:13:40.938 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 10 is an irrelevant frame. We do not count it in the InterProcedural graph
+00:13:40.938 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing io.netty.channel.AbstractChannelHandlerContext
+00:13:40.939 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class io.netty.channel.AbstractChannelHandlerContext, method fireChannelRead, and line number 350.
+00:13:40.939 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Found 11 candidates to repair the stack trace line number
+00:13:40.939 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - detect_missing_line option is enabled.We will make a link beetween each of the lin
+00:13:40.944 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Selected candidate is in line 340 of method fireChannelRead(Ljava/lang/Object;)Lio/netty/channel/ChannelHandlerContext;
+00:13:40.945 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.http.netty4.pipelining.HttpPipeliningHandler
+00:13:41.213 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 78.
+00:14:04.357 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+00:14:04.368 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+00:14:04.402 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this line number 372 does not found!

@@ -1,8 +1,267 @@
-23:19:16.125 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-23:19:16.128 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.node.Node.<init>(Node:198)
-23:19:16.128 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.node.Node
-23:19:16.128 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-23:19:16.898 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 42.
-23:19:27.868 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-23:19:27.875 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-23:19:27.891 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class org.elasticsearch.transport.netty.NettyTransport was null!
+18:47:17.744 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+18:47:17.763 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.node.Node.<init>(Node:198)
+18:47:17.764 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.node.Node
+18:47:17.764 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+18:47:32.434 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages.class' should be in target project!
+18:47:32.435 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+18:47:32.453 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages_en.class' should be in target project!
+18:47:32.453 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+18:47:44.310 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.transport.netty.NettyTransport
+18:47:44.313 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.transport.netty.NettyTransport
+18:47:44.313 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.transport.TransportService
+18:47:44.314 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.discovery.zen.ping.unicast.UnicastZenPing
+18:47:44.316 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.node.Node
+18:47:44.317 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.node.Node, method <init>, and line number 198.
+18:47:44.335 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+18:47:44.335 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 5 is an irrelevant frame. We do not count it in the InterProcedural graph
+18:47:44.581 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 42.
+18:48:43.017 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+18:48:43.043 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+18:48:44.974 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 15: 
+18:48:44.974 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+18:48:50.572 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+18:49:34.891 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+18:49:34.892 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+18:49:34.892 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+18:51:44.403 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+18:51:44.403 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
+18:51:44.403 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+18:54:20.085 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+18:54:20.086 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #3 is created.
+18:54:20.086 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+18:56:38.516 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+18:56:38.516 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #4 is created.
+18:56:38.516 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+18:57:18.379 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+18:57:18.380 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #5 is created.
+18:57:18.380 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+18:58:19.420 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+18:58:19.420 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #6 is created.
+18:58:19.421 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+18:58:44.326 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+18:58:44.341 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #7 is created.
+18:58:44.341 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+18:59:26.918 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+18:59:26.918 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #8 is created.
+18:59:26.918 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+18:59:51.318 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+18:59:51.319 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #9 is created.
+18:59:51.319 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:00:28.299 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:00:28.300 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #10 is created.
+19:00:28.300 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:00:50.955 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:00:51.005 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #11 is created.
+19:00:51.005 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:02:02.112 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:02:02.145 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #12 is created.
+19:02:02.145 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:02:13.840 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:02:13.840 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #13 is created.
+19:02:13.840 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:04:27.419 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:04:27.420 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #14 is created.
+19:04:27.420 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:04:44.495 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:04:44.495 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #15 is created.
+19:04:44.496 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:04:50.407 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:04:50.407 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #16 is created.
+19:04:50.408 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:05:11.297 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:05:11.297 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #17 is created.
+19:05:11.297 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:05:30.981 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:05:30.981 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #18 is created.
+19:05:30.981 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:05:41.312 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:05:41.312 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #19 is created.
+19:05:41.313 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:05:48.262 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:05:48.264 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #20 is created.
+19:05:48.264 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:06:24.741 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:06:24.741 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #21 is created.
+19:06:24.741 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:07:08.110 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:07:08.111 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #22 is created.
+19:07:08.111 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:07:25.982 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:07:25.983 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #23 is created.
+19:07:25.983 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:07:32.374 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:07:32.374 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #24 is created.
+19:07:32.375 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:07:46.783 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:07:46.784 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #25 is created.
+19:07:46.801 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:07:47.863 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:07:47.863 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #26 is created.
+19:07:47.863 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:07:51.907 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:07:51.909 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #27 is created.
+19:07:51.938 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:07:57.374 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:07:57.374 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #28 is created.
+19:07:57.374 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:08:18.242 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:08:18.242 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #29 is created.
+19:08:18.242 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:08:22.036 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:08:22.036 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #30 is created.
+19:08:22.036 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:08:30.070 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:08:30.070 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #31 is created.
+19:08:30.070 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:08:36.809 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:08:36.809 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #32 is created.
+19:08:36.809 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:08:49.700 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:08:49.700 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #33 is created.
+19:08:49.700 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:08:54.813 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:08:54.813 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #34 is created.
+19:08:54.813 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:09:00.557 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:09:00.560 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #35 is created.
+19:09:00.560 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:09:05.615 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:09:05.615 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #36 is created.
+19:09:05.615 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:09:15.596 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:09:15.596 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #37 is created.
+19:09:15.596 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:09:18.642 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:09:18.642 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #38 is created.
+19:09:18.642 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:09:20.223 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:09:20.223 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #39 is created.
+19:09:20.223 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:09:21.849 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:09:21.849 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #40 is created.
+19:09:21.850 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:09:23.821 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:09:23.822 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #41 is created.
+19:09:23.822 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:09:27.908 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:09:27.908 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #42 is created.
+19:09:27.920 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:09:29.770 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:09:29.770 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #43 is created.
+19:09:29.771 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:09:35.027 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:09:35.027 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #44 is created.
+19:09:35.027 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:09:47.426 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:09:47.426 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #45 is created.
+19:09:47.426 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:10:27.843 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:10:27.844 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #46 is created.
+19:10:27.844 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:10:41.126 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:10:41.126 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #47 is created.
+19:10:41.126 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:10:47.862 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:10:47.862 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #48 is created.
+19:10:47.862 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:10:48.621 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:10:48.621 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #49 is created.
+19:10:48.623 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:11:29.222 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:11:29.222 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #50 is created.
+19:11:29.222 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:11:59.701 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:11:59.702 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #51 is created.
+19:11:59.702 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:12:15.023 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:12:15.027 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #52 is created.
+19:12:15.027 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:12:28.255 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:12:28.256 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #53 is created.
+19:12:28.256 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:12:29.455 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:12:29.455 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #54 is created.
+19:12:29.455 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:12:48.640 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:12:48.641 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #55 is created.
+19:12:48.643 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:12:50.028 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:12:50.028 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #56 is created.
+19:12:50.028 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:12:55.852 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:12:55.852 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #57 is created.
+19:12:55.852 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:13:02.589 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:13:02.590 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #58 is created.
+19:13:02.590 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:13:05.890 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:13:05.890 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #59 is created.
+19:13:05.890 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:14:06.377 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:14:06.392 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #60 is created.
+19:14:06.392 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:14:37.061 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:14:37.061 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #61 is created.
+19:14:37.062 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:14:53.205 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:14:53.206 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #62 is created.
+19:14:53.206 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:15:30.410 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:15:30.410 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #63 is created.
+19:15:30.430 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:15:33.815 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:15:33.815 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #64 is created.
+19:15:33.816 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:15:45.361 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:15:45.361 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #65 is created.
+19:15:45.361 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:15:54.783 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:15:54.784 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #66 is created.
+19:15:54.784 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:15:55.350 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:15:55.350 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #67 is created.
+19:15:55.351 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:16:15.808 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:16:15.809 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #68 is created.
+19:16:15.809 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:16:21.598 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:16:21.599 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #69 is created.
+19:16:21.599 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:16:49.855 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:16:49.855 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #70 is created.
+19:16:49.855 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:16:56.156 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:16:56.156 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #71 is created.
+19:16:56.157 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:17:03.468 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:17:03.470 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #72 is created.
+19:17:03.470 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:17:11.466 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:17:11.466 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #73 is created.
+19:17:11.466 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:17:30.001 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:17:30.002 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #74 is created.
+19:17:30.002 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:17:36.707 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:17:36.707 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #75 is created.
+19:17:36.707 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:17:39.908 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:17:39.908 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #76 is created.
+19:17:39.908 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:18:09.061 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:18:09.062 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #77 is created.
+19:18:09.077 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:18:11.740 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:18:11.749 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #78 is created.
+19:18:11.749 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:18:14.954 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:18:14.954 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #79 is created.
+19:18:14.954 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/15
+19:18:48.307 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@329983c4: 4.9714285714285715
+19:18:48.307 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #80 is created.
+19:18:48.389 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: GlobalTime :                   1,805 / 1,800        Finished!
+19:18:48.404 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+19:18:48.450 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+19:18:51.427 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+19:18:51.493 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'Node_ESTest' to results/ES-14457-5-7
+19:18:51.663 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

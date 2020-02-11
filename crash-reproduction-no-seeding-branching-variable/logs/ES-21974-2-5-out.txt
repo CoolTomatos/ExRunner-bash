@@ -1,24 +1,74 @@
-11:21:07.376 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-11:21:07.379 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.rest.RestUtils.decodeComponent(RestUtils:139)
-11:21:07.379 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.rest.RestUtils
-11:21:07.379 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-11:21:07.856 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 78.
-11:21:18.538 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-11:21:18.546 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-11:21:18.563 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 25: 
-11:21:18.563 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
-11:21:20.376 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 11/25
-11:21:20.643 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@11b4a8cb: 1.4285714285714286
-11:21:20.643 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
-11:21:20.644 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 11/25
-11:21:21.274 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@11b4a8cb: 1.4285714285714286
-11:21:21.275 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
-11:21:21.275 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 11/25
-11:21:22.984 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@11b4a8cb: 0.0
-11:21:22.985 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #3 is created.
-11:21:22.985 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
-11:21:23.004 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
-11:21:23.057 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
-11:21:23.471 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
-11:21:24.766 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'RestUtils_ESTest' to results/ES-21974-2-5
-11:21:24.772 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
+00:17:16.732 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+00:17:16.742 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.rest.RestUtils.decodeComponent(RestUtils:139)
+00:17:16.742 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.rest.RestUtils
+00:17:16.742 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+00:17:19.824 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.rest.RestUtils
+00:17:19.872 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.rest.RestUtils
+00:17:19.971 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 78.
+00:17:53.001 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+00:17:53.011 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+00:17:53.059 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 19: 
+00:17:53.059 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+00:17:58.916 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 6/19
+00:18:01.090 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.4444444444444444
+00:18:01.090 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+00:18:01.090 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 6/19
+00:18:02.062 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.4444444444444444
+00:18:02.063 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
+00:18:02.063 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 6/19
+00:18:03.143 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.4444444444444444
+00:18:03.143 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #3 is created.
+00:18:03.144 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 6/19
+00:18:04.196 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.4444444444444444
+00:18:04.196 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #4 is created.
+00:18:04.197 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 6/19
+00:18:06.651 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.4444444444444444
+00:18:06.651 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #5 is created.
+00:18:06.652 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 6/19
+00:18:07.660 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.4285714285714286
+00:18:07.661 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #6 is created.
+00:18:07.661 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 6/19
+00:18:08.158 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.3333333333333333
+00:18:08.158 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #7 is created.
+00:18:08.158 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 7/19
+00:18:09.568 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.3333333333333333
+00:18:09.568 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #8 is created.
+00:18:09.569 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 7/19
+00:18:10.171 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.3333333333333333
+00:18:10.174 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #9 is created.
+00:18:10.175 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 7/19
+00:18:10.598 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.3333333333333333
+00:18:10.598 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #10 is created.
+00:18:10.599 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 7/19
+00:18:10.919 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.3333333333333333
+00:18:10.919 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #11 is created.
+00:18:10.920 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 7/19
+00:18:11.776 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.3333333333333333
+00:18:11.776 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #12 is created.
+00:18:11.778 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 7/19
+00:18:12.116 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.3333333333333333
+00:18:12.117 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #13 is created.
+00:18:12.117 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 7/19
+00:18:12.627 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.3333333333333333
+00:18:12.629 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #14 is created.
+00:18:12.629 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 8/19
+00:18:13.090 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.3333333333333333
+00:18:13.091 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #15 is created.
+00:18:13.091 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 8/19
+00:18:13.567 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.3333333333333333
+00:18:13.567 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #16 is created.
+00:18:13.568 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 8/19
+00:18:13.956 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.3333333333333333
+00:18:13.956 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #17 is created.
+00:18:13.957 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 8/19
+00:18:14.250 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 1.3333333333333333
+00:18:14.251 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #18 is created.
+00:18:14.252 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 8/19
+00:18:14.759 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@453204ab: 0.0
+00:18:14.759 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #19 is created.
+00:18:14.761 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
+00:18:14.795 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+00:18:14.845 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+00:18:15.951 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+00:18:19.532 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'RestUtils_ESTest' to results/ES-21974-2-5
+00:18:19.550 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

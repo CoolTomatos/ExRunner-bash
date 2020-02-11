@@ -1,8 +1,65 @@
-17:24:17.788 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-17:24:17.792 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.model.internal.reference.AbstractStringEntityReferenceResolver.resolve(AbstractStringEntityReferenceResolver:155)
-17:24:17.792 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.model.internal.reference.AbstractStringEntityReferenceResolver
-17:24:17.793 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-17:24:19.627 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 586.
-17:24:58.897 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-17:24:58.921 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-17:24:58.986 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class org.xwiki.model.internal.reference.ExplicitStringEntityReferenceResolver was null!
+15:02:26.525 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+15:02:26.529 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.model.internal.reference.AbstractStringEntityReferenceResolver.resolve(AbstractStringEntityReferenceResolver:155)
+15:02:26.529 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.model.internal.reference.AbstractStringEntityReferenceResolver
+15:02:26.530 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+15:02:29.194 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.model.internal.reference.ExplicitStringEntityReferenceResolver
+15:02:29.195 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.model.internal.reference.AbstractEntityReferenceResolver
+15:02:29.196 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.model.internal.reference.AbstractStringEntityReferenceResolver
+15:02:29.196 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.model.internal.reference.AbstractStringEntityReferenceResolver
+15:02:29.207 [main] WARN  e.s.b.c.g.c.BotsingRawControlFlowGraph - method getDefaultReference(Lorg/xwiki/model/EntityType;[Ljava/lang/Object;)Lorg/xwiki/model/reference/EntityReference; does not have any exit point
+15:02:29.274 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 586.
+15:03:12.952 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+15:03:13.004 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+15:03:13.565 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 34: 
+15:03:13.565 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+15:03:21.227 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/34
+15:03:23.968 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@734131a9: 4.5
+15:03:23.969 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+15:03:23.969 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/34
+15:03:25.754 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@734131a9: 4.5
+15:03:25.755 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
+15:03:25.755 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/34
+15:03:27.276 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@734131a9: 2.0
+15:03:27.276 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #3 is created.
+15:03:27.313 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 4/34
+15:03:28.642 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@734131a9: 2.0
+15:03:28.643 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #4 is created.
+15:03:28.644 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 4/34
+15:03:30.002 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@734131a9: 2.0
+15:03:30.003 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #5 is created.
+15:03:30.003 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 5/34
+15:03:31.428 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@734131a9: 2.0
+15:03:31.428 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #6 is created.
+15:03:31.428 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 6/34
+15:03:32.887 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@734131a9: 2.0
+15:03:32.887 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #7 is created.
+15:03:32.888 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 6/34
+15:03:34.469 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@734131a9: 2.0
+15:03:34.493 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #8 is created.
+15:03:34.494 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 6/34
+15:03:35.775 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@734131a9: 2.0
+15:03:35.776 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #9 is created.
+15:03:35.776 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 6/34
+15:03:37.144 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@734131a9: 2.0
+15:03:37.144 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #10 is created.
+15:03:37.165 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 7/34
+15:03:38.398 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@734131a9: 2.0
+15:03:38.398 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #11 is created.
+15:03:38.399 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 7/34
+15:03:39.420 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@734131a9: 2.0
+15:03:39.421 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #12 is created.
+15:03:39.421 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 7/34
+15:03:40.307 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@734131a9: 2.0
+15:03:40.307 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #13 is created.
+15:03:40.307 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 7/34
+15:03:41.537 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@734131a9: 2.0
+15:03:41.537 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #14 is created.
+15:03:41.537 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 7/34
+15:03:42.560 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@734131a9: 0.0
+15:03:42.560 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #15 is created.
+15:03:42.589 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
+15:03:42.609 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+15:03:42.768 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+15:03:49.584 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+15:04:04.032 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'AbstractStringEntityReferenceResolver_ESTest' to results/XWIKI-13942-4-2
+15:04:04.053 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

@@ -1,6 +1,26 @@
-13:46:38.372 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-13:46:38.375 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.gateway.MetaDataStateFormat.read(MetaDataStateFormat:202)
-13:46:38.375 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.gateway.MetaDataStateFormat
-13:46:38.375 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-13:46:38.803 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 36.
-13:46:40.972 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
+01:34:14.486 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+01:34:14.495 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.gateway.MetaDataStateFormat.read(MetaDataStateFormat:202)
+01:34:14.495 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.gateway.MetaDataStateFormat
+01:34:14.495 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+01:34:20.273 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.cluster.node.DiscoveryNodeFilters
+01:34:20.273 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.cluster.node.DiscoveryNodeFilters, method lambda$static$0, and line number 58.
+01:34:20.275 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+01:34:20.275 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 1 is an irrelevant frame. We do not count it in the InterProcedural graph
+01:34:20.275 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.settings.Setting$3
+01:34:20.275 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.common.settings.Setting$3, method get, and line number 908.
+01:34:20.275 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+01:34:20.276 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 2 is an irrelevant frame. We do not count it in the InterProcedural graph
+01:34:20.276 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.settings.Setting$3
+01:34:20.276 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.common.settings.Setting$3, method get, and line number 885.
+01:34:20.276 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 3 is an irrelevant frame. We do not count it in the InterProcedural graph
+01:34:20.276 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.cluster.metadata.IndexMetaData$Builder
+01:34:20.287 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.cluster.metadata.IndexMetaData$Builder
+01:34:20.292 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.cluster.metadata.IndexMetaData$1
+01:34:20.294 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.cluster.metadata.IndexMetaData$1
+01:34:20.294 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.cluster.metadata.IndexMetaData$1, method fromXContent, and line number 1293.
+01:34:20.294 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 7 is an irrelevant frame. We do not count it in the InterProcedural graph
+01:34:20.295 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.gateway.MetaDataStateFormat
+01:34:20.781 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 36.
+01:34:36.060 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+01:34:36.069 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+01:34:36.091 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this line number 58 does not found!

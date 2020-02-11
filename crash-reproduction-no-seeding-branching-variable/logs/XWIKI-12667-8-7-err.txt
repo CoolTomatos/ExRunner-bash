@@ -1,14 +1,105 @@
-Exception in thread "main" java.lang.NullPointerException
-	at eu.stamp.botsing.coverage.CoverageUtility.isConstructor(CoverageUtility.java:51)
-	at eu.stamp.botsing.coverage.CoverageUtility.<init>(CoverageUtility.java:38)
-	at eu.stamp.botsing.coverage.variable.BranchingVariableDiversityFactory.<init>(BranchingVariableDiversityFactory.java:29)
-	at eu.stamp.botsing.fitnessfunction.FitnessFunctions.getFitnessFunctionList(FitnessFunctions.java:39)
-	at eu.stamp.botsing.commons.ga.strategy.mosa.AbstractMOSA.getSuiteFitnessFunctions(AbstractMOSA.java:39)
-	at eu.stamp.botsing.commons.ga.strategy.mosa.AbstractMOSA.<init>(AbstractMOSA.java:29)
-	at eu.stamp.botsing.commons.ga.strategy.mosa.MOSA.<init>(MOSA.java:43)
-	at eu.stamp.botsing.testgeneration.strategy.TestGenerationUtility.getGA(TestGenerationUtility.java:37)
-	at eu.stamp.botsing.commons.testgeneration.strategy.MOSuiteStrategy.generateTests(MOSuiteStrategy.java:43)
-	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:113)
-	at eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
-	at eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:101)
-	at eu.stamp.botsing.Botsing.main(Botsing.java:168)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:557)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:557)
+org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:557)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:557)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:557)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:557)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:557)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:557)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2" Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:557)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:557)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1" Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:557)
+org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:557)
+Exception in thread "Timer-2" java.lang.IndexOutOfBoundsException: Index: 33647, Size: 32640
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at org.evosuite.runtime.LoopCounter.checkLoop(LoopCounter.java:111)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector.run(ThreadPoolAsynchronousRunner.java:596)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Exception in thread "Timer-3" java.lang.IndexOutOfBoundsException: Index: 33647, Size: 6645
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at org.evosuite.runtime.LoopCounter.checkLoop(LoopCounter.java:111)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector.run(ThreadPoolAsynchronousRunner.java:596)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:533)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:533)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:557)
+Exception in thread "Timer-5" Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner.recreateThreadsAndTasks(ThreadPoolAsynchronousRunner.java:394)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner.access$300(ThreadPoolAsynchronousRunner.java:36)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector.run(ThreadPoolAsynchronousRunner.java:627)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:531)
+Exception in thread "Timer-4" java.lang.IndexOutOfBoundsException: Index: 33647, Size: 33600
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at org.evosuite.runtime.LoopCounter.checkLoop(LoopCounter.java:111)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector.run(ThreadPoolAsynchronousRunner.java:596)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0" Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:533)
+org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:533)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:557)
+Exception in thread "Timer-0" java.lang.IndexOutOfBoundsException: Index: 33647, Size: 11876
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at org.evosuite.runtime.LoopCounter.checkLoop(LoopCounter.java:111)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector.run(ThreadPoolAsynchronousRunner.java:596)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:533)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:533)
+Exception in thread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:533)
+Exception in thread "Timer runner-1,<CLUSTER>,<ADDR>" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.jgroups.util.TimeScheduler3.run(TimeScheduler3.java:165)
+	at java.lang.Thread.run(Thread.java:748)

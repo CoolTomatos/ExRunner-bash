@@ -1,5 +1,24 @@
-17:59:36.258 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
-17:59:36.262 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.common.cache.Cache.computeIfAbsent(Cache:401)
-17:59:36.262 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.common.cache.Cache
-17:59:36.262 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-17:59:36.635 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
+04:25:36.720 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
+04:25:36.723 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.common.cache.Cache.computeIfAbsent(Cache:401)
+04:25:36.723 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.common.cache.Cache
+04:25:36.724 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+04:25:38.253 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DocValues
+04:25:38.254 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DocValues
+04:25:38.254 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.fielddata.plain.SortedSetDVBytesAtomicFieldData
+04:25:38.254 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.fielddata.ordinals.GlobalOrdinalsBuilder
+04:25:38.255 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.fielddata.plain.SortedSetDVOrdinalsIndexFieldData
+04:25:38.255 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.fielddata.plain.SortedSetDVOrdinalsIndexFieldData
+04:25:38.255 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.index.fielddata.plain.SortedSetDVOrdinalsIndexFieldData, method localGlobalDirect, and line number 45.
+04:25:38.256 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Frame level 6 is an irrelevant frame. We do not count it in the InterProcedural graph
+04:25:38.256 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.indices.fielddata.cache.IndicesFieldDataCache$IndexFieldCache
+04:25:38.256 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.indices.fielddata.cache.IndicesFieldDataCache$IndexFieldCache, method lambda$load$1, and line number 157.
+04:25:38.256 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+04:25:38.256 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 7 is an irrelevant frame. We do not count it in the InterProcedural graph
+04:25:38.256 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.cache.Cache
+04:25:38.256 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.elasticsearch.common.cache.Cache, method computeIfAbsent, and line number 401.
+04:25:38.257 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+04:25:38.257 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 8 is an irrelevant frame. We do not count it in the InterProcedural graph
+04:25:38.281 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
+04:25:41.696 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+04:25:41.702 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+04:25:41.775 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this line number 45 does not found!

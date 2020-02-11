@@ -1,6 +1,14 @@
-00:30:02.361 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
-00:30:02.364 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.node.Node.<init>(Node:200)
-00:30:02.364 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.node.Node
-00:30:02.364 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-00:30:03.121 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 35.
-00:30:05.515 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
+19:18:56.954 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
+19:18:56.980 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.node.Node.<init>(Node:200)
+19:18:56.981 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.node.Node
+19:18:56.981 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+19:19:12.326 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.plugins.PluginInfo
+19:19:12.328 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.plugins.PluginsService
+19:19:12.339 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.plugins.PluginsService
+19:19:12.366 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.node.Node
+19:19:14.272 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 35.
+19:20:02.863 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+19:20:02.876 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+19:20:03.603 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 31: 
+19:20:03.603 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+19:20:12.750 [main] ERROR e.s.b.f.t.f.StackTraceChromosomeFactory - Guided initialization failed. Please revise the target class and method!

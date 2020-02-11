@@ -1,8 +1,26 @@
-22:11:00.156 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
-22:11:00.159 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch:121)
-22:11:00.159 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.bootstrap.Elasticsearch
-22:11:00.159 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-22:11:00.529 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 36.
-22:11:09.842 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-22:11:09.849 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-22:11:09.861 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class java.util.regex.Matcher was null!
+06:53:48.747 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
+06:53:48.750 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch:121)
+06:53:48.750 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.bootstrap.Elasticsearch
+06:53:48.750 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+06:53:49.764 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages.class' should be in target project!
+06:53:49.764 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+06:53:49.766 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages_en.class' should be in target project!
+06:53:49.766 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+06:53:52.484 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class java.util.regex.Matcher was empty.
+06:53:52.486 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.util.regex.Matcher
+06:53:52.487 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 1]Cannot load class java.util.regex.Matcher. We do not count it in the InterProcedural graph
+06:53:52.487 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.monitor.os.OsProbe
+06:53:52.487 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.monitor.os.OsProbe
+06:53:52.488 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.monitor.os.OsProbe
+06:53:52.488 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.monitor.os.OsService
+06:53:52.489 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.monitor.MonitorService
+06:53:52.489 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.node.Node
+06:53:52.503 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.node.Node
+06:53:52.503 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.bootstrap.Bootstrap$6
+06:53:52.503 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.bootstrap.Bootstrap
+06:53:52.504 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.bootstrap.Bootstrap
+06:53:52.505 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.bootstrap.Elasticsearch
+06:53:52.921 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 36.
+06:54:02.110 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+06:54:02.116 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+06:54:02.127 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class java.util.regex.Matcher was null!

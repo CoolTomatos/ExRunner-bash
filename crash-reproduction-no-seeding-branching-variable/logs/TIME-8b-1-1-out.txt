@@ -1,15 +1,25 @@
-15:34:24.337 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-15:34:24.358 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.DateTimeZone.forOffsetHoursMinutes(DateTimeZone:280)
-15:34:24.358 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.DateTimeZone
-15:34:24.361 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-15:34:31.616 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
-15:34:53.202 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-15:34:53.271 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-15:34:53.417 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 16: 
-15:34:53.425 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
-15:35:00.524 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
-15:35:00.626 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
-15:35:00.964 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
-15:35:04.350 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
-15:35:11.296 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DateTimeZone_ESTest' to results/TIME-8b-1-1
-15:35:11.361 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
+18:16:45.963 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+18:16:46.028 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.DateTimeZone.forOffsetHoursMinutes(DateTimeZone:280)
+18:16:46.029 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.DateTimeZone
+18:16:46.029 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+18:17:07.202 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.joda.time.DateTimeZone
+18:17:07.389 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+18:17:36.805 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+18:17:36.858 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+18:17:39.443 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 16: 
+18:17:39.461 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+18:17:47.947 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 3/16
+18:17:50.095 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@71702d5e: 1.4545454545454546
+18:17:50.095 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+18:17:50.096 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 3/16
+18:17:51.976 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@71702d5e: 1.4545454545454546
+18:17:51.976 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
+18:17:52.025 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 3/16
+18:17:54.391 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@71702d5e: 0.0
+18:17:54.392 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #3 is created.
+18:17:54.393 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
+18:17:54.460 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+18:17:54.567 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+18:18:00.944 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+18:18:09.833 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DateTimeZone_ESTest' to results/TIME-8b-1-1
+18:18:09.909 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

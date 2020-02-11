@@ -1,6 +1,28 @@
-19:23:42.175 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected:  java.lang.IllegalStateException
-19:23:42.179 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.indices.NodeIndicesStats.writeTo(NodeIndicesStats:175)
-19:23:42.179 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.indices.NodeIndicesStats
-19:23:42.179 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-19:23:42.453 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 36.
-19:23:44.609 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
+05:13:30.676 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected:  java.lang.IllegalStateException
+05:13:30.681 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.indices.NodeIndicesStats.writeTo(NodeIndicesStats:175)
+05:13:30.681 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.indices.NodeIndicesStats
+05:13:30.681 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+05:13:39.526 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.io.stream.StreamOutput
+05:13:39.528 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.search.stats.SearchStats$Stats
+05:13:39.529 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.search.stats.SearchStats
+05:13:39.529 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.common.io.stream.StreamOutput
+05:13:39.530 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.action.admin.indices.stats.CommonStats
+05:13:39.531 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.indices.NodeIndicesStats
+05:13:39.777 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 36.
+05:14:17.089 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+05:14:17.123 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+05:14:19.076 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 3: 
+05:14:19.076 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+05:14:34.546 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/3
+05:14:46.392 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@33adb154: 4.5
+05:14:46.392 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+05:14:46.392 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/3
+05:14:57.836 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@33adb154: 4.5
+05:14:57.836 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
+05:14:57.836 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/3
+05:15:07.554 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@33adb154: 4.5
+05:15:07.554 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #3 is created.
+05:15:07.555 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/3
+05:15:16.434 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@33adb154: 4.5
+05:15:16.435 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #4 is created.
+05:15:16.435 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/3

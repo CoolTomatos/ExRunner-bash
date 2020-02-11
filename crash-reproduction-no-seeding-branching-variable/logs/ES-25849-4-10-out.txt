@@ -1,8 +1,14 @@
-18:01:37.764 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
-18:01:37.767 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.index.fielddata.ordinals.GlobalOrdinalsBuilder.build(GlobalOrdinalsBuilder:63)
-18:01:37.767 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.index.fielddata.ordinals.GlobalOrdinalsBuilder
-18:01:37.767 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-18:01:38.090 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
-18:01:47.510 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-18:01:47.519 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-18:01:47.539 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class org.apache.lucene.index.DocValues was null!
+04:28:04.129 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalStateException
+04:28:04.132 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.index.fielddata.ordinals.GlobalOrdinalsBuilder.build(GlobalOrdinalsBuilder:63)
+04:28:04.132 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.index.fielddata.ordinals.GlobalOrdinalsBuilder
+04:28:04.132 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+04:28:05.064 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DocValues
+04:28:05.066 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.lucene.index.DocValues
+04:28:05.067 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.fielddata.plain.SortedSetDVBytesAtomicFieldData
+04:28:05.067 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.index.fielddata.ordinals.GlobalOrdinalsBuilder
+04:28:05.146 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 38.
+04:28:13.246 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+04:28:13.252 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+04:28:13.332 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 10: 
+04:28:13.332 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+04:28:13.818 [main] ERROR e.s.b.f.t.f.StackTraceChromosomeFactory - Guided initialization failed. Please revise the target class and method!

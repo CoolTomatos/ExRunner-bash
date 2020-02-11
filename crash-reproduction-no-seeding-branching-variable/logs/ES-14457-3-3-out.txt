@@ -1,8 +1,46 @@
-23:04:19.961 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-23:04:19.964 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.transport.TransportService.addressesFromString(TransportService:398)
-23:04:19.964 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.transport.TransportService
-23:04:19.964 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-23:04:20.595 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 42.
-23:04:28.993 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-23:04:28.999 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-23:04:29.014 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class org.elasticsearch.transport.netty.NettyTransport was null!
+18:24:08.930 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+18:24:08.950 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.elasticsearch.transport.TransportService.addressesFromString(TransportService:398)
+18:24:08.951 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.elasticsearch.transport.TransportService
+18:24:08.951 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+18:24:25.791 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages.class' should be in target project!
+18:24:25.792 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+18:24:25.819 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/joda/time/format/messages_en.class' should be in target project!
+18:24:25.819 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+18:24:33.155 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.transport.netty.NettyTransport
+18:24:33.183 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.transport.netty.NettyTransport
+18:24:33.187 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.elasticsearch.transport.TransportService
+18:24:33.334 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 42.
+18:25:30.575 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+18:25:30.685 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+18:25:32.752 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 10: 
+18:25:32.752 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+18:25:57.761 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/10
+18:26:52.642 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@1e3fb3d7: 2.5
+18:26:52.642 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+18:26:52.643 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/10
+18:27:27.443 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@1e3fb3d7: 2.5
+18:27:27.443 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
+18:27:27.443 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/10
+18:28:13.474 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@1e3fb3d7: 2.5
+18:28:13.475 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #3 is created.
+18:28:13.475 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/10
+18:28:23.949 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@1e3fb3d7: 2.5
+18:28:23.949 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #4 is created.
+18:28:23.949 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/10
+18:28:38.776 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@1e3fb3d7: 2.5
+18:28:38.776 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #5 is created.
+18:28:38.777 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/10
+18:28:59.768 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@1e3fb3d7: 2.5
+18:28:59.769 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #6 is created.
+18:28:59.769 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/10
+18:29:05.482 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@1e3fb3d7: 2.5
+18:29:05.482 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #7 is created.
+18:29:05.483 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/10
+18:29:38.168 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@1e3fb3d7: 0.0
+18:29:38.169 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #8 is created.
+18:29:38.170 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
+18:29:38.206 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+18:29:38.937 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+18:29:49.232 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+18:29:54.455 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'TransportService_ESTest' to results/ES-14457-3-3
+18:29:54.535 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

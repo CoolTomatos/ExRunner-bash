@@ -1,17 +1,117 @@
 log4j:WARN No appenders could be found for logger (org.elasticsearch.common.netty).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-Exception in thread "main" java.lang.NullPointerException
-	at eu.stamp.botsing.coverage.CoverageUtility.isConstructor(CoverageUtility.java:51)
-	at eu.stamp.botsing.coverage.CoverageUtility.<init>(CoverageUtility.java:38)
-	at eu.stamp.botsing.coverage.variable.BranchingVariableDiversityFactory.<init>(BranchingVariableDiversityFactory.java:29)
-	at eu.stamp.botsing.fitnessfunction.FitnessFunctions.getFitnessFunctionList(FitnessFunctions.java:39)
-	at eu.stamp.botsing.commons.ga.strategy.mosa.AbstractMOSA.getSuiteFitnessFunctions(AbstractMOSA.java:39)
-	at eu.stamp.botsing.commons.ga.strategy.mosa.AbstractMOSA.<init>(AbstractMOSA.java:29)
-	at eu.stamp.botsing.commons.ga.strategy.mosa.MOSA.<init>(MOSA.java:43)
-	at eu.stamp.botsing.testgeneration.strategy.TestGenerationUtility.getGA(TestGenerationUtility.java:37)
-	at eu.stamp.botsing.commons.testgeneration.strategy.MOSuiteStrategy.generateTests(MOSuiteStrategy.java:43)
-	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:113)
-	at eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
-	at eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:101)
-	at eu.stamp.botsing.Botsing.main(Botsing.java:168)
+Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "ForkJoinPool-1-worker-57" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:110)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1402)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[\8<tCOwHd ]6%5][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[hmYXD7g7][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[-\CPl}Ii][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[\dX>TPd][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[l(2fjp%(doqTq][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[[timer]]" Exception in thread "elasticsearch[bEjw*][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[/;{gZ`%e][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[initialized][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:578)
+Exception in thread "elasticsearch[X3][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:578)
+Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:578)
+Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:578)
+Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:578)
+Exception in thread "elasticsearch[^G)r\][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[7ITQ4X][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:578)
+Exception in thread "elasticsearch[U#6j8"ay+V~4][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:578)
+Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:578)
+Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[transport_client_timer][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[[timer]]" Exception in thread "elasticsearch[a%#d0noN9G9][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[ны][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:578)
+Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+Exception in thread "elasticsearch[[timer]]" Exception in thread "elasticsearch[][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)
+org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:582)

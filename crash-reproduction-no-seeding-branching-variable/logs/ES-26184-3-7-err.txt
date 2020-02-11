@@ -1,3 +1,11 @@
+java.lang.NullPointerException
+	at org.evosuite.graphs.cfg.ActualControlFlowGraph.<init>(ActualControlFlowGraph.java:93)
+	at eu.stamp.botsing.commons.graphs.cfg.BotsingActualControlFlowGraph.<init>(BotsingActualControlFlowGraph.java:16)
+	at eu.stamp.botsing.graphs.cfg.CFGGenerator.generateInterProceduralCFG(CFGGenerator.java:42)
+	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:88)
+	at eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
+	at eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:101)
+	at eu.stamp.botsing.Botsing.main(Botsing.java:168)
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index: 9, Size: 9
 	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
 	at java.util.ArrayList.get(ArrayList.java:433)

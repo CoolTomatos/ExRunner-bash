@@ -1,15 +1,17 @@
-22:45:50.299 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-22:45:50.302 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.analysis.UnivariateRealSolverUtils.bracket(UnivariateRealSolverUtils:128)
-22:45:50.302 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.analysis.UnivariateRealSolverUtils
-22:45:50.303 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-22:45:50.604 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
-22:45:51.516 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-22:45:51.522 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-22:45:51.541 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 12: 
-22:45:51.542 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
-22:45:52.294 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
-22:45:52.300 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
-22:45:52.320 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
-22:45:52.527 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
-22:45:53.294 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'UnivariateRealSolverUtils_ESTest' to results/MATH-95b-2-9
-22:45:53.300 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
+18:15:16.572 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+18:15:16.594 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.analysis.UnivariateRealSolverUtils.bracket(UnivariateRealSolverUtils:128)
+18:15:16.594 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.analysis.UnivariateRealSolverUtils
+18:15:16.594 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+18:15:20.809 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.analysis.UnivariateRealSolverUtils
+18:15:20.863 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.analysis.UnivariateRealSolverUtils
+18:15:21.927 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+18:15:34.612 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+18:15:34.690 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+18:15:35.081 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 24: 
+18:15:35.082 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+18:15:41.950 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
+18:15:41.965 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+18:15:42.048 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+18:15:43.218 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+18:15:52.217 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'UnivariateRealSolverUtils_ESTest' to results/MATH-95b-2-9
+18:15:52.303 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

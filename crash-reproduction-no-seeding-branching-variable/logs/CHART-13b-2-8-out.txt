@@ -1,8 +1,41 @@
-22:05:54.453 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
-22:05:54.456 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.jfree.chart.block.BorderArrangement.arrangeFF(BorderArrangement:454)
-22:05:54.456 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.jfree.chart.block.BorderArrangement
-22:05:54.456 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-22:05:55.035 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 8.
-22:05:59.713 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-22:05:59.720 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-22:05:59.733 [main] ERROR e.s.b.c.t.TestGenerationContextUtility - CrashCoverageTestfitness.derivingMethodFromBytecode: instruction for this class org.jfree.data.Range was null!
+17:56:40.846 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+17:56:40.868 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.jfree.chart.block.BorderArrangement.arrangeFF(BorderArrangement:454)
+17:56:40.868 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.jfree.chart.block.BorderArrangement
+17:56:40.869 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+17:56:51.060 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.jfree.data.Range
+17:56:51.087 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.jfree.chart.block.BorderArrangement
+17:56:51.087 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - Could not find the cfg of class org.jfree.chart.block.BorderArrangement, method arrangeFF, and line number 454.
+17:56:51.090 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - could not find any candidate.
+17:56:51.090 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Probably, Frame level 2 is an irrelevant frame. We do not count it in the InterProcedural graph
+17:56:51.169 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 8.
+17:57:29.921 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+17:57:29.940 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+17:57:30.676 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 4: 
+17:57:30.703 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+17:57:40.183 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/4
+17:57:44.211 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@7e00a45d: 1.3333333333333333
+17:57:44.212 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+17:57:44.212 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/4
+17:57:48.179 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@7e00a45d: 1.3333333333333333
+17:57:48.180 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
+17:57:48.180 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/4
+17:57:57.893 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@7e00a45d: 1.3333333333333333
+17:57:57.893 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #3 is created.
+17:57:57.894 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/4
+17:58:00.182 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@7e00a45d: 1.3333333333333333
+17:58:00.183 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #4 is created.
+17:58:00.183 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/4
+17:58:01.858 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@7e00a45d: 1.3333333333333333
+17:58:01.858 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #5 is created.
+17:58:01.858 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/4
+17:58:03.562 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@7e00a45d: 1.3333333333333333
+17:58:03.563 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #6 is created.
+17:58:03.563 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/4
+17:58:08.095 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.IntegrationTestingFF@7e00a45d: 0.0
+17:58:08.095 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #7 is created.
+17:58:08.104 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: SingleObjectiveZero :              0 / 0            Finished!
+17:58:08.122 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+17:58:08.470 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+17:58:16.141 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+17:58:20.381 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BorderArrangement_ESTest' to results/CHART-13b-2-8
+17:58:20.396 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
