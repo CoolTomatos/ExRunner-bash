@@ -1,16 +1,25 @@
-19:44:50.344 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
-19:44:50.369 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.linear.BigMatrixImpl.operate(BigMatrixImpl:997)
-19:44:50.369 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.linear.BigMatrixImpl
-19:44:50.377 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
-19:45:00.085 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.linear.BigMatrixImpl
-19:45:00.177 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
-19:45:08.641 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
-19:45:08.676 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
-19:45:08.806 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
-19:45:08.806 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
-19:45:12.424 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
-19:45:12.453 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
-19:45:13.002 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
-19:45:22.001 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
-19:45:28.897 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BigMatrixImpl_ESTest' to results/MATH-98b-1-5
-19:45:29.011 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!
+15:41:26.566 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
+15:41:26.620 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.linear.BigMatrixImpl.operate(BigMatrixImpl:997)
+15:41:26.620 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.linear.BigMatrixImpl
+15:41:26.621 [main] INFO  eu.stamp.botsing.Botsing - Guided_MOSA
+15:41:39.145 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.linear.BigMatrixImpl
+15:41:39.208 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+15:41:48.148 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+15:41:48.187 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+15:41:48.337 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 1: 
+15:41:48.337 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+15:41:54.077 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+15:41:56.163 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.ITFFForIndexedAccess@e7ddfac: 1.0
+15:41:56.164 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+15:41:56.164 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+15:41:58.101 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.ITFFForIndexedAccess@e7ddfac: 1.0
+15:41:58.102 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
+15:41:58.102 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 0/1
+15:41:58.863 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - eu.stamp.botsing.fitnessfunction.ITFFForIndexedAccess@e7ddfac: 0.0
+15:41:58.863 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #3 is created.
+15:41:58.864 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
+15:41:58.879 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+15:41:59.047 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+15:42:09.246 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+15:42:16.531 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BigMatrixImpl_ESTest' to results/MATH-98b-1-5
+15:42:16.669 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

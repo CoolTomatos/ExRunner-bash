@@ -165,3 +165,6 @@ eu.stamp.botsing.Botsing.main(Botsing.java:168)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at java.util.logging.LogManager.<clinit>(LogManager.java:181)
 	... 46 more
+Exception in thread "TimeLimitedCollector timer thread" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.apache.lucene.search.TimeLimitingCollector$TimerThread.run(TimeLimitingCollector.java:257)

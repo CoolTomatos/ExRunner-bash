@@ -1,42 +1,3 @@
-Exception in thread "elasticsearch[][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:720)
-Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:720)
-Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:720)
-Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:720)
-Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:720)
-Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:720)
-Exception in thread "elasticsearch[jr^Dm][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:720)
-Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:720)
-Exception in thread "elasticsearch[][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:720)
-Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:720)
-Exception in thread "elasticsearch["{5~][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:720)
-Exception in thread "elasticsearch[gH5][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:720)
-Exception in thread "elasticsearch[][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:720)
 Exception in thread "main" org.evosuite.testcase.execution.EvosuiteError: java.lang.ExceptionInInitializerError
 	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:739)
 	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
@@ -49,7 +10,8 @@ Exception in thread "main" org.evosuite.testcase.execution.EvosuiteError: java.l
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 Caused by: java.lang.ExceptionInInitializerError
-	at sun.reflect.GeneratedSerializationConstructorAccessor1072.newInstance(Unknown Source)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.<clinit>(NettyHttpServerTransport.java:89)
+	at sun.reflect.GeneratedSerializationConstructorAccessor421.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.evosuite.shaded.org.objenesis.instantiator.sun.SunReflectionFactoryInstantiator.newInstance(SunReflectionFactoryInstantiator.java:48)
 	at org.evosuite.shaded.org.objenesis.ObjenesisBase.newInstance(ObjenesisBase.java:73)
@@ -62,6 +24,5 @@ Caused by: java.lang.ExceptionInInitializerError
 	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:606)
 	... 9 more
 Caused by: java.lang.NullPointerException
-	at org.elasticsearch.common.logging.DeprecationLogger.<init>(DeprecationLogger.java:36)
-	at org.elasticsearch.index.query.IndexQueryParserService.<clinit>(IndexQueryParserService.java:55)
-	... 20 more
+	at org.elasticsearch.common.netty.NettyUtils.<clinit>(NettyUtils.java:104)
+	... 21 more

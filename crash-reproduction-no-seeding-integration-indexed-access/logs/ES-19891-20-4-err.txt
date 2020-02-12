@@ -1,49 +1,12 @@
+Exception in thread "elasticsearch[Predicates.not(][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:720)
+Exception in thread "elasticsearch[][[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:720)
 Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
 	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
 	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:720)
-Exception in thread "AsyncAppender-Dispatcher-Thread-1" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.apache.log4j.AsyncAppender$Dispatcher.run(AsyncAppender.java:591)
-	at java.lang.Thread.run(Thread.java:748)
-Exception in thread "elasticsearch[[timer]]" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.elasticsearch.threadpool.ThreadPool$EstimatedTimeThread.run(ThreadPool.java:720)
-Exception in thread "AsyncAppender-Dispatcher-Thread-2" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.apache.log4j.AsyncAppender$Dispatcher.run(AsyncAppender.java:591)
-	at java.lang.Thread.run(Thread.java:748)
-Exception in thread "AsyncAppender-Dispatcher-Thread-3" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.apache.log4j.AsyncAppender$Dispatcher.run(AsyncAppender.java:591)
-	at java.lang.Thread.run(Thread.java:748)
-Exception in thread "AsyncAppender-Dispatcher-Thread-4" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.apache.log4j.AsyncAppender$Dispatcher.run(AsyncAppender.java:527)
-	at java.lang.Thread.run(Thread.java:748)
-Exception in thread "AsyncAppender-Dispatcher-Thread-5" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.apache.log4j.AsyncAppender$Dispatcher.run(AsyncAppender.java:527)
-	at java.lang.Thread.run(Thread.java:748)
-Exception in thread "AsyncAppender-Dispatcher-Thread-6" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.apache.log4j.AsyncAppender$Dispatcher.run(AsyncAppender.java:591)
-	at java.lang.Thread.run(Thread.java:748)
-Exception in thread "AsyncAppender-Dispatcher-Thread-7" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.apache.log4j.AsyncAppender$Dispatcher.run(AsyncAppender.java:527)
-	at java.lang.Thread.run(Thread.java:748)
-Exception in thread "AsyncAppender-Dispatcher-Thread-8" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.apache.log4j.AsyncAppender$Dispatcher.run(AsyncAppender.java:527)
-	at java.lang.Thread.run(Thread.java:748)
-Exception in thread "AsyncAppender-Dispatcher-Thread-9" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.apache.log4j.AsyncAppender$Dispatcher.run(AsyncAppender.java:591)
-	at java.lang.Thread.run(Thread.java:748)
-Exception in thread "AsyncAppender-Dispatcher-Thread-10" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
-	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
-	at org.apache.log4j.AsyncAppender$Dispatcher.run(AsyncAppender.java:527)
-	at java.lang.Thread.run(Thread.java:748)
 Exception in thread "main" org.evosuite.testcase.execution.EvosuiteError: java.lang.ExceptionInInitializerError
 	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:739)
 	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
@@ -56,8 +19,7 @@ Exception in thread "main" org.evosuite.testcase.execution.EvosuiteError: java.l
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 Caused by: java.lang.ExceptionInInitializerError
-	at org.elasticsearch.http.netty.NettyHttpServerTransport.<clinit>(NettyHttpServerTransport.java:89)
-	at sun.reflect.GeneratedSerializationConstructorAccessor260.newInstance(Unknown Source)
+	at sun.reflect.GeneratedSerializationConstructorAccessor1115.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.evosuite.shaded.org.objenesis.instantiator.sun.SunReflectionFactoryInstantiator.newInstance(SunReflectionFactoryInstantiator.java:48)
 	at org.evosuite.shaded.org.objenesis.ObjenesisBase.newInstance(ObjenesisBase.java:73)
@@ -70,5 +32,6 @@ Caused by: java.lang.ExceptionInInitializerError
 	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:606)
 	... 9 more
 Caused by: java.lang.NullPointerException
-	at org.elasticsearch.common.netty.NettyUtils.<clinit>(NettyUtils.java:104)
-	... 21 more
+	at org.elasticsearch.common.logging.DeprecationLogger.<init>(DeprecationLogger.java:36)
+	at org.elasticsearch.index.analysis.AnalysisService.<clinit>(AnalysisService.java:48)
+	... 20 more
