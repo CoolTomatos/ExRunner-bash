@@ -1,0 +1,12 @@
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console.
+Exception in thread "pool-2-thread-1" org.evosuite.testcase.execution.TestCaseExecutor$TimeoutExceeded
+	at org.evosuite.testcase.execution.ExecutionTracer.checkTimeout(ExecutionTracer.java:384)
+	at org.apache.logging.log4j.message.ParameterizedMessage.getThreadLocalStringBuilder(ParameterizedMessage.java:209)
+	at org.apache.logging.log4j.message.ParameterizedMessage.getFormattedMessage(ParameterizedMessage.java:200)
+	at org.apache.logging.log4j.message.ParameterizedNoReferenceMessageFactory.newMessage(ParameterizedNoReferenceMessageFactory.java:105)
+	at org.apache.logging.log4j.message.AbstractMessageFactory.newMessage(AbstractMessageFactory.java:75)
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessage(AbstractLogger.java:2010)
+	at org.apache.logging.log4j.spi.AbstractLogger.logIfEnabled(AbstractLogger.java:1884)
+	at org.apache.logging.log4j.spi.AbstractLogger.error(AbstractLogger.java:793)
+	at org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry.run(DefaultShutdownCallbackRegistry.java:76)
+	at java.lang.Thread.run(Thread.java:748)

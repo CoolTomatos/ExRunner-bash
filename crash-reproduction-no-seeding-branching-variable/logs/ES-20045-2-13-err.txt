@@ -1,0 +1,23 @@
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at sun.misc.Unsafe.ensureClassInitialized(Native Method)
+	at sun.reflect.UnsafeFieldAccessorFactory.newFieldAccessor(UnsafeFieldAccessorFactory.java:43)
+	at sun.reflect.ReflectionFactory.newFieldAccessor(ReflectionFactory.java:156)
+	at java.lang.reflect.Field.acquireFieldAccessor(Field.java:1088)
+	at java.lang.reflect.Field.getFieldAccessor(Field.java:1069)
+	at java.lang.reflect.Field.get(Field.java:393)
+	at org.evosuite.setup.TestClusterGenerator.initializeTargetMethods(TestClusterGenerator.java:594)
+	at org.evosuite.setup.TestClusterGenerator.generateCluster(TestClusterGenerator.java:134)
+	at org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:118)
+	at org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:132)
+	at eu.stamp.botsing.commons.SetupUtility.analyzeClassDependencies(SetupUtility.java:108)
+	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:89)
+	at eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
+	at eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:101)
+	at eu.stamp.botsing.Botsing.main(Botsing.java:168)
+Caused by: java.lang.IllegalArgumentException: illegal settings key: [index.max_result_window]
+	at org.elasticsearch.common.settings.AbstractScopedSettings.validateSettingKey(AbstractScopedSettings.java:89)
+	at org.elasticsearch.common.settings.IndexScopedSettings.validateSettingKey(IndexScopedSettings.java:177)
+	at org.elasticsearch.common.settings.AbstractScopedSettings.<init>(AbstractScopedSettings.java:70)
+	at org.elasticsearch.common.settings.IndexScopedSettings.<init>(IndexScopedSettings.java:161)
+	at org.elasticsearch.common.settings.IndexScopedSettings.<clinit>(IndexScopedSettings.java:157)
+	... 15 more
