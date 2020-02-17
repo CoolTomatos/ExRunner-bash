@@ -1,0 +1,5 @@
+Exception in thread "TimeLimitedCollector timer thread" java.lang.IndexOutOfBoundsException: Index: 33220, Size: 8698
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at org.evosuite.runtime.LoopCounter.checkLoop(LoopCounter.java:111)
+	at org.apache.lucene.search.TimeLimitingCollector$TimerThread.run(TimeLimitingCollector.java:264)
